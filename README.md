@@ -18,6 +18,9 @@ Task list:
  - [x] Access Reuters dataset
  - [ ] Semantic Technology lectures
  - [ ] Neo4j knowledge graph tutorial: https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/
+ - [ ] Sort out advisor
+   - [ ] Inform Michael
+   - [ ] Introduction to Jan
  - [ ] Literature review
    - [ ] IPTC things?
    - [ ] Previous Birkbeck projects
