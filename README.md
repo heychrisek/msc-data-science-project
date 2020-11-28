@@ -21,7 +21,7 @@ Task list:
  - [ ] Literature review
    - [ ] IPTC things?
    - [ ] Previous Birkbeck projects
-   - [ ] Other academic articles:
+   - [ ] Academic articles:
      - [ ] https://arxiv.org/pdf/1503.00759.pdf
      - [ ] http://ceur-ws.org/Vol-2635/
      - [ ] http://www.semantic-web-journal.net/system/files/swj1141.pdf
@@ -31,6 +31,36 @@ Task list:
      - [ ] http://www.semantic-web-journal.net/system/files/swj1791.pdf
      - [ ] http://www.semantic-web-journal.net/system/files/swj1462.pdf
      - [ ] http://www.semantic-web-journal.net/system/files/swj1495.pdf
+   - [ ] Online articles
+     - [ ] http://andrea-index.blogspot.com/2015/06/wikipedia-dbpedia-wikidata.html?m=1
+     - [ ] https://blog.cambridgesemantics.com/creating-a-successful-enterprise-knowledge-graph
+     - [ ] https://chatbotslife.com/knowledge-graphs-and-chatbots-an-analytical-approach-a8dcc8649100
+     - [ ] https://blog.dbpedia.org/2011/07/09/official-dbpedia-live-release/
+     - [ ] https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata
+     - [ ] https://towardsdatascience.com/movie-recommendations-powered-by-knowledge-graphs-and-neo4j-33603a212ad0
+     - [ ] https://jbarrasa.com/
+     - [ ] https://pro.europeana.eu/page/linked-open-data
+     - [ ] https://heartbeat.fritz.ai/the-7-nlp-techniques-that-will-change-how-you-communicate-in-the-future-part-i-f0114b2f0497
+     - [ ] https://info.cambridgesemantics.com/build-your-enterprise-knowledge-graph
+     - [ ] https://linkurio.us/blog/how-nasa-experiments-with-knowledge-discovery/
+     - [ ] https://neo4j.com/blog/knowledge-graph-search-elasticsearch-neo4j/
+     - [ ] https://neo4j.com/blog/nasa-critical-data-knowledge-graph/
+     - [ ] https://news.ycombinator.com/item?id=19095849
+     - [ ] https://news.ycombinator.com/item?id=20792807
+     - [ ] https://towardsdatascience.com/a-practitioners-guide-to-natural-language-processing-part-i-processing-understanding-text-9f4abfd13e72
+     - [ ] https://towardsdatascience.com/fact-based-ai-improving-on-a-knowledge-graph-12c37481cce6
+     - [ ] https://towardsdatascience.com/knowledge-graph-bb78055a7884
+     - [ ] https://towardsdatascience.com/the-data-fabric-for-machine-learning-part-2-building-a-knowledge-graph-2fdd1370bb0a
+     - [ ] https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1
+     - [ ] https://voicebot.ai/2019/10/07/alexa-will-answer-questions-using-reuters-news-stories/
+     - [ ] https://www.kdnuggets.com/2017/02/natural-language-processing-key-terms-explained.html
+     - [ ] https://www.mkbergman.com/2267/combining-knowledge-graphs-and-ontologies-for-dynamic-apps/
+     - [ ] https://www.reddit.com/r/MLQuestions/comments/i98cy3/how_are_knowledge_graphs_used_in_recommendation/
+     - [ ] https://medium.com/virtuoso-blog/dbpedia-usage-report-as-of-2018-01-01-8cae1b81ca71
+     - [ ] https://docs.google.com/document/d/1gitkYb8btXhcvyz1rna5mLJkQeSc-6luBQA2jlFqwT8/edit?usp=drivesdk
+     - [ ] http://www-ksl.stanford.edu/kst/what-is-an-ontology.html
+     - [ ] https://neo4j.com/blog/rdf-triple-store-vs-labeled-property-graph-difference/
+     - [ ] https://towardsdatascience.com/a-brief-introduction-to-wikidata-bb4e66395eb1
  - [ ] start some code
    - [ ] pipeline / processing of data
    - [ ] hosted / stored knowledge graph?
