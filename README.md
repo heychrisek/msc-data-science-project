@@ -64,6 +64,7 @@ Task list:
      - [ ] http://www-ksl.stanford.edu/kst/what-is-an-ontology.html
      - [ ] https://neo4j.com/blog/rdf-triple-store-vs-labeled-property-graph-difference/
      - [ ] https://towardsdatascience.com/a-brief-introduction-to-wikidata-bb4e66395eb1
+     - [ ] https://towardsdatascience.com/creating-knowledge-graphs-from-resumes-and-traver-56016426f4fb / https://github.com/priya-dwivedi/Deep-Learning
  - [ ] start some code
    - [ ] pipeline / processing of data
    - [ ] hosted / stored knowledge graph?
