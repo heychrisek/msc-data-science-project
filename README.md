@@ -65,6 +65,7 @@ Task list:
      - [ ] https://neo4j.com/blog/rdf-triple-store-vs-labeled-property-graph-difference/
      - [ ] https://towardsdatascience.com/a-brief-introduction-to-wikidata-bb4e66395eb1
      - [ ] https://towardsdatascience.com/creating-knowledge-graphs-from-resumes-and-traver-56016426f4fb / https://github.com/priya-dwivedi/Deep-Learning
+     - [ ] https://programmerbackpack.com/python-nlp-tutorial-information-extraction-and-knowledge-graphs/
  - [ ] start some code
    - [ ] pipeline / processing of data
    - [ ] hosted / stored knowledge graph?
