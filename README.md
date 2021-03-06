@@ -2,7 +2,7 @@
 
 See [TODO.md](https://github.com/heychrisek/msc-data-science-project/blob/main/TODO.md) for a todo list of reading.
 
-This README documents some of the actual code / processing / data science that's been completed or planned. Skip ahead to [section 2c]() for some interactive code.
+This README documents some of the actual code / processing / data science that's been completed or planned. Skip ahead to [section 2c](https://github.com/heychrisek/msc-data-science-project/#2c-csv-and-dimensions) for some interactive code.
 
 ### 1. Source the data
 
