@@ -9,12 +9,22 @@ import sys
 import xml.etree.ElementTree as ET
 
 # REMOVE WHEN DONE
+import datetime
 import pprint
 import pdb
 
 
 def save_to_csv(newsitems, filename):
-  fields = ['guid', 'slugline', 'headline', 'description', 'genres', 'subjects', 'bodyLengthChars', 'bodyLengthWords', 'body']
+  fields = ['guid',
+            'slugline',
+            'headline',
+            'description',
+            'genres',
+            'subjects',
+            'bodyLengthChars',
+            'bodyLengthWords',
+            # 'body'
+            ]
 
   with open(filename, 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fields)
@@ -50,7 +60,7 @@ def parse_xml(filename):
   body = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentSet/iptc:inlineXML/xhtml:html/xhtml:body', namespaces=NSMAP)#.text
   body = str(ET.tostring(body))
 
-  return {"body": body,
+  return {#'body': body,
           'description': description,
           'genres': genres,
           'guid': guid,
@@ -86,9 +96,11 @@ def parse_n_files(path='./', max_files=100000):
 #   call with first arg as `path` param:                           python item_xml_docs_to_csv.py ./text_en_201909
 #   call with first arg `path` and second arg `max_files` param:   python item_xml_docs_to_csv.py ./text_en_201909 20
 if __name__ == "__main__":
+  print(datetime.datetime.now())
   if len(sys.argv) == 1:
     parse_n_files()
   elif len(sys.argv) == 2:
     parse_n_files(sys.argv[1])
   else:
     parse_n_files(sys.argv[1], int(sys.argv[2]))
+  print(datetime.datetime.now())
