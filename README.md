@@ -4,13 +4,13 @@ See [TODO.md](https://github.com/heychrisek/msc-data-science-project/blob/main/T
 
 This README documents some of the actual code / processing / data science that's been completed or planned. Skip ahead to [section 2c](https://github.com/heychrisek/msc-data-science-project/#2c-csv-and-dimensions) for some interactive code.
 
-### 1. Source the data
+### 1. Source and analyze the data
+
+#### 1a. Data source
 
 This project will use this dataset provided by Reuters: [Reuters News Archive (30 Days)](https://aws.amazon.com/marketplace/pp/Reuters-News-Archive-30-Days/prodview-qwmkdffmmjesa#offers). It is briefly described as:
 
 > Reuters’ Text Archive provides the full corpus of English articles that have been published. This will include breaking news in the financial and general news space as well as global coverage in politics, sports, entertainment, and technology. This comprehensive corpus of content makes this dataset ideal for any natural language processing (NLP) algorithms or ML applications.
-
-### 2. Brief data analysis
 
 #### 2a. Corpus size
 
@@ -53,3 +53,25 @@ df.info()
 #  - subjects are missing for a small number of items, about 6.5%
 
 ```
+### 2. Ingest the documents into Neo4j
+[ ] Proof of concept: follow [Neo4j tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/)
+[ ] Sample Cypher queries
+
+### 3. Text processing
+
+Consider:
+[ ] evaluating and improving information retrieval (search)
+[ ] text classification
+      [ ] Neo4j: items have phrases, phrases have topics, same topics are same class?
+      [ ] similarity/clustering
+
+### 4. [optional] Deploy data / pipeline / API?
+[ ] Neo4j cloud hosting
+[ ] Expose Cypher query interface
+[ ] Expose information retrieval search API
+[ ] Chatbot
+
+### 5. Finalize written report
+[ ] finalize code/pipeline -- identify key code snippets
+[ ] diagram of data flow: XML docs -> CSV/Neo4j -> NLP pipeline
+[ ] **define the problem**: improve information retrieval with Neo4j? apply Neo4j to improve NLP applications? use Neo4j to improve semantic value of text data?
