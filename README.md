@@ -74,7 +74,7 @@ Consider:
 ### 5. Finalize written report
 [ ] finalize code/pipeline -- identify key code snippets
 [ ] diagram of data flow: XML docs -> CSV/Neo4j -> NLP pipeline
-[ ] **define the problem**: improve information retrieval with Neo4j? apply Neo4j to improve NLP applications? use Neo4j to improve semantic value of text data?
+[ ] **define the problem**: improve information retrieval with Neo4j? apply Neo4j to improve NLP applications? use Neo4j to improve *semantic value* of text data? compare Neo4j to non-graph DBs for information retrieval or NLP applications?
 
 #### 5x. Challenges
 Notes about challenges faced (and solved):

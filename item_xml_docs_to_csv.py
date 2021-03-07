@@ -16,6 +16,8 @@ import pdb
 
 NSMAP = {'iptc': 'http://iptc.org/std/nar/2006-10-01/',
            'xhtml': 'http://www.w3.org/1999/xhtml'}
+CSV_ROW_LIMIT = 10000
+VERBOSE = False
 
 # temporary solution for encoded emojis in files like:
 #   tag:reuters.com,2019:newsml_CqtdcPk1a:607651010.XML
@@ -56,7 +58,7 @@ def make_news_item_dict(filename, body='', datetime='EXCEPTION', description='EX
                         slugline='EXCEPTION', subjects='EXCEPTION'):
   """
   Return dictionary of news_item. For empty case (in exceptions), default arguments
-  will be "EXCEPTION" and 0 length for bodyLengthChards and bodyLengthWords.
+  will be 'EXCEPTION' and 0 length for bodyLengthChards and bodyLengthWords.
   """
   return {#'body': body,
           'datetime': datetime,
@@ -68,13 +70,14 @@ def make_news_item_dict(filename, body='', datetime='EXCEPTION', description='EX
           'slugline': slugline,
           'subjects': subjects,
           'bodyLengthChars': len(body),
-          'bodyLengthWords': len(body.split(" "))}
+          'bodyLengthWords': len(body.split(' '))}
 
 def parse_xml(path, filename):
   file = path + '/' + filename
   try:
     root = ET.parse(file).getroot()
   except Exception as e:
+    raise(e)
     with open(file, 'r') as file:
       data = file.read()
       data = re.sub(INVALID_CHAR_REGEX, '�', data)
@@ -116,59 +119,70 @@ def parse_xml(path, filename):
           'slugline': slugline,
           'subjects': subjects,
           'bodyLengthChars': len(body),
-          'bodyLengthWords': len(body.split(" "))}
+          'bodyLengthWords': len(body.split(' '))}
 
-def parse_n_files(path='./', max_files=100000):
+def parse_xml_and_write_csv(path, files, output_filename):
   counter = 0
   news_items = []
-
-  files = os.listdir(path)
-  files.sort()
-
-  length = min(len(files), max_files)
-  print("Parsing " + str(length) + " files...")
-  checkLength = length // 20 + 1
-
+  n_files = len(files)
+  check_length = n_files // 10 + 1
   for i, filename in enumerate(files):
-    if i%checkLength == 0: print(str(int(i/length*100)) + "% complete - Parsing file " + str(i) + " out of " + str(length))
+    if VERBOSE:
+      if i%check_length == 0:
+        print(str(int(i/n_files*100)) + '% of this segment complete - Parsing file ' + str(i) + ' out of ' + str(n_files) + ' - ', datetime.datetime.now())
 
     try:
       news_item = parse_xml(path, filename)
-      news_items.append(news_item)
     except Exception as e:
-      print("EXCEPTION: ", e, "on file ", filename)
-      # make_news_item_dict(filename)
-      news_items.append({#'body': body,
-                        'datetime': "EXCEPTION",
-                        'description': "EXCEPTION",
-                        'filename': filename,
-                        'genres': "EXCEPTION",
-                        'guid': "EXCEPTION",
-                        'headline': "EXCEPTION",
-                        'slugline': "EXCEPTION",
-                        'subjects': "EXCEPTION",
-                        'bodyLengthChars': 0,
-                        'bodyLengthWords': 0})
-      pass
+      print('EXCEPTION: ', e, 'on file ', filename)
+      news_item = make_news_item_dict(filename)
+    news_items.append(news_item)
 
-    # pprint.pprint(news_items)
-    save_to_csv(news_items, 'output.csv')
+  if VERBOSE:
+    print('Parsed next ' + str(n_files) + ' files')
+    print('Saving to ' + output_filename + '...')
 
-    counter += 1
-    if counter >= max_files:
-      break
+  save_to_csv(news_items, output_filename)
+
+  if VERBOSE: print('Saved to ' + output_filename)
+
+def parse_n_files(path='./', max_files=100000):
+  files = os.listdir(path)
+  files.sort()
+  n_files = min(len(files), max_files)
+  n_remaining_files = n_files
+
+  if 'start_file_index' not in locals():
+    start_file_index = 0
+    end_file_index = start_file_index + CSV_ROW_LIMIT
+
+  if VERBOSE:
+    print('Parsing all ' + str(n_files) + 'XML files in directory')
+    print()
+
+  while end_file_index < n_files:
+    end_file_index = start_file_index + CSV_ROW_LIMIT
+    n_rows_in_csv = min(n_remaining_files, CSV_ROW_LIMIT)
+    output_filename = 'output_' + str(start_file_index+1) + '_' + str(start_file_index + n_rows_in_csv) + '.csv'
+    if VERBOSE: print('Parsing ' + str(n_rows_in_csv) + ' files into CSV rows in: ' + output_filename)
+    parse_xml_and_write_csv(path, files[start_file_index:end_file_index], output_filename)
+    n_remaining_files = n_remaining_files - n_rows_in_csv
+    if VERBOSE:
+      print('Completed parsing and saving of ' + str(n_files - n_remaining_files) + '/' + str(n_files) + ' files (' + str((n_files - n_remaining_files) / n_files * 100) + '%)')
+      print()
+    start_file_index += CSV_ROW_LIMIT
 
 
 # command line API
 #   call with no params (from directory with XML files):           python item_xml_docs_to_csv.py
 #   call with first arg as `path` param:                           python item_xml_docs_to_csv.py ./text_en_201909
 #   call with first arg `path` and second arg `max_files` param:   python item_xml_docs_to_csv.py ./text_en_201909 20
-if __name__ == "__main__":
-  print(datetime.datetime.now())
+if __name__ == '__main__':
+  if VERBOSE: print(datetime.datetime.now())
   if len(sys.argv) == 1:
     parse_n_files()
   elif len(sys.argv) == 2:
     parse_n_files(sys.argv[1])
   else:
     parse_n_files(sys.argv[1], int(sys.argv[2]))
-  print(datetime.datetime.now())
+  if VERBOSE: print(datetime.datetime.now())
