@@ -1,2 +1,5 @@
 .ipynb_checkpoints/
+.DS_STORE
 output.csv
+reuters.csv
+reuters.csv.gz
