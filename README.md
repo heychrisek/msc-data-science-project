@@ -82,4 +82,7 @@ Notes about challenges faced (and solved):
 [ ] scale of data -- script takes ~2 hours (?) to run
 [ ] how to store / process text files (not in CSV!)
 [ ] loading into Neo4j
-[ ] 
+[ ] how to split words -- 1 or more spaces so that tag:reuters.com,2019:newsml_L3N2602HC:991614233.XML doesn't have 76783 words (still has 294233 chars)
+    - [ ] weird document (table, lots of whitepace): tag/reuters.com,2019/newsml_L3N2602HC/991614233.XML
+    - [ ] weird document (full transcript of a committee hearing): tag/reuters.com,2019/newsml_CqtYP8GSa/1548902168.XML
+    - [ ] how to compute average word length

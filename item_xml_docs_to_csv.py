@@ -44,6 +44,7 @@ def save_to_csv(news_items, filename):
             'genres',
             'subjects',
             'bodyLengthChars',
+            'bodyLengthCharsNonWhitespace',
             'bodyLengthWords',
             # 'body'
             ]
@@ -70,7 +71,8 @@ def make_news_item_dict(filename, body='', datetime='EXCEPTION', description='EX
           'slugline': slugline,
           'subjects': subjects,
           'bodyLengthChars': len(body),
-          'bodyLengthWords': len(body.split(' '))}
+          'bodyLengthCharsNonWhitespace': len(body.replace(' ', '')),
+          'bodyLengthWords': len(re.split('\s+', body))} # split on \s+ for one *or more* spaces
 
 def parse_xml(path, filename):
   file = path + '/' + filename
@@ -108,18 +110,7 @@ def parse_xml(path, filename):
   body = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentSet/iptc:inlineXML/xhtml:html/xhtml:body', namespaces=NSMAP)#.text
   body = str(ET.tostring(body))
 
-  # make_news_item_dict(filename, body, datetime, description, genres, guid, headline, slugline, subjects)
-  return {#'body': body,
-          'datetime': datetime,
-          'description': description,
-          'filename': filename,
-          'genres': genres,
-          'guid': guid,
-          'headline': headline,
-          'slugline': slugline,
-          'subjects': subjects,
-          'bodyLengthChars': len(body),
-          'bodyLengthWords': len(body.split(' '))}
+  return make_news_item_dict(filename, body, datetime, description, genres, guid, headline, slugline, subjects)
 
 def parse_xml_and_write_csv(path, files, output_filename):
   counter = 0
@@ -134,7 +125,7 @@ def parse_xml_and_write_csv(path, files, output_filename):
     try:
       news_item = parse_xml(path, filename)
     except Exception as e:
-      print('EXCEPTION: ', e, 'on file ', filename)
+      if VERBOSE: print('EXCEPTION: ', e, 'on file ', filename)
       news_item = make_news_item_dict(filename)
     news_items.append(news_item)
 
@@ -173,6 +164,7 @@ def parse_n_files(path='./', max_files=100000):
     start_file_index += CSV_ROW_LIMIT
 
 
+# [ ] TODO: improve CLI args, add VERBOSE
 # command line API
 #   call with no params (from directory with XML files):           python item_xml_docs_to_csv.py
 #   call with first arg as `path` param:                           python item_xml_docs_to_csv.py ./text_en_201909
