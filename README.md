@@ -75,3 +75,11 @@ Consider:
 [ ] finalize code/pipeline -- identify key code snippets
 [ ] diagram of data flow: XML docs -> CSV/Neo4j -> NLP pipeline
 [ ] **define the problem**: improve information retrieval with Neo4j? apply Neo4j to improve NLP applications? use Neo4j to improve semantic value of text data?
+
+#### 5x. Challenges
+Notes about challenges faced (and solved):
+[ ] emojis in tweets (&#55358;&#56603; -> left-facing fist emoji) for tag:reuters.com,2019:newsml_CqtHM2P1a. solutions: (1) handle exceptions, (2) sub &#\d\d\d\d\d; with �, (3) TBD correct solution
+[ ] scale of data -- script takes ~2 hours (?) to run
+[ ] how to store / process text files (not in CSV!)
+[ ] loading into Neo4j
+[ ] 

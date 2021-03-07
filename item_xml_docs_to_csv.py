@@ -5,6 +5,7 @@
 
 import csv
 import os
+import re
 import sys
 import xml.etree.ElementTree as ET
 
@@ -13,9 +14,28 @@ import datetime
 import pprint
 import pdb
 
+NSMAP = {'iptc': 'http://iptc.org/std/nar/2006-10-01/',
+           'xhtml': 'http://www.w3.org/1999/xhtml'}
 
-def save_to_csv(newsitems, filename):
-  fields = ['guid',
+# temporary solution for encoded emojis in files like:
+#   tag:reuters.com,2019:newsml_CqtdcPk1a:607651010.XML
+#   tag:reuters.com,2019:newsml_CqtHM2P1a:938288348.XML
+# for example: &#55358;&#56603;&#55357;&#56397;&#55356;&#56826;&#55356;&#56824;
+# should become something like:
+#   &#55358;&#56603; -> 55368 56603 -> https://www.iemoji.com/view/emoji/2277/smileys-people/left-facing-fist
+#   &#55357;&#56397;
+#   &#55356;&#56826;
+#   &#55356;&#56824; -> 55356 56824 -> https://www.iemoji.com/view/emoji/1674/flags/south-sudan
+# if only Trump's tweets weren't suspended :)
+# solution could include:
+#   https://github.com/KermMartian/smsxml2html/issues/1#issuecomment-414967015
+#   https://stackoverflow.com/questions/13165408/decode-55357-to-real-character#answer-13165544
+INVALID_CHAR_REGEX = '&#\d\d\d\d\d;'
+
+def save_to_csv(news_items, filename):
+  fields = ['filename',
+            'datetime',
+            'guid',
             'slugline',
             'headline',
             'description',
@@ -29,39 +49,67 @@ def save_to_csv(newsitems, filename):
   with open(filename, 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fields)
     writer.writeheader()
-    writer.writerows(newsitems)
+    writer.writerows(news_items)
 
-def parse_xml(filename):
-  NSMAP = {'iptc': 'http://iptc.org/std/nar/2006-10-01/',
-           'xhtml': 'http://www.w3.org/1999/xhtml'}
-  root = ET.parse(filename).getroot()
+def make_news_item_dict(filename, body='', datetime='EXCEPTION', description='EXCEPTION',
+                        genres='EXCEPTION', guid='EXCEPTION', headline='EXCEPTION',
+                        slugline='EXCEPTION', subjects='EXCEPTION'):
+  """
+  Return dictionary of news_item. For empty case (in exceptions), default arguments
+  will be "EXCEPTION" and 0 length for bodyLengthChards and bodyLengthWords.
+  """
+  return {#'body': body,
+          'datetime': datetime,
+          'description': description,
+          'filename': filename,
+          'genres': genres,
+          'guid': guid,
+          'headline': headline,
+          'slugline': slugline,
+          'subjects': subjects,
+          'bodyLengthChars': len(body),
+          'bodyLengthWords': len(body.split(" "))}
+
+def parse_xml(path, filename):
+  file = path + '/' + filename
+  try:
+    root = ET.parse(file).getroot()
+  except Exception as e:
+    with open(file, 'r') as file:
+      data = file.read()
+      data = re.sub(INVALID_CHAR_REGEX, '�', data)
+      root = ET.fromstring(data)
 
   guid = root.find('./iptc:itemSet/iptc:newsItem', namespaces=NSMAP).get('guid')
-  
-  subjectNodes = root.findall('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:subject/iptc:name', namespaces=NSMAP)
+
+  subject_nodes = root.findall('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:subject/iptc:name', namespaces=NSMAP)
   subjects = set()
-  if len(subjectNodes) == 0:
+  if len(subject_nodes) == 0:
     subjects = None
   else:
-    for s in subjectNodes:
+    for s in subject_nodes:
       subjects.add(s.text)
 
-  genreNodes = root.findall('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:genre/iptc:name', namespaces=NSMAP)
-  if len(genreNodes) == 0:
+  genre_nodes = root.findall('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:genre/iptc:name', namespaces=NSMAP)
+  if len(genre_nodes) == 0:
     genres = None
   else:
     genres = set()
-    for g in genreNodes:
+    for g in genre_nodes:
       genres.add(g.text)
 
+  datetime = root.find('./iptc:itemSet/iptc:newsItem/iptc:itemMeta/iptc:firstCreated', namespaces=NSMAP).text
   slugline = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:slugline', namespaces=NSMAP).text
   headline = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:headline', namespaces=NSMAP).text
   description = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:description', namespaces=NSMAP).text
   body = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentSet/iptc:inlineXML/xhtml:html/xhtml:body', namespaces=NSMAP)#.text
   body = str(ET.tostring(body))
 
+  # make_news_item_dict(filename, body, datetime, description, genres, guid, headline, slugline, subjects)
   return {#'body': body,
+          'datetime': datetime,
           'description': description,
+          'filename': filename,
           'genres': genres,
           'guid': guid,
           'headline': headline,
@@ -72,19 +120,39 @@ def parse_xml(filename):
 
 def parse_n_files(path='./', max_files=100000):
   counter = 0
-  newsItems = []
+  news_items = []
 
   files = os.listdir(path)
+  files.sort()
+
   length = min(len(files), max_files)
   print("Parsing " + str(length) + " files...")
-  for i, filename in enumerate(files):
-    if i%500 == 0: print("Parsing file " + str(i) + " out of " + str(length))
-    
-    newsItem = parse_xml(path + '/' + filename)
-    newsItems.append(newsItem)
+  checkLength = length // 20 + 1
 
-    # pprint.pprint(newsItems)
-    save_to_csv(newsItems, 'output.csv')
+  for i, filename in enumerate(files):
+    if i%checkLength == 0: print(str(int(i/length*100)) + "% complete - Parsing file " + str(i) + " out of " + str(length))
+
+    try:
+      news_item = parse_xml(path, filename)
+      news_items.append(news_item)
+    except Exception as e:
+      print("EXCEPTION: ", e, "on file ", filename)
+      # make_news_item_dict(filename)
+      news_items.append({#'body': body,
+                        'datetime': "EXCEPTION",
+                        'description': "EXCEPTION",
+                        'filename': filename,
+                        'genres': "EXCEPTION",
+                        'guid': "EXCEPTION",
+                        'headline': "EXCEPTION",
+                        'slugline': "EXCEPTION",
+                        'subjects': "EXCEPTION",
+                        'bodyLengthChars': 0,
+                        'bodyLengthWords': 0})
+      pass
+
+    # pprint.pprint(news_items)
+    save_to_csv(news_items, 'output.csv')
 
     counter += 1
     if counter >= max_files:
