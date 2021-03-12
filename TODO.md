@@ -25,7 +25,7 @@ Task list:
    - [ ] IPTC things?
    - [ ] Previous Birkbeck projects
    - [ ] Academic articles:
-     - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-arxiv-org-pdf-1503-00759.pdf)
+     - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-arxiv-org-pdf-1503-00759.txt)
      - [ ] http://ceur-ws.org/Vol-2635/
      - [ ] http://www.semantic-web-journal.net/system/files/swj1141.pdf
      - [ ] https://arxiv.org/pdf/2003.02320.pdf
@@ -34,7 +34,10 @@ Task list:
      - [ ] http://www.semantic-web-journal.net/system/files/swj1791.pdf
      - [ ] http://www.semantic-web-journal.net/system/files/swj1462.pdf
      - [ ] http://www.semantic-web-journal.net/system/files/swj1495.pdf
+     - [ ] https://research.google/pubs/pub45634/ / https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45634.pdf
    - [ ] Online articles
+     - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-data-science-blog-blog-2016-08-17-statistical-relational-learning.txt)
+     - [ ] https://data-science-blog.com/blog/2017/01/18/statistical-relational-learning-part-2/
      - [ ] http://andrea-index.blogspot.com/2015/06/wikipedia-dbpedia-wikidata.html?m=1
      - [ ] https://blog.cambridgesemantics.com/creating-a-successful-enterprise-knowledge-graph
      - [ ] https://chatbotslife.com/knowledge-graphs-and-chatbots-an-analytical-approach-a8dcc8649100

@@ -1,1 +1,3 @@
+https://arxiv.org/pdf/1503.00759.pdf
+
 See lines 30-49 of [2021-03-12-project-title-and-diagram.txt](https://github.com/heychrisek/msc-data-science-project/blob/main/notes-to-self/2021-03-12-project-title-and-diagram.txt)
