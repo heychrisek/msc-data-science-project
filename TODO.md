@@ -16,16 +16,17 @@ Task list:
 
  - [x] Learn Neo4j basics
  - [x] Access Reuters dataset
- - [ ] Semantic Technology lectures
- - [ ] Neo4j knowledge graph tutorial: https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/
- - [ ] Sort out advisor
-   - [ ] Inform Michael
-   - [ ] Introduction to Jan
+ - [x] Semantic Technology lectures
+ - [x] [Neo4j knowledge graph tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/)
+ - [ ] POC with Reuters tech (similar to [Neo4j knowledge graph tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/))
+ - [x] Sort out advisor
+   - [x] Inform Michael
+   - [x] Introduction to Jan
  - [ ] Literature review
    - [ ] IPTC things?
    - [ ] Previous Birkbeck projects
    - [ ] Academic articles:
-     - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-arxiv-org-pdf-1503-00759.txt)
+     - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-arxiv-org-pdf-1503-00759.md)
      - [ ] http://ceur-ws.org/Vol-2635/
      - [ ] http://www.semantic-web-journal.net/system/files/swj1141.pdf
      - [ ] https://arxiv.org/pdf/2003.02320.pdf
@@ -37,7 +38,7 @@ Task list:
      - [ ] https://www.cs.utexas.edu/users/ml/papers/srl-submitted-05.pdf
      - [ ] https://research.google/pubs/pub45634/ / https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45634.pdf
    - [ ] Online articles
-     - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-data-science-blog-blog-2016-08-17-statistical-relational-learning.txt)
+     - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-data-science-blog-blog-2016-08-17-statistical-relational-learning.md)
      - [ ] https://data-science-blog.com/blog/2017/01/18/statistical-relational-learning-part-2/
      - [ ] http://andrea-index.blogspot.com/2015/06/wikipedia-dbpedia-wikidata.html?m=1
      - [ ] https://blog.cambridgesemantics.com/creating-a-successful-enterprise-knowledge-graph
