@@ -25,10 +25,10 @@ $ find ./ -type f | wc -l
 
 Each file is an XML document in the [IPTC NewsML-G2](https://iptc.org/standards/newsml-g2/) format.
 
-[ ] **TODO**: review NewsML-G2
-[ ] **TODO**: document this XML structure
-[ ] **TODO**: map XML structure to human-meaningful description
-[ ] **TODO**: ontology? review XML [limitations](https://www.cambridgesemantics.com/blog/semantic-university/learn-rdf/rdf-vs-xml/) and consider how to expand the semantics of this dataset
+- [ ] **TODO**: review NewsML-G2
+- [ ] **TODO**: document this XML structure
+- [ ] **TODO**: map XML structure to human-meaningful description
+- [ ] **TODO**: ontology? review XML [limitations](https://www.cambridgesemantics.com/blog/semantic-university/learn-rdf/rdf-vs-xml/) and consider how to expand the semantics of this dataset
 
 #### 2c. CSV and dimensions
 
@@ -58,37 +58,37 @@ Top 50 are overwhelmingly geographic: Americas, North America, Europe, United St
 
 
 ### 2. Ingest the documents into Neo4j
-[ ] Proof of concept: follow [Neo4j tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/)
-[ ] Sample Cypher queries
+- [ ] Proof of concept: follow [Neo4j tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/)
+- [ ] Sample Cypher queries
 
 ### 3. Text processing
 
 Consider:
-[ ] evaluating and improving information retrieval (search)
-[ ] text classification
-      [ ] Neo4j: items have phrases, phrases have topics, same topics are same class?
-      [ ] similarity/clustering
+- [ ] evaluating and improving information retrieval (search)
+- [ ] text classification
+      - [ ] Neo4j: items have phrases, phrases have topics, same topics are same class?
+      - [ ] similarity/clustering
 
 ### 4. [optional] Deploy data / pipeline / API?
-[ ] Neo4j cloud hosting
-[ ] Expose Cypher query interface
-[ ] Expose information retrieval search API
-[ ] Chatbot
+- [ ] Neo4j cloud hosting
+- [ ] Expose Cypher query interface
+- [ ] Expose information retrieval search API
+- [ ] Chatbot
 
 ### 5. Finalize written report
-[ ] finalize code/pipeline -- identify key code snippets
-[ ] diagram of data flow: XML docs -> CSV/Neo4j -> NLP pipeline
-[ ] **define the problem**: improve information retrieval with Neo4j? apply Neo4j to improve NLP applications? use Neo4j to improve *semantic value* of text data? compare Neo4j to non-graph DBs for information retrieval or NLP applications?
+- [ ] finalize code/pipeline -- identify key code snippets
+- [ ] diagram of data flow: XML docs -> CSV/Neo4j -> NLP pipeline
+- [ ] **define the problem**: improve information retrieval with Neo4j? apply Neo4j to improve NLP applications? use Neo4j to improve *semantic value* of text data? compare Neo4j to non-graph DBs for information retrieval or NLP applications?
 
 #### 5x. Challenges
 Notes about challenges faced (and solved):
-[ ] emojis in tweets (&#55358;&#56603; -> left-facing fist emoji) for tag:reuters.com,2019:newsml_CqtHM2P1a. solutions: (1) handle exceptions, (2) sub &#\d\d\d\d\d; with �, (3) TBD correct solution
-[ ] scale of data -- had to modify script so it doesn't take hours to run
-[ ] how to store / process text files (CSV?)
-[ ] loading into Neo4j
-[ ] how to split words -- 1 or more spaces so that tag:reuters.com,2019:newsml_L3N2602HC:991614233.XML doesn't have 76783 words (still has 294233 chars)
+- [ ] emojis in tweets (&#55358;&#56603; -> left-facing fist emoji) for tag:reuters.com,2019:newsml_CqtHM2P1a. solutions: (1) handle exceptions, (2) sub &#\d\d\d\d\d; with �, (3) TBD correct solution
+- [ ] scale of data -- had to modify script so it doesn't take hours to run
+- [ ] how to store / process text files (CSV?)
+- [ ] loading into Neo4j
+- [ ] how to split words -- 1 or more spaces so that tag:reuters.com,2019:newsml_L3N2602HC:991614233.XML doesn't have 76783 words (still has 294233 chars)
     - [ ] weird document (table, lots of whitepace): tag:reuters.com,2019:newsml_L3N2602HC:991614233.XML
     - [ ] weird document (full transcript of a committee hearing): tag:reuters.com,2019:newsml_CqtYP8GSa:1548902168.XML
     - [ ] how to compute average word length
     - [ ] weird docuument: Greek: tag:reuters.com,2019:newsml_L5N25X2BB:219326942.XML
-[ ] cleaning/categorizing of subjects and genres (see data-dimensions.ipynb notebook)
+- [ ] cleaning/categorizing of subjects and genres (see data-dimensions.ipynb notebook)
