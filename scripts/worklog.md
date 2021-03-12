@@ -4,6 +4,7 @@ Worklog
  - [ ] consider SPARQL category query...politicians, people above a certain fame, political organizations, financial orgs, countries?
  - [ ] start using Python driver for Neo4j: https://neo4j.com/developer/python/
  - [ ] submit project proposal
+ - [ ] figure out AWS hosted Neo4j: https://console.aws.amazon.com/marketplace/home/subscriptions#/subscriptions/42e71149-46df-4ee5-ae1b-34d134153fd6
 
 ### March
  - 12 March: add individual features/columns for each subject/genre (see notebook and output CSVs), Neo4j CREATE NewsItems for 216 Breakingviews news items, basic genres, and continent subjects
