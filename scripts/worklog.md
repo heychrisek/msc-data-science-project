@@ -1,10 +1,16 @@
 Worklog
 
+### Upcoming
+ - [ ] consider SPARQL category query...politicians, people above a certain fame, political organizations, financial orgs, countries?
+ - [ ] start using Python driver for Neo4j: https://neo4j.com/developer/python/
+ - [ ] submit project proposal
+
 ### March
- - 
  - 12 March: add individual features/columns for each subject/genre (see notebook and output CSVs), Neo4j CREATE NewsItems for 216 Breakingviews news items, basic genres, and continent subjects
       - images: [1](https://drive.google.com/file/d/1LeIy60x17guQbfFBS0EhznmPR-d00SZ9/view?usp=sharing), [2](https://drive.google.com/file/d/1pKNjCCksnJ522UOInAD3iQtURSP7MTy5/view?usp=sharing), [3](https://drive.google.com/file/d/1gMdv4bqjJb77qelHnmUOz4FDfIor4h3C/view?usp=sharing), [4](https://drive.google.com/file/d/1z5UlOC5Y_JatiUtmWGN70grOArDzeapI/view?usp=sharing)
       - TO BE CONTINUED: pick up where [these notes](https://github.com/heychrisek/msc-data-science-project/blob/main/notes-to-self/2021-03-12-project-title-and-diagram.txt) left off
+      - [x] CSV with sample of ~200 news items: breakingviews.csv
+      - [x] import into Neo4j
  - 11 March: complete [Neo4j knowledge graph tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/)
  - Early March: Start data analysis and scripting (see [item_xml_docs_to_csv.py](https://github.com/heychrisek/msc-data-science-project/blob/main/scripts/item_xml_docs_to_csv.py), [data-dimensions.ipynb Python notebook](https://github.com/heychrisek/msc-data-science-project/blob/main/data-dimensions.ipynb) and output CSVs)
 

@@ -1,19 +1,35 @@
 TITLE
     choose title...
+    options
+      Building a News Item Knowledge Graph and Applying Link Prediction
 
     keywords
-
       Reuters
       news
+
       Knowledge Graph
       Knowledge representation
       Facts
-      Natural Language Processing
-      Entity Extraction
       RDF triples
       Semantics / Semantic Technology
       Linked Data
+      
+      information retrieval
+      Natural Language Processing
+      Entity Extraction
+      
       Neo4j
+      Statistical Relational Learning
+      Link Prediction
+
+    outcomes
+      Reuters knowledge graph demo
+      increased number of related NewsItems
+      increased quality of related NewsItems
+      increased number of overall facts
+      increased quality of facts
+      improved information retrieval
+
 
 
 TECH PLAN
@@ -60,6 +76,20 @@ TECH PLAN
     [2] LRL = Logical and Relational Learning
         http://ecmlpkdd2008.org/files/pdf/tutorials/lrl.pdf
 
+    "pipeline"
+        data prep
+          XML docs
+
+          iterate and parse XML docs
+            (parsing depends on XML format)
+
+          build up CSV of all data
+
+        Neo4j ingest
+          sample rows from CSV (some number, only Breakingviews)
+          
+          build up Neo4j DB of all data
+
 
 PROJECT PROPOSAL...
     project proposal
@@ -70,11 +100,3 @@ PROJECT PROPOSAL...
       - intend to do same with Reuters XML documents
           category = Wiki ... (famous people, financial orgs, countries, cities, political orgs)
           article = Reuters XML
-
-
-
-    application/evaluation
-      - number of related NewsItems
-      - quality of related NewsItems
-      - number of facts
-      - quality of facts

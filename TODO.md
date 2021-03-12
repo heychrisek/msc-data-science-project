@@ -27,6 +27,7 @@ Task list:
    - [ ] Previous Birkbeck projects
    - [ ] Academic articles:
      - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-arxiv-org-pdf-1503-00759.md)
+     - [ ] https://proceedings.neurips.cc/paper/2018/file/53f0d7c537d99b3824f0f99d62ea2428-Paper.pdf
      - [ ] http://ceur-ws.org/Vol-2635/
      - [ ] http://www.semantic-web-journal.net/system/files/swj1141.pdf
      - [ ] https://arxiv.org/pdf/2003.02320.pdf
@@ -73,8 +74,9 @@ Task list:
      - [ ] https://programmerbackpack.com/python-nlp-tutorial-information-extraction-and-knowledge-graphs/
      - [ ] https://www.inbenta.com/en/technology/ai-nlp/semantic-clustering/
  - [ ] start some code
-   - [ ] pipeline / processing of data
-   - [ ] hosted / stored knowledge graph?
-   - [ ] NLP
-   - [ ] ontology
-   - [ ] user-facing API or application like chatbot? (or just Neo4j interface)
+     - [ ]Breakingviews POC
+        - [x] pipeline / processing of data
+        - [ ] hosted / stored knowledge graph?
+        - [ ] NLP
+        - [ ] ontology
+        - [ ] user-facing API or application like chatbot? (or just Neo4j interface)
