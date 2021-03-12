@@ -34,6 +34,7 @@ Task list:
      - [ ] http://www.semantic-web-journal.net/system/files/swj1791.pdf
      - [ ] http://www.semantic-web-journal.net/system/files/swj1462.pdf
      - [ ] http://www.semantic-web-journal.net/system/files/swj1495.pdf
+     - [ ] https://www.cs.utexas.edu/users/ml/papers/srl-submitted-05.pdf
      - [ ] https://research.google/pubs/pub45634/ / https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45634.pdf
    - [ ] Online articles
      - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-data-science-blog-blog-2016-08-17-statistical-relational-learning.txt)
