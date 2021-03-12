@@ -51,8 +51,12 @@ df.info()
 #  - genres are missing for the majority of items (could disregard genre, or this could be an
 #    interesting problem: predict genre items where it's missing)
 #  - subjects are missing for a small number of items, about 6.5%
-
 ```
+
+414 subjects in total
+Top 50 are overwhelmingly geographic: Americas, North America, Europe, United States, Emerging Market Countries
+
+
 ### 2. Ingest the documents into Neo4j
 [ ] Proof of concept: follow [Neo4j tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/)
 [ ] Sample Cypher queries
@@ -79,10 +83,12 @@ Consider:
 #### 5x. Challenges
 Notes about challenges faced (and solved):
 [ ] emojis in tweets (&#55358;&#56603; -> left-facing fist emoji) for tag:reuters.com,2019:newsml_CqtHM2P1a. solutions: (1) handle exceptions, (2) sub &#\d\d\d\d\d; with �, (3) TBD correct solution
-[ ] scale of data -- script takes ~2 hours (?) to run
-[ ] how to store / process text files (not in CSV!)
+[ ] scale of data -- had to modify script so it doesn't take hours to run
+[ ] how to store / process text files (CSV?)
 [ ] loading into Neo4j
 [ ] how to split words -- 1 or more spaces so that tag:reuters.com,2019:newsml_L3N2602HC:991614233.XML doesn't have 76783 words (still has 294233 chars)
-    - [ ] weird document (table, lots of whitepace): tag/reuters.com,2019/newsml_L3N2602HC/991614233.XML
-    - [ ] weird document (full transcript of a committee hearing): tag/reuters.com,2019/newsml_CqtYP8GSa/1548902168.XML
+    - [ ] weird document (table, lots of whitepace): tag:reuters.com,2019:newsml_L3N2602HC:991614233.XML
+    - [ ] weird document (full transcript of a committee hearing): tag:reuters.com,2019:newsml_CqtYP8GSa:1548902168.XML
     - [ ] how to compute average word length
+    - [ ] weird docuument: Greek: tag:reuters.com,2019:newsml_L5N25X2BB:219326942.XML
+[ ] cleaning/categorizing of subjects and genres (see data-dimensions.ipynb notebook)
