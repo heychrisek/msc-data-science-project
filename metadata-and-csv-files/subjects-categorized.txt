@@ -274,7 +274,6 @@ GEOGRAPHY
     'Midwest (PADD II)'
     'Nordic States'
     'North Africa'
-    'North America'
     'North Asia'
     'Pacific Islands'
     'Scandinavia'
@@ -296,6 +295,7 @@ GEOGRAPHY
     'Asia'
     'Australia'
     'Europe'
+    'North America'
     'South America'
 
   US STATE (missing RI, SD, VT?)

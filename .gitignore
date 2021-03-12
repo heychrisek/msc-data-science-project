@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
 .DS_STORE
 output.csv
-reuters.csv
-reuters.csv.gz
+metadata-and-csv-files/reuters.csv
+metadata-and-csv-files/reuters.csv.gz
+metadata-and-csv-files/breakingviews.csv
