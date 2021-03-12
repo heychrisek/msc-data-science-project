@@ -1,0 +1,5 @@
+worklog
+ - 12 March: add individual features/columns for each subject/genre (see notebook and output CSVs), Neo4j CREATE NewsItems for 216 Breakingviews news items, basic genres, and continent subjects
+      - images: [1](https://drive.google.com/file/d/1LeIy60x17guQbfFBS0EhznmPR-d00SZ9/view?usp=sharing), [2](https://drive.google.com/file/d/1pKNjCCksnJ522UOInAD3iQtURSP7MTy5/view?usp=sharing), [3](https://drive.google.com/file/d/1gMdv4bqjJb77qelHnmUOz4FDfIor4h3C/view?usp=sharing)
+ - 11 March: complete [Neo4j knowledge graph tutorial](https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/)
+ - Early March: Start data analysis and scripting (see [item_xml_docs_to_csv.py](https://github.com/heychrisek/msc-data-science-project/blob/main/scripts/item_xml_docs_to_csv.py), [data-dimensions.ipynb Python notebook](https://github.com/heychrisek/msc-data-science-project/blob/main/data-dimensions.ipynb) and output CSVs)
