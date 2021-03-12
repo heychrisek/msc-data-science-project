@@ -1,7 +1,7 @@
 NEXT STEPS
   
-  [ ] CSV with sample of ~200 news items: breakingviews.csv
-  [ ] import into Neo4j
+  [x] CSV with sample of ~200 news items: breakingviews.csv
+  [x] import into Neo4j
 
   [ ] smaller SPARQL category query...politicians, people above a certain fame, political organizations, financial orgs?
 
@@ -18,7 +18,7 @@ NEXT STEPS
     build up CSV of all data
 
   Neo4j ingest
-    sample rows from CSV (some number, only subject finance?)
+    sample rows from CSV (some number, only Breakingviews)
     
     build up Neo4j DB of all data
 

@@ -82,7 +82,8 @@ Consider:
 
 #### 5x. Challenges
 Notes about challenges faced (and solved):
-- [ ] emojis in tweets (&#55358;&#56603; -> left-facing fist emoji) for tag:reuters.com,2019:newsml_CqtHM2P1a. solutions: (1) handle exceptions, (2) sub &#\d\d\d\d\d; with �, (3) TBD correct solution
+- [ ] text encoding: emojis in tweets (&#55358;&#56603; -> left-facing fist emoji) for tag:reuters.com,2019:newsml_CqtHM2P1a. solutions: (1) handle exceptions, (2) sub &#\d\d\d\d\d; with �, (3) TBD correct solution
+- [ ] text encoding: apostrophes become `‚Äô` instead of `'` (see breakingviews CSV file)
 - [ ] scale of data -- had to modify script so it doesn't take hours to run
 - [ ] how to store / process text files (CSV?)
 - [ ] loading into Neo4j
