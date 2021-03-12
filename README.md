@@ -93,3 +93,4 @@ Notes about challenges faced (and solved):
     - [ ] how to compute average word length
     - [ ] weird docuument: Greek: tag:reuters.com,2019:newsml_L5N25X2BB:219326942.XML
 - [ ] cleaning/categorizing of subjects and genres (see data-dimensions.ipynb notebook)
+    - [ ] populating wikidata URLs (manually) and wikipedia URLs ([wikidata_to_wikipedia_url.py script](https://github.com/heychrisek/msc-data-science-project/blob/main/scripts/wikidata_to_wikipedia_url.py)) for all subjects and genres

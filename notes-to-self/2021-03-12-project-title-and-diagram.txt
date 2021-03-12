@@ -100,3 +100,32 @@ PROJECT PROPOSAL...
       - intend to do same with Reuters XML documents
           category = Wiki ... (famous people, financial orgs, countries, cities, political orgs)
           article = Reuters XML
+
+
+    Abstract / Objectives
+
+      This project is intended to generate a knowledge graph of news articles. The knowledge graph will link news items with their categories, subjects, and related news items. This will be accomplished by applying techniques including:
+        - ingestion of XML documents into a graph database
+        - establishment of relationships between each news item node and its categories
+        - link prediction to generate new relationships
+        - NLP entity extraction
+        - linked data with Wikidata
+        - ontology review/development (Wikidata geography + other entity ontologies)
+
+      
+
+    ** CALL db.schema.visualization()
+    Schema (Subject == Genre == Category ?)
+
+      x NewsItem            :HAS_GENRE      Genre
+      
+
+      NewsItem                  :HAS_SUBJECT    Subject
+      NewsItem                  :HAS_ENTITY     WikipediaPage (Entity?)
+      WikipediaPage (Entity?)   :ABOUT          Category
+      Category                  :SUB_CAT_OF     Category
+
+      WikipediaPage and Category are both Resource
+
+
+    ignore Genre -- only relevant for Reuters, not knowledge graph overall
