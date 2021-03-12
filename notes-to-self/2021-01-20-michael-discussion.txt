@@ -1,0 +1,39 @@
+question #1
+  
+  two problems as different: 
+
+    first problem
+      what do I want to achieve
+      fixed amount of time, it will be hard, time is limited
+      progress may not be as fast as I hoped
+
+      set up some minimal problem that I can achieve AND a more challenging one
+    
+    second problem (converge search/recommendation/ads) is very challenging -- if I can do something that really works, I can make a lot of money
+
+
+combine with Samtla http://samtla.dcs.bbk.ac.uk/
+
+
+assume my project is successful, Samtla will help
+Martyn Harris
+https://samtla.wordpress.com/author/martyndcsbbkacuk/
+  The process is as follows:
+  1.) Upload some documents (plain .txt files)
+  2.) Do a bit of annotation to help tailor the results to your domain. This is done by clicking on a word and selecting a tag from the menu.
+  3.) Hit the launch icon, and wait for a bit (depends on size and quantity of documents)
+  4.) When done, click on the results icon to view and download.
+  We also have a python wrapper if you want to interface with it through code.
+
+
+  email Martyn (cc Michael)
+
+
+
+Michael has discussed with Mark Levene, merging NLP with Knowledge Representation (KR)
+
+
+
+given a Reuters data set, can we apply Neo4j and NLP technologies
+
+apply some Knowledge Representation and NLP technologies

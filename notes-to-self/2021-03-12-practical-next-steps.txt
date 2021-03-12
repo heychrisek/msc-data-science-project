@@ -1,0 +1,23 @@
+NEXT STEPS
+  
+  - smaller SPARQL category query...politicians, people above a certain fame, political organizations, financial orgs?
+  - CSV with sample of 100 news items
+  - import into Neo4j
+
+
+
+"pipeline"
+  data prep
+    XML docs
+
+    iterate and parse XML docs
+      (parsing depends on XML format)
+
+    build up CSV of all data
+
+  Neo4j ingest
+    sample rows from CSV (some number, only subject finance?)
+    
+    build up Neo4j DB of all data
+
+  

@@ -1,0 +1,78 @@
+picking up from the previous attempt (see 2020-11-28-*.txt)
+
+https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/
+
+
+nice KG overview (PR/marketing)
+https://go.neo4j.com/rs/710-RRC-335/images/Neo4j-Survey-Technology-Executive-Priorities-for-Knowledge-Graphs-Infographic.pdf
+
+
+PART 0 Tools (Installation and setup)
+  - steps:
+      - install Neo4J Desktop
+      - install APOC (Neo4j Desktop > Plugins > APOC)
+      - install APOC NLP Dependencies
+          - download jar from https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/4.0.0.18
+          - mv jar to:
+            ~/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-85715109-e73d-48f2-ac91-cae3f0de36ce/plugins
+      - install neosemantics (n10s)
+          - download jar from https://github.com/neo4j-labs/neosemantics/releases
+          - mv jar to:
+            ~/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-85715109-e73d-48f2-ac91-cae3f0de36ce/plugins
+          - add
+              dbms.unmanaged_extension_classes=n10s.endpoint=/rdf
+            to
+              /Users/6043740/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-85715109-e73d-48f2-ac91-cae3f0de36ce/conf/neo4j.conf
+
+PART 1 Importing Wikidata Ontologies
+  - steps
+      - WikiData SPARQL query
+      - neosemantics unique URIs
+      - neosemantics add mappings
+      - neosemantics fetch to import RDF triples
+          - x3 for Software Systems, Programming Languages, and Data Formats
+  - differences for my project
+      - instead of SPARQL query for WikiData software systems (Q2429814)
+          https://query.wikidata.org/#prefix%20neo%3A%20%3Cneo4j%3A%2F%2Fvoc%23%3E%20%0A%23Cats%0A%23SELECT%20%3Fitem%20%3Flabel%20%0ACONSTRUCT%20%7B%0A%3Fitem%20a%20neo%3ACategory%20%3B%20neo%3AsubCatOf%20%3FparentItem%20.%20%20%0A%20%20%3Fitem%20neo%3Aname%20%3Flabel%20.%0A%20%20%3FparentItem%20a%20neo%3ACategory%3B%20neo%3Aname%20%3FparentLabel%20.%0A%20%20%3Farticle%20a%20neo%3AWikipediaPage%3B%20neo%3Aabout%20%3Fitem%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%0A%7D%0AWHERE%20%0A%7B%0A%20%20%3Fitem%20%28wdt%3AP31%7Cwdt%3AP279%29%2a%20wd%3AQ2429814%20.%0A%20%20%3Fitem%20wdt%3AP31%7Cwdt%3AP279%20%3FparentItem%20.%0A%20%20%3Fitem%20rdfs%3Alabel%20%3Flabel%20.%0A%20%20filter%28lang%28%3Flabel%29%20%3D%20%22en%22%29%0A%20%20%3FparentItem%20rdfs%3Alabel%20%3FparentLabel%20.%0A%20%20filter%28lang%28%3FparentLabel%29%20%3D%20%22en%22%29%0A%20%20%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%20%3Farticle%20schema%3Aabout%20%3Fitem%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3AinLanguage%20%22en%22%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20schema%3AisPartOf%20%3Chttps%3A%2F%2Fen.wikipedia.org%2F%3E%20.%0A%20%20%20%20%7D%0A%20%20%0A%7D
+
+        should be a new SPARQL query for politicians, places, years?
+
+PART 2 Importing dev.to articles
+  - steps
+      - load CSV of dev.to URIs
+      - apoc.periodic.iterate over all CSV rows to create a:Article nodes
+  - differences for my project
+      - instead of loading CSV of dev.to URIS
+          https://github.com/neo4j-examples/nlp-knowledge-graph/raw/master/import/articles.csv
+
+        load CSV of Reuters text files / guids
+
+      - instead of merging article nodes with apoc.load.html CSS selectors
+
+        merge article nodes with apoc.load.xml
+        or maybe apoc.load.html after parsing from original XML
+
+PART 3 Article Entity Extraction
+  - steps
+      - configure api key param
+      - run apoc.nlp.gcp.entities.stream to get entity and salience (importance/centrality)
+          - ISSUE: API 403 issue
+            SOLVED: https://community.neo4j.com/t/failed-to-invoke-procedure-apoc-nlp-gcp-entities-stream-caused-by-java-io-ioexception/19436/10
+      - run apoc.nlp.gcp.entities.stream and filter where no wiki URL
+          WHERE not(entity.metadata.wikipedia_url is null)
+      - apoc.periodic.iterate over all articles that weren't processed
+  - differences for my project
+      - run apoc.nlp.gcp.entities.stream over NewsItem nodes, not Articles
+
+
+PART 4 Querying the Knowledge Graph
+  - steps
+      - match all the things
+
+PART 5 Adding a custom ontology
+  - steps
+      - add nsmntx.org/2020/08/swStacks tech stacks ontology
+      - fetch/preview nsmntx.org/2020/08/swStacks tech ontology
+      - query similar articles based on shared tech stacks
+
+  CALL apoc.meta.schema()

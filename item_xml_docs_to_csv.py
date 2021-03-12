@@ -15,7 +15,7 @@ import pprint
 import pdb
 
 NSMAP = {'iptc': 'http://iptc.org/std/nar/2006-10-01/',
-           'xhtml': 'http://www.w3.org/1999/xhtml'}
+         'xhtml': 'http://www.w3.org/1999/xhtml'}
 CSV_ROW_LIMIT = 10000
 VERBOSE = False
 

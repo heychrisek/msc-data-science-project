@@ -25,7 +25,7 @@ Task list:
    - [ ] IPTC things?
    - [ ] Previous Birkbeck projects
    - [ ] Academic articles:
-     - [ ] https://arxiv.org/pdf/1503.00759.pdf
+     - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-arxiv-org-pdf-1503-00759.pdf)
      - [ ] http://ceur-ws.org/Vol-2635/
      - [ ] http://www.semantic-web-journal.net/system/files/swj1141.pdf
      - [ ] https://arxiv.org/pdf/2003.02320.pdf

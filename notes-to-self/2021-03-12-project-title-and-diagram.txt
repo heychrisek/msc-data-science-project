@@ -1,0 +1,67 @@
+Reuters
+news
+Knowledge Graph
+Natural Language Processing
+Entity Extraction
+RDF triples
+Semantics / Semantic Technology
+Linked Data
+
+
+
+
+                  (1)                         |           (2)                         |       (3)
+                                              |                                       |
+                                              |                 Reuters XML           |      SRL/LRL [1][2]
+                                              |                     |                 |         |
+                                                                    v                           v
+              wiki categories graph (neo4j)   ->   categories + NewsItems             ->    predict new facts
+                - wiki Categories             |      - NewsItem:Category relations    |       - NewsItem:NewsItem relations
+FACTS           - X is a Category             |      - NewsItem A is about Cat X      |       - probability of connections between NewsItems (see [2] page 119-121)
+                - Y is a category             |                                       |       - NewsItem A is related to NewsItem B
+                - X is a subcategory of Y     |                                       |                    
+                                              |                                       |
+                                              |                                       |
+NODES/TYPES     - :Category                   |      - :NewsItem                              - [:is_related_to]
+
+
+
+
+[1] SRL = Statistical Relational Learning
+    https://arxiv.org/pdf/1503.00759.pdf
+
+    useful for my paper:
+      **"D. Uses of knowledge graphs" (3)
+      **"E  Main tasks in knowledge graph construction and curation" (3)
+          * Link prediction
+          * Entity Resolution
+          * Link-based clustering
+      
+      [Data-sciencey / mathy, but too complicated...]
+        "III. STATISTICAL RELATIONAL LEARNING FOR KNOWLEDGE GRAPHS" (4)
+        "IV. LATENT FEATURE MODELS" (6)
+      
+      **"V. GRAPH FEATURE MODELS" (10)
+          * A. Similarity measures for uni-relational data (10)
+          * C. Path Ranking Algorithm (10)  -- EASILY INTERPRETABL
+
+[2] LRL = Logical and Relational Learning
+    http://ecmlpkdd2008.org/files/pdf/tutorials/lrl.pdf
+
+
+project proposal
+  - show POC with Neo4j tutorial
+      category = Wiki Software System, DB, Programming Language
+      article = dev.to article
+  
+  - intend to do same with Reuters XML documents
+      category = Wiki ... (famous people, financial orgs, countries, cities, political orgs)
+      article = Reuters XML
+
+
+
+application/evaluation
+  - number of related NewsItems
+  - quality of related NewsItems
+  - number of facts
+  - quality of facts
