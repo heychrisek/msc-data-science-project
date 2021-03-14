@@ -26,8 +26,11 @@ Task list:
    - [ ] IPTC things?
    - [ ] Previous Birkbeck projects
    - [ ] Academic articles:
-     - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-arxiv-org-pdf-1503-00759.md)
+     - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-arxiv-org-pdf-1503-00759.md)
      - [ ] https://proceedings.neurips.cc/paper/2018/file/53f0d7c537d99b3824f0f99d62ea2428-Paper.pdf
+     - [ ] https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9216015
+     - [ ] https://ojs.aaai.org/index.php/AAAI/article/view/5681
+     - [ ] https://msnews.github.io/assets/doc/ACL2020_MIND.pdf
      - [ ] http://ceur-ws.org/Vol-2635/
      - [ ] http://www.semantic-web-journal.net/system/files/swj1141.pdf
      - [ ] https://arxiv.org/pdf/2003.02320.pdf
@@ -39,7 +42,9 @@ Task list:
      - [ ] https://www.cs.utexas.edu/users/ml/papers/srl-submitted-05.pdf
      - [ ] https://research.google/pubs/pub45634/ / https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45634.pdf
    - [ ] Online articles
-     - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/https-data-science-blog-blog-2016-08-17-statistical-relational-learning.md)
+     - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-data-science-blog-blog-2016-08-17-statistical-relational-learning.md)
+     - [x] https://www.mkbergman.com/2244/a-common-sense-view-of-knowledge-graphs/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2244-a-common-sense-view.md)
+     - [x] https://www.mkbergman.com/2267/combining-knowledge-graphs-and-ontologies-for-dynamic-apps/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2267-combining.md)
      - [ ] https://data-science-blog.com/blog/2017/01/18/statistical-relational-learning-part-2/
      - [ ] http://andrea-index.blogspot.com/2015/06/wikipedia-dbpedia-wikidata.html?m=1
      - [ ] https://blog.cambridgesemantics.com/creating-a-successful-enterprise-knowledge-graph
@@ -63,7 +68,6 @@ Task list:
      - [ ] https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1
      - [ ] https://voicebot.ai/2019/10/07/alexa-will-answer-questions-using-reuters-news-stories/
      - [ ] https://www.kdnuggets.com/2017/02/natural-language-processing-key-terms-explained.html
-     - [ ] https://www.mkbergman.com/2267/combining-knowledge-graphs-and-ontologies-for-dynamic-apps/
      - [ ] https://www.reddit.com/r/MLQuestions/comments/i98cy3/how_are_knowledge_graphs_used_in_recommendation/
      - [ ] https://medium.com/virtuoso-blog/dbpedia-usage-report-as-of-2018-01-01-8cae1b81ca71
      - [ ] https://docs.google.com/document/d/1gitkYb8btXhcvyz1rna5mLJkQeSc-6luBQA2jlFqwT8/edit?usp=drivesdk
