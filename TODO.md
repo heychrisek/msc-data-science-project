@@ -28,6 +28,15 @@ Task list:
    - [ ] Academic articles:
      - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-arxiv-org-pdf-1503-00759.md)
      - [ ] https://proceedings.neurips.cc/paper/2018/file/53f0d7c537d99b3824f0f99d62ea2428-Paper.pdf
+     - [x] https://www.acadpubl.eu/jsi/2018-118-19/articles/19b/24.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-16-https-www-acadpubl-eu-jsi-2018-118-19-articles-19b-24-pdf.md)
+     - News Knowledge Graphs
+            - [ ] https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=
+            - [ ] https://www.sciencedirect.com/science/article/pii/S0166361520305558
+            - [ ] http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf
+            - [ ] https://dl.acm.org/doi/pdf/10.1145/3308560.3316761
+            - [ ] https://dl.acm.org/doi/pdf/10.1145/3178876.3186175
+            - [ ] https://dl.acm.org/doi/pdf/10.1145/3372278.3390713
+     - [ ] https://www.mdpi.com/2079-9292/9/5/750
      - [ ] https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9216015
      - [ ] https://ojs.aaai.org/index.php/AAAI/article/view/5681
      - [ ] https://msnews.github.io/assets/doc/ACL2020_MIND.pdf
@@ -45,6 +54,7 @@ Task list:
      - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-data-science-blog-blog-2016-08-17-statistical-relational-learning.md)
      - [x] https://www.mkbergman.com/2244/a-common-sense-view-of-knowledge-graphs/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2244-a-common-sense-view.md)
      - [x] https://www.mkbergman.com/2267/combining-knowledge-graphs-and-ontologies-for-dynamic-apps/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2267-combining.md)
+     - [ ] https://blog.diffbot.com/converting-text-documents-into-knowledge-graphs-with-the-diffbot-natural-language-api/ / https://ryanong.co.uk/2020/11/05/day-310-nlp-discovery-diffbots-knowledge-graph-api/
      - [ ] https://data-science-blog.com/blog/2017/01/18/statistical-relational-learning-part-2/
      - [ ] http://andrea-index.blogspot.com/2015/06/wikipedia-dbpedia-wikidata.html?m=1
      - [ ] https://blog.cambridgesemantics.com/creating-a-successful-enterprise-knowledge-graph
@@ -78,7 +88,7 @@ Task list:
      - [ ] https://programmerbackpack.com/python-nlp-tutorial-information-extraction-and-knowledge-graphs/
      - [ ] https://www.inbenta.com/en/technology/ai-nlp/semantic-clustering/
  - [ ] start some code
-     - [ ]Breakingviews POC
+     - [ ] Breakingviews POC
         - [x] pipeline / processing of data
         - [ ] hosted / stored knowledge graph?
         - [ ] NLP

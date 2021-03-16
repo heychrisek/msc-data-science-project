@@ -1,0 +1,36 @@
+1. review 2021-03-12-project-title-and-diagram.txt
+
+2. from General Proposal Briefing recording:
+    Title page
+    Word count 2000-3000 (4000 upper limit)
+    Potential structure (attached)
+    1- to 2-line high-level description
+
+3. Review example project proposals
+   https://www.dcs.bbk.ac.uk/r/studentprojects/exampleprojects/msc/MSc%20Data%20Science%20Project%20Reports/
+
+4. Structure (You can and should adjust this structure to your needs)
+    Abstract
+    1 A brief description of the topic and where it fits into the field
+    2 Literature review:
+        relevant applications
+        related data science results
+        anything else relevant
+    3 A high level description of the proposed project
+        Main requirements/features and the process for obtaining them
+        May include: sketch of a GUI, algorithms you plan to use, the practical problem you would like to solve
+    4 High level system/software architecture/data analysis plan
+    5 Tools and programming languages
+    6 Verification plan
+    7 Methodology and work plan
+    8 What are the overall targets in term of the project? What do you personally plan to achieve from this project?
+
+5. Shape previous drafts into new draft for Michael
+    https://docs.google.com/document/d/1-Ltw4ZjXQVwPCVux86JSdNDtQngP33QWRi5KTal2QUg/edit
+    https://docs.google.com/document/d/1sfsfyxlBT35WbQ6Vuz7Expz3fEhNqH-M/edit
+
+    * highlight where questions / action items remain
+
+6. Questions for Michael
+    see supervisor-questions.md
+    academic format/font
