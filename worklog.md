@@ -4,6 +4,7 @@ Worklog
  - [ ] pick up where [these notes](https://github.com/heychrisek/msc-data-science-project/blob/main/notes-to-self/2021-03-12-project-title-and-diagram.txt) left off
  - [ ] review semantic "layer cake": OWL, SPARQL, RDF, schema, KG
  - [ ] add to [supervisor-questions.md](https://github.com/heychrisek/msc-data-science-project/blob/main/supervisor-questions.md)
+ - [ ] literature review of [news knowledge graph articles](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=)
  - [ ] consider SPARQL category query...politicians, people above a certain fame, political organizations, financial orgs, countries?
       - [ ] are all subjects a [type of sport](https://www.wikidata.org/wiki/Q31629) or [geographic region](https://www.wikidata.org/wiki/Q82794)? (plus art/entertainment)
  - [ ] start using Python driver for Neo4j: https://neo4j.com/developer/python/
@@ -11,6 +12,7 @@ Worklog
  - [ ] figure out AWS hosted Neo4j: https://console.aws.amazon.com/marketplace/home/subscriptions#/subscriptions/42e71149-46df-4ee5-ae1b-34d134153fd6
 
 ### March
+ - 15 March: found a few articles and briefly reviewed one
  - 14 March:
     - found a few new academic articles ([1](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9216015), [2](https://ojs.aaai.org/index.php/AAAI/article/view/5681), [3](https://msnews.github.io/assets/doc/ACL2020_MIND.pdf))
     - still defining research question: KG + NLP + link prediction for...recommendations, fact extraction, information retrieval?
