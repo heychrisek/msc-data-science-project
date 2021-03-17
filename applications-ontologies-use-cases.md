@@ -1,4 +1,4 @@
-useful applications  
+useful applications / projects
   Wikification (document annotation)
   Part-of-speech tagging
   Cosine similarity measure
@@ -25,6 +25,13 @@ useful applications
 
   event knowledge graph
     http://eventkg.l3s.uni-hannover.de/
+
+  news monitoring
+  automatic speech recognition (ASR)
+  machine translation (MT)
+  and named entity recognition (NER)
+    http://summa-project.eu/
+    https://github.com/summa-platform/summa-oss
 
 ontologies/vocabularies
   BBC

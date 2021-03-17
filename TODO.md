@@ -29,10 +29,12 @@ Task list:
      - [x] https://arxiv.org/pdf/1503.00759.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-arxiv-org-pdf-1503-00759.md)
      - [ ] https://proceedings.neurips.cc/paper/2018/file/53f0d7c537d99b3824f0f99d62ea2428-Paper.pdf
      - [x] https://www.acadpubl.eu/jsi/2018-118-19/articles/19b/24.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-16-https-www-acadpubl-eu-jsi-2018-118-19-articles-19b-24-pdf.md)
-     - [News Knowledge Graphs](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=)
+     - [ ] Knowledge Graph embedding https://ieeexplore.ieee.org/document/8047276
+     - [ ] [News Knowledge Graphs](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=)
+
             - [x] https://www.sciencedirect.com/science/article/pii/S0166361520305558 - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-sciencedirect-com-science-article-pii-S0166361520305558.md)
             - [x] https://ojs.bibsys.no/index.php/Nokobit/article/view/548 - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-sciencedirect-com-science-article-pii-S0166361520305558.md)
-            - [ ] http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-ceur-ws-org-Vol-2601-kars2019_paper_01-pdf.md)
+            - [x] **News Graph** http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-ceur-ws-org-Vol-2601-kars2019_paper_01-pdf.md)
             - [ ] https://arxiv.org/pdf/1801.08284v2.pdf
             - [ ] Reuters Tracer https://arxiv.org/pdf/1711.04068.pdf
             - [x] SUMMA https://www.aclweb.org/anthology/W18-2508.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-aclweb-org-anthology-W18-2508-pdf.md)

@@ -7,6 +7,7 @@ Worklog
  - [ ] literature review of [news knowledge graph articles](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=)
  - [ ] consider SPARQL category query...politicians, people above a certain fame, political organizations, financial orgs, countries?
       - [ ] are all subjects a [type of sport](https://www.wikidata.org/wiki/Q31629) or [geographic region](https://www.wikidata.org/wiki/Q82794)? (plus art/entertainment)
+ - [ ] [Neo4j link prediction](https://neo4j.com/docs/graph-data-science/current/algorithms/ml-models/linkprediction/)
  - [ ] Neo4j and OWL / RDF
       - https://neo4j.com/docs/labs/nsmntx/current/importing-ontologies/
       - https://neo4j.com/blog/using-owl-with-neo4j/
