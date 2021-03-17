@@ -31,11 +31,18 @@ Task list:
      - [x] https://www.acadpubl.eu/jsi/2018-118-19/articles/19b/24.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-16-https-www-acadpubl-eu-jsi-2018-118-19-articles-19b-24-pdf.md)
      - News Knowledge Graphs
             - [ ] https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=
-            - [ ] https://www.sciencedirect.com/science/article/pii/S0166361520305558
+            - [x] https://www.sciencedirect.com/science/article/pii/S0166361520305558 - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-sciencedirect-com-science-article-pii-S0166361520305558.md)
+            - [x] https://ojs.bibsys.no/index.php/Nokobit/article/view/548 - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-sciencedirect-com-science-article-pii-S0166361520305558.md)
             - [ ] http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf
             - [ ] https://dl.acm.org/doi/pdf/10.1145/3308560.3316761
             - [ ] https://dl.acm.org/doi/pdf/10.1145/3178876.3186175
             - [ ] https://dl.acm.org/doi/pdf/10.1145/3372278.3390713
+            - [ ] https://link.springer.com/chapter/10.1007%2F978-3-540-25956-5_31
+            - [ ] Reuters Tracer https://arxiv.org/pdf/1711.04068.pdf
+            - [ ] SUMMA https://www.aclweb.org/anthology/W18-2508.pdf
+            - [x] **ASRAEL** https://arxiv.org/pdf/1904.05557.pdf - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-arxiv-org-pdf-1904-05557-pdf.md)
+            - [ ] IPTC news architecture/semantics https://www.researchgate.net/publication/221467264_Bringing_the_IPTC_News_Architecture_into_the_Semantic_Web
+            - [ ] Neptuno https://www.researchgate.net/publication/236234808_Neptuno_Semantic_Web_Technologies_for_a_Digital_Newspaper_Archive
      - [ ] https://www.mdpi.com/2079-9292/9/5/750
      - [ ] https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9216015
      - [ ] https://ojs.aaai.org/index.php/AAAI/article/view/5681
@@ -47,7 +54,7 @@ Task list:
      - [ ] https://dblp.uni-trier.de/search?q=DBpedia
      - [ ] http://www.semantic-web-journal.net/system/files/swj1791.pdf
      - [ ] http://www.semantic-web-journal.net/system/files/swj1462.pdf
-     - [ ] http://www.semantic-web-journal.net/system/files/swj1495.pdf
+     - [ ] RDF2Vec http://www.semantic-web-journal.net/system/files/swj1495.pdf
      - [ ] https://www.cs.utexas.edu/users/ml/papers/srl-submitted-05.pdf
      - [ ] https://research.google/pubs/pub45634/ / https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45634.pdf
    - [ ] Online articles

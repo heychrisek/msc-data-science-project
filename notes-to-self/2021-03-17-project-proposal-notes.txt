@@ -9,7 +9,7 @@
 3. Review example project proposals
    https://www.dcs.bbk.ac.uk/r/studentprojects/exampleprojects/msc/MSc%20Data%20Science%20Project%20Reports/
 
-4. Structure (You can and should adjust this structure to your needs)
+4. Structure ("You can and should adjust this structure to your needs")
     Abstract
     1 A brief description of the topic and where it fits into the field
     2 Literature review:
