@@ -55,7 +55,7 @@ use cases
 my project
   NewsML -> NER -> wikidata links -> Neo4j Knowledge Graph
 
-  question: how to aggregate text news data and enhance link prediction and information retrieval using semantic technologies, NLP, and ML
+  question: Building a knowledge graph in the news domain to enhance link prediction and information retrieval using semantic technologies, NLP, and ML
   goals:
     - pipeline: documents -> enrichment -> graph DB
         - enrichment
@@ -69,3 +69,5 @@ my project
     - practical applications
         - information retrieval (evaluate precision/recall)
         - linked item recommendations
+
+  which relations are relevant for news? remove irrelevant ones?

@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+\title{Project Proposal: A Domain-Specific Knowledge Graph for News Item Recommendations and Information Retrieval}
+\author{Chris Eaves-Kohlbrenner}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This proposal introduces the project plan for a knowledge graph in the news domain. The project is intended to to build a news knowledge graph to enhance recommendations, link prediction, and information retrieval using semantic technologies, natural language processing, and machine learning.
+
+Two phases are planned: (1) build a prototype of a news knowledge graph using a Reuters archive of 59,542 news items and (2) run experiments aimed at enhancing the knowledge graph to improve recommendation quality and information retrieval. Final outcomes will include a functional graph database application and metrics documenting the information retrieval improvement.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+The field of knowledge graphs has seen rapid growth in the last decade, with notable examples like Wikidata, DBpedia, and the Google Knowledge Graph[1]. Meanwhile, the media industry generates a high volume of news content that is often unstructured and semantically limited, presenting information retrieval challenges for news consumers and journalists. The data challenges facing news agencies present an opportunity for a domain-specific knowledge graph architecture. 
+
+Modeling news items as a knowledge graph requires transforming unstructured text or semi-structured XML into a structured and semantically modelled graph structure, which represents meaning or knowledge in the form of graph nodes and edges. The architecture and storage of knowledge graphs can vary, primarily between RDF stores of subject-predicate-object triples and graph databases like Neo4j[2]. In either case, this graph structure presents opportunities to enrich the data by creating additional edges or relationships between the various entity nodes.
+
+An effective knowledge graph in the news domain would present benefits similar to Wikidata and others: a machine-readable graph enables others to link data and enrich other data sets; journalists can more easily draw insights about the entities in a story; consumers of the news can retrieve more relevant information and recommendations.
+
+\section{Literature Review}
+
+A variety of news-specific knowledge systems have been proposed or built to aggregate, generate, and link news data. The efforts described below represent the state of the art for applying knowledge graphs, semantic technology, and NLP in the news domain. They form the inspiration for some of the project's architecture and expirementation.
+
+\textbf{OPEN QUESTION: WHICH ONES USE KGs, NLP, SRL, etc.?}
+
+\begin{itemize}
+\item \textbf{Neptuno} \cite{castells2004neptuno}, 2004: ``introduction of the emergent semantic-based technologies to improve the processes of creation, maintenance, and exploitation of the digital archive of a newspaper"
+\item \textbf{News Engine Web Services (NEWS)} \cite{fernandez2010news}, 2010
+\item \textbf{Global Database of Events, Language, and Tone (GDELT)}\footnote{https://www.gdeltproject.org/}, 2013: graph of news items and events with real-time monitoring of world's news media
+\item \textbf{Event Registry} \cite{leban2014event}, 2014: ``a system that can analyze news articles and identify in them mentioned world events"
+\item \textbf{NewsReader} \cite{vossen2016newsreader}, 2016: system to read news articles and represent information as RDF; "a cycle of knowledge acquisition and NLP improvement on a massive scale"
+\item \textbf{NewsAPI}\footnote{https://newsapi.org/}, 2017: 
+\item \textbf{Reuters' Tracer} \cite{liu2017reuters}, 2017 : ``a system that automates end-to-end news production using Twitter data."
+\item \textbf{Scalable Understanding of Multilingual MediA (SUMMA)} \cite{germann2018integrating}, 2018: architecture for monitoring media and applying NLP pipeline
+\item \textbf{Acquisition de Schémas pour la Reconnaissance et l'Annotation d'Événements Liés (ASRAEL)} \cite{rudnik2019searching}, 2019: harvest news text, link to Wikidata, and annotate using IPTC rNews vocabulary
+\item \textbf{News Graph} \cite{liu2019news}, 2019
+\item \textbf{News Hunter} \cite{berven2020knowledge}, 2020
+
+
+
+\end{itemize}
+
+
+
+\section{Proposed Project}
+\subsection{Requirements and Features}
+\subsection{Data Analysis and Software Architecture Plan}
+\subsection{Tools and Programming Languages}
+\subsection{Verification Plan}
+\subsection{Methodology and Work Plan}
+
+\section{Conclusion}
+\subsection{Targeted Outcomes}
+\subsection{Personal Comments}
+
+
+% \section{References}
+
+\bibliographystyle{abbrv}
+\bibliography{proposal}
+
+\end{document}  

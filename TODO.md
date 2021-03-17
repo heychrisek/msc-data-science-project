@@ -37,7 +37,9 @@ Task list:
      - [x] * **[ASRAEL](https://arxiv.org/pdf/1904.05557.pdf)** - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-arxiv-org-pdf-1904-05557-pdf.md)
      - [x] [Neptuno](https://www.researchgate.net/publication/236234808_Neptuno_Semantic_Web_Technologies_for_a_Digital_Newspaper_Archive)
      - [x] [NEWS ontology](https://www.sciencedirect.com/science/article/pii/S0957417410005592) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-sciencedirect-com-science-article-pii-S0957417410005592.md)
+     - [ ] [Event Registry](https://www.researchgate.net/publication/261961178_Event_registry_learning_about_world_events_from_news)
      - [x] [Semantic web + media](https://www.sciencedirect.com/science/article/pii/S157082680800005X) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-sciencedirect-com-science-article-pii-S0957417410005592.md)
+     - [ ] [NewsReader: more knowledge from massive streams of news](https://reader.elsevier.com/reader/sd/pii/S0950705116302271?token=126A7EF993CBBA80556662576164144C5DC53075BFF90A6E2ECFD72EB8ABD4E58BD2BC48289235FCAB974EA23CAB92F7)
      - [ ] [MIND: Large-scale Dataset for News Recommendation](https://msnews.github.io/assets/doc/ACL2020_MIND.pdf)
    - [ ] Academic articles:
      - [x] [Relational ML for KG](https://arxiv.org/pdf/1503.00759.pdf) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-arxiv-org-pdf-1503-00759.md)

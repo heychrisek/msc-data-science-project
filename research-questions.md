@@ -8,7 +8,7 @@ research questions
   use the knowledge graph for prototype recommender system (item to item, entity to entity, entity to item)
   use the knowledge graph to run experiments, to improve recommendations and information retrieval:
     - apply semantic technologies (ontologies, vocabulary, RDF)
-    - apply NLP (NER, clustering, topic/keyword extraction)
+    - apply NLP (NER, clustering, topic/keyword/location extraction)
     - apply ML (clustering/similarity/[link prediction](https://neo4j.com/docs/graph-data-science/current/algorithms/ml-models/linkprediction/))
   evaluate experiments' improvements over the prototype
   
@@ -19,7 +19,7 @@ research questions
         - enrichment
             - NER (named entities)
             - Wikidata links
-            - topic extraction (keywords)
+            - topic/keyword/location extraction
             - ontology
             - linked items (linked to each other, linked to an event?)
             - clustering
@@ -37,7 +37,7 @@ research questions
     - can we generate new links between news items?
     - can we generate new links between entities? (e.g., [2.2 of this article](http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf) -- Trump and Lebron same news)
     - can we identify meaningful clusters of news items?
-    - can we extract implicit/latent topics or keywords from news items?
+    - can we extract implicit/latent topics, keywords, and locations from news items?
         - **Category classification task**
     - which news item relations are relevant (for news)? can we remove irrelevant relations?
     - can we expose the knowledge graph as a user-facing application? (Neo4j, UI, API?)
@@ -45,4 +45,7 @@ research questions
     - can we learn Knowledge Graph Embeddings (KGEs)?
         - more detail: [1](https://towardsdatascience.com/introduction-to-knowledge-graph-embedding-with-dgl-ke-77ace6fb60ef), [2](https://github.com/awslabs/dgl-ke), [3](https://ieeexplore.ieee.org/document/8047276)
     - are knowledge graph recommendations explainable? (model explainability)
+    - can we use probabilistic methods instead of text extraction methods?
+        - ["Previous approaches have primarily focused on text-based extraction, which can be very noisy...here we introduce Knowledge Vault, a Web-scale probabilistic knowledge base"](https://research.google/pubs/pub45634/)
+        - Statistical Relational Learning
 

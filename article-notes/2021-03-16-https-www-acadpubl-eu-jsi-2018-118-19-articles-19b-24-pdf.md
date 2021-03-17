@@ -1,6 +1,6 @@
 https://www.acadpubl.eu/jsi/2018-118-19/articles/19b/24.pdf
 
-"Architecture of Knowledge GraphConstruction Techniques"
+"Architecture of Knowledge Graph Construction Techniques"
 
 summary: https://ryanong.co.uk/2020/08/12/day-225-nlp-papers-summary-architecture-of-knowledge-graph-construction-techniques/
 
