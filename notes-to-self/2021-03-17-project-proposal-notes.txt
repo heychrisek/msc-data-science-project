@@ -1,4 +1,6 @@
-1. review 2021-03-12-project-title-and-diagram.txt
+0. read news KG articles -- like this one: https://arxiv.org/pdf/1904.05557.pdf
+
+x 1. review 2021-03-12-project-title-and-diagram.txt
 
 2. from General Proposal Briefing recording:
     Title page
@@ -6,7 +8,7 @@
     Potential structure (attached)
     1- to 2-line high-level description
 
-3. Review example project proposals
+x 3. Review example project proposals
    https://www.dcs.bbk.ac.uk/r/studentprojects/exampleprojects/msc/MSc%20Data%20Science%20Project%20Reports/
 
 4. Structure ("You can and should adjust this structure to your needs")
@@ -31,6 +33,6 @@
 
     * highlight where questions / action items remain
 
-6. Questions for Michael
-    see supervisor-questions.md
-    academic format/font
+    * see applications-ontologies-use-cases.md
+
+6. Questions for Michael - see supervisor-questions.md
