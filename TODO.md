@@ -28,11 +28,11 @@ Task list:
    - [Academic articles about news Knowledge Graphs](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=)
      - [x] [Newshunter KG platform for newsrooms](https://www.sciencedirect.com/science/article/pii/S0166361520305558) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-sciencedirect-com-science-article-pii-S0166361520305558.md)
      - [x] [Newshunter](https://ojs.bibsys.no/index.php/Nokobit/article/view/548) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-sciencedirect-com-science-article-pii-S0166361520305558.md)
-     - [x] **[News Graph](http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf)** - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-ceur-ws-org-Vol-2601-kars2019_paper_01-pdf.md)
+     - [x] * **[News Graph](http://ceur-ws.org/Vol-2601/kars2019_paper_01.pdf)** - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-ceur-ws-org-Vol-2601-kars2019_paper_01-pdf.md)
      - [ ] [DKN deep knowledge network news recommendation](https://arxiv.org/pdf/1801.08284v2.pdf)
      - [ ] [Reuters Tracer](https://arxiv.org/pdf/1711.04068.pdf)
      - [x] [SUMMA](https://www.aclweb.org/anthology/W18-2508.pdf) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-www-aclweb-org-anthology-W18-2508-pdf.md)
-     - [x] **[ASRAEL](https://arxiv.org/pdf/1904.05557.pdf)** - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-arxiv-org-pdf-1904-05557-pdf.md)
+     - [x] * **[ASRAEL](https://arxiv.org/pdf/1904.05557.pdf)** - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-https-arxiv-org-pdf-1904-05557-pdf.md)
      - [ ] [IPTC news architecture/semantics](https://www.researchgate.net/publication/221467264_Bringing_the_IPTC_News_Architecture_into_the_Semantic_Web)
      - [x] [Neptuno](https://www.researchgate.net/publication/236234808_Neptuno_Semantic_Web_Technologies_for_a_Digital_Newspaper_Archive)
      - [x] [NEWS ontology](https://www.sciencedirect.com/science/article/pii/S0957417410005592) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-17-sciencedirect-com-science-article-pii-S0957417410005592.md)
@@ -51,12 +51,12 @@ Task list:
      - [ ] [Knowledge Graphs (long intro)](https://arxiv.org/pdf/2003.02320.pdf)
      - [ ] [Wikidata through the Eyes of DBpedia](http://www.semantic-web-journal.net/system/files/swj1462.pdf)
      - [ ] [RDF2Vec RDF graph embeddings](http://www.semantic-web-journal.net/system/files/swj1495.pdf)
-     - [ ] [Statistical Relational Learning for NaturalLanguage Information Extraction](https://www.cs.utexas.edu/users/ml/papers/srl-submitted-05.pdf)
+     - [ ] [Statistical Relational Learning for Natural Language Information Extraction](https://www.cs.utexas.edu/users/ml/papers/srl-submitted-05.pdf)
      - [ ] [Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion](https://research.google/pubs/pub45634/)
    - [ ] Online articles
-     - [x] https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-data-science-blog-blog-2016-08-17-statistical-relational-learning.md)
-     - [x] https://www.mkbergman.com/2244/a-common-sense-view-of-knowledge-graphs/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2244-a-common-sense-view.md)
-     - [x] https://www.mkbergman.com/2267/combining-knowledge-graphs-and-ontologies-for-dynamic-apps/ - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2267-combining.md)
+     - [x] [Statistical Relational Learning](https://data-science-blog.com/blog/2016/08/17/statistical-relational-learning/) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-data-science-blog-blog-2016-08-17-statistical-relational-learning.md)
+     - [x] * **[A Common Sense View of Knowledge Graphs](https://www.mkbergman.com/2244/a-common-sense-view-of-knowledge-graphs/)** - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2244-a-common-sense-view.md)
+     - [x] [KGs for ODapps](https://www.mkbergman.com/2267/combining-knowledge-graphs-and-ontologies-for-dynamic-apps/) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-14_https-www-mkbergman-com-2267-combining.md)
      - [ ] https://blog.diffbot.com/converting-text-documents-into-knowledge-graphs-with-the-diffbot-natural-language-api/ / https://ryanong.co.uk/2020/11/05/day-310-nlp-discovery-diffbots-knowledge-graph-api/
      - [ ] https://data-science-blog.com/blog/2017/01/18/statistical-relational-learning-part-2/
      - [ ] http://andrea-index.blogspot.com/2015/06/wikipedia-dbpedia-wikidata.html?m=1
