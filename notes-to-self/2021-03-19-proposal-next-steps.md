@@ -1,3 +1,6 @@
+20Mar: COMPLETE -- need to email Michael
+
+
 "Complete" proposal-tex
   highlight questions for myself and Michael
 

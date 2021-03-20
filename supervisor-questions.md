@@ -1,6 +1,0 @@
-- [ ] title, agreed weights, ethical issues routine? see Word doc: https://moodle.bbk.ac.uk/course/view.php?id=31904
-- [ ] reactions to my proposal, suggestions?
-- [ ] scope/priorities/focus areas?
-      - [ ] research question: KG + NLP + link prediction for...recommendations, fact extraction, information retrieval?
-      - [ ] KGs relevant to data science, even without statistics/math?
-          - I'm comfortable with graph, software, ontologies; less certain about adding statistics and ML models

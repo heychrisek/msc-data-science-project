@@ -1,10 +1,7 @@
 Worklog
 
 ### Upcoming
- - [ ] pick up where [these notes](https://github.com/heychrisek/msc-data-science-project/blob/main/notes-to-self/2021-03-12-project-title-and-diagram.txt) left off
  - [ ] review semantic "layer cake": OWL, SPARQL, RDF, schema, KG
- - [ ] add to [supervisor-questions.md](https://github.com/heychrisek/msc-data-science-project/blob/main/supervisor-questions.md)
- - [ ] literature review of [news knowledge graph articles](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0%2C5&cites=1198780147227444438&scipsc=&q=%22knowledge+graph%22+news&btnG=)
  - [ ] consider SPARQL category query...politicians, people above a certain fame, political organizations, financial orgs, countries?
       - [ ] are all subjects a [type of sport](https://www.wikidata.org/wiki/Q31629) or [geographic region](https://www.wikidata.org/wiki/Q82794)? (plus art/entertainment)
  - [ ] [Neo4j link prediction](https://neo4j.com/docs/graph-data-science/current/algorithms/ml-models/linkprediction/)
@@ -18,6 +15,7 @@ Worklog
  - [ ] figure out AWS hosted Neo4j: https://console.aws.amazon.com/marketplace/home/subscriptions#/subscriptions/42e71149-46df-4ee5-ae1b-34d134153fd6
 
 ### March
+ - 20 March: **finished project proposal draft**, emailed Michael to schedule feedback discussion
  - 17 March:
     - major literature review of several news KG articles
     - started tex proposal -- need to continue with project problem, plan, software, etc. - SEE research-questions and applications-ontologies-use-cases
