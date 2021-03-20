@@ -109,3 +109,29 @@ RETURN n, r, s;
 // NewsItem with subject South America AND Europe
 MATCH (s1 {subject:'Europe'})<-[r1:HAS_SUBJECT]-(n:NewsItem)-[r2:HAS_SUBJECT]->(s2:Subject {subject:'South America'})
 RETURN s1, r1, n, s2, r2
+
+
+// Create new :RELATED_TO relationship for these three items that share South America and Europ
+MATCH (n1:NewsItem), (n2:NewsItem), (s1:Subject{subject:"South America"}), (s2:Subject{subject:"Europe"})
+WHERE (n1)-[:HAS_SUBJECT]->(s1)
+AND (n1)-[:HAS_SUBJECT]->(s2)
+AND (n2)-[:HAS_SUBJECT]->(s1)
+AND (n2)-[:HAS_SUBJECT]->(s2)
+AND NOT n1.guid = n2.guid
+CREATE (n1)-[:RELATED_TO{reason:"shared continent subjects"}]->(n2)
+
+MATCH (n1)-[r:RELATED_TO]-(n2)
+RETURN n1, r, n2
+
+
+// Introduce entities, simply using South America subject for now
+CREATE (e:Entity{name:"South America"})
+
+CREATE CONSTRAINT ON (e:Entity) ASSERT e.name IS UNIQUE
+
+MATCH (n)-[:HAS_SUBJECT]->(s{subject:"South America"}), (e:Entity{name:"South America"})
+CREATE (n)-[:HAS_ENTITY]->(e)
+
+MATCH (n)-[:HAS_ENTITY]->(e) RETURN n, e
+
+

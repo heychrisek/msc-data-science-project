@@ -44,7 +44,7 @@ Task list:
    - [ ] Academic articles:
      - [x] [Relational ML for KG](https://arxiv.org/pdf/1503.00759.pdf) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-12_https-arxiv-org-pdf-1503-00759.md)
      - [ ] [Link prediction based on graph neural networks](https://proceedings.neurips.cc/paper/2018/file/53f0d7c537d99b3824f0f99d62ea2428-Paper.pdf)
-     - [x] [Architecture of KG Construction Techniques](https://www.acadpubl.eu/jsi/2018-118-19/articles/19b/24.pdf) - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-16-https-www-acadpubl-eu-jsi-2018-118-19-articles-19b-24-pdf.md)
+     - [x] **[Architecture of KG Construction Techniques](https://www.acadpubl.eu/jsi/2018-118-19/articles/19b/24.pdf)** - [Notes](https://github.com/heychrisek/msc-data-science-project/blob/main/article-notes/2021-03-16-https-www-acadpubl-eu-jsi-2018-118-19-articles-19b-24-pdf.md)
      - [ ] [Knowledge Graph embedding](https://ieeexplore.ieee.org/document/8047276)
      - [ ] [Survey on KG Embedding](https://www.mdpi.com/2079-9292/9/5/750)
      - [ ] [Survey on KG-Based Recommender Systems](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9216015)
