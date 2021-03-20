@@ -1,7 +1,13 @@
+% to compile:
+% bibtex proposal
+% bibtex proposal
+% pdflatex proposal
+
 \documentclass[11pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
+\usepackage{hyperref}
 
 \title{Project Proposal: A Domain-Specific Knowledge Graph for News Item Recommendations and Information Retrieval}
 \author{Chris Eaves-Kohlbrenner}
@@ -12,11 +18,13 @@
 \begin{abstract}
 This proposal introduces the project plan for a knowledge graph in the news domain. The project is intended to to build a news knowledge graph to enhance recommendations, link prediction, and information retrieval using semantic technologies, natural language processing, and machine learning.
 
-Two phases are planned: (1) build a prototype of a news knowledge graph using a Reuters archive of 59,542 news items and (2) run experiments aimed at enhancing the knowledge graph to improve recommendation quality and information retrieval. Final outcomes will include a functional graph database application and metrics documenting the information retrieval improvement.
+Two phases are planned: (1) build a prototype of a news knowledge graph using a Reuters archive of 59,542 news items and (2) run experiments aimed at enhancing the knowledge graph to improve recommendation quality and information retrieval. Final outcomes will include a functional graph database application and an evaluation documenting any improvements from the experiments.
 \end{abstract}
 
+\newpage
 \tableofcontents
 
+\newpage
 \section{Introduction}
 The field of knowledge graphs has seen rapid growth in the last decade, with notable examples like Wikidata, DBpedia, and the Google Knowledge Graph[1]. Meanwhile, the media industry generates a high volume of news content that is often unstructured and semantically limited, presenting information retrieval challenges for news consumers and journalists. The data challenges facing news agencies present an opportunity for a domain-specific knowledge graph architecture. 
 
@@ -24,31 +32,70 @@ Modeling news items as a knowledge graph requires transforming unstructured text
 
 An effective knowledge graph in the news domain would present benefits similar to Wikidata and others: a machine-readable graph enables others to link data and enrich other data sets; journalists can more easily draw insights about the entities in a story; consumers of the news can retrieve more relevant information and recommendations.
 
+\newpage
 \section{Literature Review}
 
-A variety of news-specific knowledge systems have been proposed or built to aggregate, generate, and link news data. The efforts described below represent the state of the art for applying knowledge graphs, semantic technology, and NLP in the news domain. They form the inspiration for some of the project's architecture and expirementation.
-
-\textbf{OPEN QUESTION: WHICH ONES USE KGs, NLP, SRL, etc.?}
+A variety of news-specific knowledge systems have been proposed or built to aggregate, generate, and link news data. The efforts described below represent the state of the art for applying knowledge graphs, semantic technology, and natural language processing in the news domain. They form the inspiration for some of the project's architecture and expirementation.
 
 \begin{itemize}
 \item \textbf{Neptuno} \cite{castells2004neptuno}, 2004: ``introduction of the emergent semantic-based technologies to improve the processes of creation, maintenance, and exploitation of the digital archive of a newspaper"
 \item \textbf{News Engine Web Services (NEWS)} \cite{fernandez2010news}, 2010
-\item \textbf{Global Database of Events, Language, and Tone (GDELT)}\footnote{https://www.gdeltproject.org/}, 2013: graph of news items and events with real-time monitoring of world's news media
+\item \textbf{Global Database of Events, Language, and Tone (GDELT)}\footnote{\url{https://www.gdeltproject.org/}}, 2013: graph of news items and events with real-time monitoring of world's news media
 \item \textbf{Event Registry} \cite{leban2014event}, 2014: ``a system that can analyze news articles and identify in them mentioned world events"
 \item \textbf{NewsReader} \cite{vossen2016newsreader}, 2016: system to read news articles and represent information as RDF; "a cycle of knowledge acquisition and NLP improvement on a massive scale"
-\item \textbf{NewsAPI}\footnote{https://newsapi.org/}, 2017: 
+\item \textbf{NewsAPI}\footnote{\url{https://newsapi.org/}}, 2017: 
 \item \textbf{Reuters' Tracer} \cite{liu2017reuters}, 2017 : ``a system that automates end-to-end news production using Twitter data."
 \item \textbf{Scalable Understanding of Multilingual MediA (SUMMA)} \cite{germann2018integrating}, 2018: architecture for monitoring media and applying NLP pipeline
 \item \textbf{Acquisition de Schémas pour la Reconnaissance et l'Annotation d'Événements Liés (ASRAEL)} \cite{rudnik2019searching}, 2019: harvest news text, link to Wikidata, and annotate using IPTC rNews vocabulary
 \item \textbf{News Graph} \cite{liu2019news}, 2019
 \item \textbf{News Hunter} \cite{berven2020knowledge}, 2020
-
-
-
 \end{itemize}
 
+\textbf{**TODO**: WHICH ONES USE KGs, NLP, SRL, etc.? Or make it an action item for the project to further research these?}
 
+In addition to the literature on news-specific knowledge systems, there is a wealth of resources related to knowledge graph architecture more broadly, including:
 
+\begin{itemize}
+\item KGEs...\cite{wang2017knowledge}
+\item Relational ML for Knowledge Graphs...\cite{nickel2015review}
+\item Google Vault and probabilistic inference system...\cite{45634}
+\end{itemize}
+
+\newpage
+\section{Problem Statement and Research Questions}
+
+This project will build a domain-specific knowledge graph of news items. It will use the knowledge graph to prototype a recommendation system and run experiments to improve recommendations and information retrieval.
+
+The planned experiments include:
+
+\begin{itemize}
+\item Apply \textbf{semantic technologies (ST)} including ontologies, vocabulary, and RDF
+\item Apply \textbf{natural language processing (NLP)} techniques including named entity recognition (NER), clustering and similarity, and keyword extraction for topics, key terms, and locations
+\item Apply \textbf{machine learning (ML)} models, including clustering, similarity, and link prediction
+\end{itemize}
+
+The key research question for the initial prototype is: \textbf{Can we build a NewsML to Knowledge Graph pipeline?} This pipeline will transform XML/NewsML documents into a knowledge graph, performing ST, NLP, and ML experiments along the way.
+
+Once the KG prototype is in place, the ST, NLP, and ML experiments can be run to enhance the KG. These experiments will investigate some of the following questions:
+\begin{itemize}
+\item [ST] Can we enhance the data and knowledge graph with semantic technologies, by authoring or integrating with existing OWL ontologies and RDF linked data?
+\item [ST] Can we identify which news item relations are relevant for news? Can we remove irrelevant relations?
+\item [ST] Can we determine a meaningful level of connection between news items? For example, one-hop, paths of length N, shared entity with salience above some weight/cutoff.
+\item [NLP] Can we enhance the data and knowledge graph with named entity recognition?
+\item [NLP/ML] Can we extract latent topics, keywords, and locations from news items, as a \textit{category classification} and/or \textit{latent semantic indexing} task?\footnote{Note to self: see NLP week 10 lecture}
+\item [NLP/ML] can we identify meaningful clusters of news items?
+\item [ML] Can we do link prediction to generate new relationships between news items and entities?\footnote{Project will consider 2.2 example of Donald Trump and Lebron James\cite{liu2019news}}
+\item [ML] Can we learn Knowledge Graph Embeddings (KGEs), with the intent to "embed components of a KG including entities and relations into continuous vector spaces, so as to simplify the manipulation while preserving the inherent structure of the KG"?\cite{wang2017knowledge}
+\item [ML] In addition to the NLP text extraction methods above, can we use probabilistic methods\cite{45634} or Statistical Relational Learning (SRL)\cite{nickel2015review} to build knowledge graph relationships?
+\item [evaluation] How can we evaluate improvements in quality or information retrieval? Which metrics are most meaningful among precision, recall, f-score, and similar?\footnote{
+\url{https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval)}}
+\item [evaluation] Does the knowledge graph improve information retrieval in terms of precision and recall?
+\item [evaluation] Does the knowledge graph improve the quality of recommended news items?
+\item [evaluation] Can we expose the knowledge graph as a user-facing application, via Neo4j, a user interface, or API?
+\item [evaluation] Does the knowledge graph improve human explainability of news item recommendations?
+\end{itemize}
+
+\newpage
 \section{Proposed Project}
 \subsection{Requirements and Features}
 \subsection{Data Analysis and Software Architecture Plan}
@@ -56,13 +103,23 @@ A variety of news-specific knowledge systems have been proposed or built to aggr
 \subsection{Verification Plan}
 \subsection{Methodology and Work Plan}
 
+\newpage
 \section{Conclusion}
 \subsection{Targeted Outcomes}
 \subsection{Personal Comments}
 
+\newpage
+\section{Glossary}
+\begin{itemize}
+\item KG - Knowledge Graph
+\item ML - Machine Learning
+\item NewsML\footnote{\url{https://iptc.org/standards/newsml-g2/}} - XML format for news items and metadata
+\item NLP - Natural Language Processing
+\item ST - Semantic Technology
+\item XML - Extensible Markup Language format for encoding documents
+\end{itemize}
 
-% \section{References}
-
+\newpage
 \bibliographystyle{abbrv}
 \bibliography{proposal}
 
