@@ -39,6 +39,7 @@ research questions
     - can we identify meaningful clusters of news items?
     - can we extract implicit/latent topics, keywords, and locations from news items?
         - **Category classification task**
+        - **latent semantic indexing -- see NLP week 10**
     - which news item relations are relevant (for news)? can we remove irrelevant relations?
     - can we expose the knowledge graph as a user-facing application? (Neo4j, UI, API?)
     - what is a meaningful level of connection between news items? (for example, one-hop, paths of length N, shared entity with salience above some weight/cutoff)

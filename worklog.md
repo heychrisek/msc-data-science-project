@@ -18,7 +18,9 @@ Worklog
  - [ ] figure out AWS hosted Neo4j: https://console.aws.amazon.com/marketplace/home/subscriptions#/subscriptions/42e71149-46df-4ee5-ae1b-34d134153fd6
 
 ### March
- - 17 March: major literature review of several news KG articles
+ - 17 March:
+    - major literature review of several news KG articles
+    - started tex proposal -- need to continue with project problem, plan, software, etc. - SEE research-questions and applications-ontologies-use-cases
  - 15 March: found a few articles and briefly reviewed one
  - 14 March:
     - found a few new academic articles ([1](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9216015), [2](https://ojs.aaai.org/index.php/AAAI/article/view/5681), [3](https://msnews.github.io/assets/doc/ACL2020_MIND.pdf))
