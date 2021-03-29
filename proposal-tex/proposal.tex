@@ -58,7 +58,9 @@ Modeling news items as a knowledge graph requires transforming unstructured text
 An effective knowledge graph in the news domain would present benefits similar to Wikidata and others: a machine-readable graph enables others to link data and enrich other data sets; journalists can more easily draw insights about the entities in a story; consumers of the news can retrieve more relevant information and recommendations.
 
 \newpage
-\section{Literature Review}
+\section{Background Research}
+
+\subsection{Literature Review}
 \label{sec:LiteratureReview}
 
 A variety of news-specific knowledge systems have been proposed or built to aggregate, generate, and link news data. The efforts described below represent the state of the art for applying knowledge graphs, semantic technology, and natural language processing in the news domain. They form the inspiration for some of the project's architecture and expirementation.
@@ -88,8 +90,44 @@ In addition to the literature on news-specific knowledge systems, there is a wea
 \item Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion \cite{45634}
 \end{itemize}
 
+\subsection{Proof of Concept}
+The efforts of this project have already included a preliminary analysis into (1) the available data, (2) initial cleaning of the data, (3) ingestion of a subset of news items into Neo4j, and (4) brief tests of Cypher queries and linked data. \textit{Figure 1} demonstrates this early proof of concept, which will be expanded as documented in the \hyperref[sec:ProposedProject]{``Proposed Project"} and \hyperref[sec:ProjectPlan]{``Project Plan"} below.
+
+This inital proof of concept verifies a few key details:
+
+\begin{itemize}
+  \item The chosen technologies--including Neo4j, Cypher, XML documents, and linked Wikidata--can all be applied to this project.
+  \item The Reuters archive data set provides a corpus of text documents from which a knowledge graph can be generated, as demonstrated with a subset of 216 news items linked by some simple entities and relationships.
+  \item The volume of data will vastly increase the level of effort, from a proof of concept with 216 news items to the full corpus of 59,542 documents.
+  \item Many open questions remain around the application of ontologies, linked data, NLP techniques, and evaluation. These open questions will be addressed over the course of the project and outlined in the sections below.
+\end{itemize}
+
+\begin{figure}
+\centerline{\includegraphics[scale=0.25]{neo4j-proof-of-concept}}
+\caption{\textit{The initial knowledge graph proof of concept ingested 216 XML news items into Neo4j and created test relationships between nodes. For example, a news item shown (right) in XML document format matches four other news items via shared entity ``South America", in both graph view (top-left) and table output (bottom-left).}}
+\end{figure}
+
 \newpage
-\section{Problem Statement and Research Questions}
+\section{Aims and Objectives}
+\label{sec:AimsObjectives}
+
+\subsection{Aims}
+The \textit{aims} or high-level research questions for this project include:
+\begin{itemize}
+  \item Design and implement a system for news information retrieval and recommendations
+  \item Determine whether and how certain technologies, including knowledge graphs, ontologies, linked data, and natural language processing, can be used to implement such a system
+\end{itemize}
+
+\subsection{Objectives}
+The \textit{objectives} or concrete and verifiable outcomes include:
+\begin{itemize}
+  \item Develop a software specification for the design and implementation of an information retrieval system for news XML documents
+  \item Build a data extraction pipeline for ingesting news data into the system
+  \item Build a knowledge graph prototype stored in Neo4j and query-able via Cypher
+  \item Experiment with semantic technologies and natural language processing for entity extraction and link prediction to enhance the knowledge graph
+\end{itemize}
+
+\subsection{Additional Details}
 
 This project will build a domain-specific knowledge graph of news items. It will use the knowledge graph to prototype a recommendation system and run experiments to improve recommendations and information retrieval.
 
@@ -124,10 +162,11 @@ Once the knowledge graph prototype is in place, the ST, NLP, and ML experiments 
 
 \newpage
 \section{Proposed Project}
+\label{sec:ProposedProject}
 \subsection{Project Technology and Architecture}
 Because the project is intended to (1) build a knowledge graph prototype and (2) run NLP experiments to enhance the knowledge graph's news item recommendations and information retrieval, the overall architecture can be viewed as a data pipeline ending in a knowledge graph.
 
-This project will take a "bottom-up" approach, by which data is ingested, other knowledge instances like Wikidata are extracted through linked open data, and the two are fused. This stands in contrast to a "top-down" approach, where an ontology and schema are structured first and knowledge instances are then fit into the structure \cite{zhao2018architecture}. See \textit{Figure 1} for a proposed knowledge graph pipeline and architecture.
+This project will take a "bottom-up" approach, by which data is ingested, other knowledge instances like Wikidata are extracted through linked open data, and the two are fused. This stands in contrast to a "top-down" approach, where an ontology and schema are structured first and knowledge instances are then fit into the structure \cite{zhao2018architecture}. See \textit{Figure 2} for a proposed knowledge graph pipeline and architecture.
 
 \begin{figure}
 \centerline{\includegraphics[scale=0.275]{bottom-up-kg-architecture}}
@@ -163,15 +202,15 @@ The tech stack will include the following technologies:
   \end{itemize}
 \end{enumerate}
 
-Taking a more granular view at the steps from the previous diagram, we can simplify the view to a linear flow of data through the various technologies (\textit{Figure 2}), where the Neo4j interface enables Cypher queries of nodes and relationships (\textit{Figure 3}).
+Taking a more granular view at the steps from the previous diagram, we can simplify the view to a linear flow of data through the various technologies (\textit{Figure 3}), where the Neo4j interface enables Cypher queries of nodes and relationships (\textit{Figure 4}).
 
 \begin{figure}
-\centerline{\includegraphics[scale=0.2]{data-pipeline}}
+\centerline{\includegraphics[scale=0.225]{data-pipeline}}
 \caption{\textit{Data flow}}
 \end{figure}
 
 \begin{figure}
-\centerline{\includegraphics[scale=0.2]{neo4j-cypher-interface}}
+\centerline{\includegraphics[scale=0.225]{neo4j-cypher-interface}}
 \caption{\textit{Cypher query interface of Neo4j Desktop}}
 \end{figure}
 
@@ -193,6 +232,9 @@ RETURN n1, r, n2
 
 
 \subsection{Project Plan}
+\label{sec:ProjectPlan}
+As mentioned in \textit{Figure 1} and the \hyperref[sec:AimsObjectives]{``Aims and Objectives"} section above, an initial investigation and proof of concept is already underway. The first few steps of the project plan aim to consolidate this proof of concept into a verifiable specification, then evaluate semantic technologies and NLP techniques.
+
 The project plan is broken into distinct sequential steps:
 \begin{enumerate}
 \item{Data exploration} \label{sec:PropDataExploration}
@@ -215,7 +257,7 @@ The project plan is broken into distinct sequential steps:
   \item Build Neo4j/Cypher queries for similar content (e.g., item that’s no more than X steps away via topic or items within date range)
   \item Use Neo4j, APOC, and neosemantics to link Wikidata\footnote{\url{https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/}}\footnote{Wikidata script in progress:\\ \url{https://github.com/heychrisek/msc-data-science-project/blob/main/scripts/wikidata_to_wikipedia_url.py}}
   \item Use Neo4j, APOC, and neosemantics to integrate ontology\footnote{\url{https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/} and attempt ST experiments to build ontology and link data}
-  \item Define graph model\footnote{https://neo4j.com/developer/guide-data-modeling/}. Proof of concept graph model in \textit{Figure 4}.
+  \item Define graph model\footnote{https://neo4j.com/developer/guide-data-modeling/}. Proof of concept graph model in \textit{Figure 5}.
   \item Complete Knowledge Graph prototype
   \end{enumerate}
 
@@ -308,29 +350,30 @@ The following timeline breaks down the approximate intended deliverable by each 
 \end{itemize}
 
 \subsection{Verification Plan}
-The key research question is \textbf{can we build a NewsML to Knowledge Graph pipeline, resulting in a knowledge graph that improves news item recommendations and information retrieval?} Therefore the desired outcome is an affirmative answer to this question, as demonstrated by successful Cypher queries of the Neo4j knowledge graph.
+The key research question is \textbf{can we build a NewsML to Knowledge Graph pipeline, resulting in a knowledge graph that improves news item recommendations and information retrieval?} Therefore the desired outcome is an affirmative answer to this question, as demonstrated by successful Cypher queries of the Neo4j knowledge graph. This will achieve the aims and objectives of the project
 
 A working graph database will be evidence of successful data cleaning, data ingestion, and data enrichment via NLP techniques. A Cypher script file will be provided to show example queries and results. The enhanced knowledge graph will be made available to demo sample queries, recommendations, and information retrieval.
 
-The completed project will also be verified with a summary of the NLP techniques applied to the knowledge graph and an evaluation of how they have performed.
+The completed project will also be verified with a specification, a summary of the NLP techniques applied to the knowledge graph, and an evaluation of how they have performed.
 
 \newpage
 \section{Conclusion}
 
 As a MSc Data Science student and a member of the product engineering team at Reuters, the author hopes to (1) understand the news industry, data, and knowledge representation efforts at a deeper level; (2) apply data science techniques to generate insights about the news domain; and (3) as a best case scenario, create meaningful value for Reuters and the broader media.
 
-This project is the culmination of the MSc Data Science degree and therefore aims to combine key learnings from data science, semantic technology, natural language processing, and information retrieval into a single research and software development project. Completing this project will provide experience and build confidence with technologies including Neo4j, Cypher, Python, OWL, and RDF.
+This project is the culmination of the MSc Data Science degree and therefore aims to combine key learnings from data science, semantic technology, natural language processing, and information retrieval into a single research and software development project. Completing this project and achieving the \hyperref[sec:AimsObjectives]{aims and objectives} will provide experience and build confidence with technologies including Neo4j, Cypher, Python, OWL, and RDF.
 
 \newpage
 \section{Glossary}
 \begin{itemize}
-\item KG - Knowledge Graph
-\item ML - Machine Learning
+\item KG - Knowledge graph
+\item ML - Machine learning
 \item NewsML\footnote{\url{https://iptc.org/standards/newsml-g2/}} - XML format for news items and metadata
 \item OWL - Web Ontology Language
-\item NLP - Natural Language Processing
-\item SRL - Statistical Relational Learning
-\item ST - Semantic Technology
+\item NER - Named entity recognition
+\item NLP - Natural language processing
+\item SRL - Statistical relational learning
+\item ST - Semantic technology
 \item XML - Extensible Markup Language format for encoding documents
 \end{itemize}
 

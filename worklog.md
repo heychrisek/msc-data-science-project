@@ -10,6 +10,11 @@ Worklog
       - https://neo4j.com/blog/using-owl-with-neo4j/
       - https://lju-lazarevic.github.io/ImportingRDFSOWL.html
       - https://community.neo4j.com/t/import-owl-individuals-to-neo4j/11873
+ - [ ] define NLP experiments:
+      - [ ] ...
+      - [ ] vector semantics and embeddings, word2vec, tf-idf document similarity
+            https://web.stanford.edu/~jurafsky/slp3/6.pdf
+            https://github.com/josephwilk/semanticpy / http://blog.josephwilk.net/projects/latent-semantic-analysis-in-python.html
  - [ ] start using Python driver for Neo4j: https://neo4j.com/developer/python/
  - [ ] submit project proposal
  - [ ] figure out AWS hosted Neo4j: https://console.aws.amazon.com/marketplace/home/subscriptions#/subscriptions/42e71149-46df-4ee5-ae1b-34d134153fd6
