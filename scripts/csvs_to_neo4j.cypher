@@ -10,96 +10,130 @@ CREATE (g:Genre {genre: map.genre})
 MATCH (g:Genre) RETURN g LIMIT 10
 
 
+// DEPRECATED 12 JULY (REPLACED WITH FOREACH BELOW)
+    // all breakingviews nodes have genres Columns, Reports, Reuters Breakingviews
+    // only some have Reuters Breakingviews Full, Dealtalk, Enterprise reporting, Media type Graphics, so    // for those
 
-// all breakingviews nodes have genres Columns, Reports, Reuters Breakingviews
-// only some have Reuters Breakingviews Full, Dealtalk, Enterprise reporting, Media type Graphics, so add for those
+    // 1 relationship
+    MATCH (n:NewsItem),(g:Genre)
+    WHERE n.genres CONTAINS "Dealtalk" AND g.genre = "Dealtalk"
+    CREATE (n)-[r:HAS_GENRE]->(g)
+    RETURN r;
 
-// 1 relationship
-MATCH (n:NewsItem),(g:Genre)
-WHERE n.genres CONTAINS "Dealtalk" AND g.genre = "Dealtalk"
+    // 1 relationship
+    MATCH (n:NewsItem),(g:Genre)
+    WHERE n.genres CONTAINS "Enterprise reporting" AND g.genre = "Enterprise reporting"
+    CREATE (n)-[r:HAS_GENRE]->(g)
+    RETURN n, r, g;
+
+    // 3 relationships
+    MATCH (n:NewsItem),(g:Genre)
+    WHERE n.genres CONTAINS "Media type Graphics" AND g.genre = "Media type Graphics"
+    CREATE (n)-[r:HAS_GENRE]->(g)
+    RETURN n, r, g;
+
+    // 114 relationships
+    MATCH (n:NewsItem),(g:Genre)
+    WHERE n.genres CONTAINS "Reuters Breakingviews Full" AND g.genre = "Reuters Breakingviews Full"
+    RETURN r;
+    CREATE (n)-[r:HAS_GENRE]->(g)
+
+// NEW FOREACH ON 12 JULY
+MATCH (g:Genre)
+WITH g.genre AS genres
+UNWIND genres AS genre
+MATCH (n:NewsItem),(g:Genre) WHERE n.genres CONTAINS genre AND g.genre = genre
 CREATE (n)-[r:HAS_GENRE]->(g)
-RETURN r;
-
-// 1 relationship
-MATCH (n:NewsItem),(g:Genre)
-WHERE n.genres CONTAINS "Enterprise reporting" AND g.genre = "Enterprise reporting"
-CREATE (n)-[r:HAS_GENRE]->(g)
-RETURN n, r, g;
-
-// 3 relationships
-MATCH (n:NewsItem),(g:Genre)
-WHERE n.genres CONTAINS "Media type Graphics" AND g.genre = "Media type Graphics"
-CREATE (n)-[r:HAS_GENRE]->(g)
-RETURN n, r, g;
-
-// 114 relationships
-MATCH (n:NewsItem),(g:Genre)
-WHERE n.genres CONTAINS "Reuters Breakingviews Full" AND g.genre = "Reuters Breakingviews Full"
-RETURN r;
-CREATE (n)-[r:HAS_GENRE]->(g)
-
 
 MATCH (n:NewsItem)-[r:HAS_GENRE]->(g:Genre)
 RETURN n, r, g
 
 
-CREATE (s:Subject {subject:'Antarctica'});
-CREATE (s:Subject {subject:'Africa'});
-CREATE (s:Subject {subject:'Asia'});
-CREATE (s:Subject {subject:'Australia'});
-CREATE (s:Subject {subject:'Europe'});
-CREATE (s:Subject {subject:'North America'});
-CREATE (s:Subject {subject:'South America'});
-
-MATCH (s:Subject) SET s.type='Continent'
-
-MATCH (s:Subject) RETURN s;
+// DEPRECATED 12 JULY
+    CREATE (s:Subject {subject:'Antarctica'});
+    CREATE (s:Subject {subject:'Africa'});
+    CREATE (s:Subject {subject:'Asia'});
+    CREATE (s:Subject {subject:'Australia'});
+    CREATE (s:Subject {subject:'Europe'});
+    CREATE (s:Subject {subject:'North America'});
+    CREATE (s:Subject {subject:'South America'});
 
 
+// NEW SUBJECT SOLUTION
+CALL apoc.load.csv('/subjects-with-wikidata.csv') yield map as row
+CREATE (s:Subject {subject: row.name}) SET s = row
 
-// there's probably a better way to iterate / FOREACH, but for now manually run for each of seven (7) breakingviews subjects (for continents):
+MATCH (s:Subject) RETURN s LIMIT 10;
+MATCH (s:Subject {category: "US state"}) RETURN s LIMIT 10;
+MATCH (s:Subject {category: "continent"}) RETURN s LIMIT 10;
+MATCH (s:Subject {category: "region"}) RETURN s LIMIT 10;
+MATCH (s:Subject {category: "art and culture"}) RETURN s LIMIT 10;
 
-// 0 relationships
-MATCH (n:NewsItem),(s:Subject)
-WHERE n.subjects CONTAINS "Antarctica" AND s.subject = "Antarctica"
-CREATE (n)-[r:HAS_SUBJECT]->(s)
-RETURN n, r, s;
 
-// 8 relationships
-MATCH (n:NewsItem),(s:Subject)
-WHERE n.subjects CONTAINS "Africa" AND s.subject = "Africa"
-CREATE (n)-[r:HAS_SUBJECT]->(s)
-RETURN n, r, s;
+// DEPRECATED 12 JULY
+    // there's probably a better way to iterate / FOREACH, but for now manually run for each of seven (7) breakingviews subjects (for continents):
 
-// 103 relationships
-MATCH (n:NewsItem),(s:Subject)
-WHERE n.subjects CONTAINS "Asia" AND s.subject = "Asia"
-CREATE (n)-[r:HAS_SUBJECT]->(s)
-RETURN n, r, s;
+    // 0 relationships
+    MATCH (n:NewsItem),(s:Subject)
+    WHERE n.subjects CONTAINS "Antarctica" AND s.subject = "Antarctica"
+    CREATE (n)-[r:HAS_SUBJECT]->(s)
+    RETURN n, r, s;
 
-// 10 relationships
-MATCH (n:NewsItem),(s:Subject)
-WHERE n.subjects CONTAINS "Australia" AND s.subject = "Australia"
-CREATE (n)-[r:HAS_SUBJECT]->(s)
-RETURN n, r, s;
+    // 8 relationships
+    MATCH (n:NewsItem),(s:Subject)
+    WHERE n.subjects CONTAINS "Africa" AND s.subject = "Africa"
+    CREATE (n)-[r:HAS_SUBJECT]->(s)
+    RETURN n, r, s;
 
-// 116 relationships
-MATCH (n:NewsItem),(s:Subject)
-WHERE n.subjects CONTAINS "Europe" AND s.subject = "Europe"
-CREATE (n)-[r:HAS_SUBJECT]->(s)
-RETURN n, r, s;
+    // 103 relationships
+    MATCH (n:NewsItem),(s:Subject)
+    WHERE n.subjects CONTAINS "Asia" AND s.subject = "Asia"
+    CREATE (n)-[r:HAS_SUBJECT]->(s)
+    RETURN n, r, s;
 
-// 122 relationships
-MATCH (n:NewsItem),(s:Subject)
-WHERE n.subjects CONTAINS "North America" AND s.subject = "North America"
-CREATE (n)-[r:HAS_SUBJECT]->(s)
-RETURN n, r, s;
+    // 10 relationships
+    MATCH (n:NewsItem),(s:Subject)
+    WHERE n.subjects CONTAINS "Australia" AND s.subject = "Australia"
+    CREATE (n)-[r:HAS_SUBJECT]->(s)
+    RETURN n, r, s;
 
-// 5 relationships
-MATCH (n:NewsItem),(s:Subject)
-WHERE n.subjects CONTAINS "South America" AND s.subject = "South America"
-CREATE (n)-[r:HAS_SUBJECT]->(s)
-RETURN n, r, s;
+    // 116 relationships
+    MATCH (n:NewsItem),(s:Subject)
+    WHERE n.subjects CONTAINS "Europe" AND s.subject = "Europe"
+    CREATE (n)-[r:HAS_SUBJECT]->(s)
+    RETURN n, r, s;
+
+    // 122 relationships
+    MATCH (n:NewsItem),(s:Subject)
+    WHERE n.subjects CONTAINS "North America" AND s.subject = "North America"
+    CREATE (n)-[r:HAS_SUBJECT]->(s)
+    RETURN n, r, s;
+
+    // 5 relationships
+    MATCH (n:NewsItem),(s:Subject)
+    WHERE n.subjects CONTAINS "South America" AND s.subject = "South America"
+    CREATE (n)-[r:HAS_SUBJECT]->(s)
+    RETURN n, r, s;
+
+// NEW SUBJECT SOLUTION
+MATCH (s:Subject)
+WITH s.subject AS subjects
+UNWIND subjects AS subject
+MATCH (n:NewsItem),(s:Subject) WHERE n.subjects CONTAINS subject AND s.subject = subject
+CREATE (n)-[r:HAS_SUBJECT]->(g)
+
+MATCH (g:Genre)
+WITH g.genre AS genres
+UNWIND genres AS genre
+RETURN genre
+
+MATCH (s:Subject)
+WITH s.subject AS subjects
+UNWIND subjects AS subject
+RETURN subject
+
+
+
 
 
 MATCH (n:NewsItem)-[r:HAS_SUBJECT]->(s:Subject)

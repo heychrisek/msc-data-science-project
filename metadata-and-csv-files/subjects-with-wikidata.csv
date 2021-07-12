@@ -1,427 +1,416 @@
-﻿subject,wikidataURL,wikipediaURL
-New York City,https://www.wikidata.org/wiki/Q60,https://en.wikipedia.org/wiki/New_York_City
-Washington DC,https://www.wikidata.org/wiki/Q61,https://en.wikipedia.org/wiki/Washington,_D.C.
-Afghanistan,https://www.wikidata.org/wiki/Q889,https://en.wikipedia.org/wiki/Afghanistan
-Albania,https://www.wikidata.org/wiki/Q222,https://en.wikipedia.org/wiki/Albania
-Algeria,https://www.wikidata.org/wiki/Q262,https://en.wikipedia.org/wiki/Algeria
-American Samoa,https://www.wikidata.org/wiki/Q16641,https://en.wikipedia.org/wiki/American_Samoa
-Andorra,https://www.wikidata.org/wiki/Q228,https://en.wikipedia.org/wiki/Andorra
-Angola,https://www.wikidata.org/wiki/Q916,https://en.wikipedia.org/wiki/Angola
-Anguilla,https://www.wikidata.org/wiki/Q25228,https://en.wikipedia.org/wiki/Anguilla
-Antigua and Barbuda,https://www.wikidata.org/wiki/Q316390,https://en.wikipedia.org/wiki/Antigua
-Argentina,https://www.wikidata.org/wiki/Q414,https://en.wikipedia.org/wiki/Argentina
-Armenia,https://www.wikidata.org/wiki/Q399,https://en.wikipedia.org/wiki/Armenia
-Aruba,https://www.wikidata.org/wiki/Q21203,https://en.wikipedia.org/wiki/Aruba
-Austria,https://www.wikidata.org/wiki/Q40,https://en.wikipedia.org/wiki/Austria
-Azerbaijan,https://www.wikidata.org/wiki/Q227,https://en.wikipedia.org/wiki/Azerbaijan
-Bahamas,https://www.wikidata.org/wiki/Q778,https://en.wikipedia.org/wiki/The_Bahamas
-Bahrain,https://www.wikidata.org/wiki/Q398,https://en.wikipedia.org/wiki/Bahrain
-Bangladesh,https://www.wikidata.org/wiki/Q902,https://en.wikipedia.org/wiki/Bangladesh
-Barbados,https://www.wikidata.org/wiki/Q244,https://en.wikipedia.org/wiki/Barbados
-Belarus,https://www.wikidata.org/wiki/Q184,https://en.wikipedia.org/wiki/Belarus
-Belgium,https://www.wikidata.org/wiki/Q31,https://en.wikipedia.org/wiki/Belgium
-Belize,https://www.wikidata.org/wiki/Q242,https://en.wikipedia.org/wiki/Belize
-Benin,https://www.wikidata.org/wiki/Q962,https://en.wikipedia.org/wiki/Benin
-Bermuda,https://www.wikidata.org/wiki/Q23635,https://en.wikipedia.org/wiki/Bermuda
-Bhutan,https://www.wikidata.org/wiki/Q917,https://en.wikipedia.org/wiki/Bhutan
-Bolivia,https://www.wikidata.org/wiki/Q750,https://en.wikipedia.org/wiki/Bolivia
-Bosnia and Herzegovina,https://www.wikidata.org/wiki/Q225,https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina
-Botswana,https://www.wikidata.org/wiki/Q963,https://en.wikipedia.org/wiki/Botswana
-Brazil,https://www.wikidata.org/wiki/Q155,https://en.wikipedia.org/wiki/Brazil
-British Virgin Islands,https://www.wikidata.org/wiki/Q25305,https://en.wikipedia.org/wiki/British_Virgin_Islands
-Brunei,https://www.wikidata.org/wiki/Q921,https://en.wikipedia.org/wiki/Brunei
-Bulgaria,https://www.wikidata.org/wiki/Q219,https://en.wikipedia.org/wiki/Bulgaria
-Burkina Faso,https://www.wikidata.org/wiki/Q965,https://en.wikipedia.org/wiki/Burkina_Faso
-Burundi,https://www.wikidata.org/wiki/Q967,https://en.wikipedia.org/wiki/Burundi
-Cambodia,https://www.wikidata.org/wiki/Q424,https://en.wikipedia.org/wiki/Cambodia
-Cameroon,https://www.wikidata.org/wiki/Q1009,https://en.wikipedia.org/wiki/Cameroon
-Canada,https://www.wikidata.org/wiki/Q16,https://en.wikipedia.org/wiki/Canada
-Cape Verde,https://www.wikidata.org/wiki/Q1011,https://en.wikipedia.org/wiki/Cape_Verde
-Cayman Islands,https://www.wikidata.org/wiki/Q5785,https://en.wikipedia.org/wiki/Cayman_Islands
-Central African Republic,https://www.wikidata.org/wiki/Q929,https://en.wikipedia.org/wiki/Central_African_Republic
-Chad,https://www.wikidata.org/wiki/Q657,https://en.wikipedia.org/wiki/Chad
-Channel Islands,https://www.wikidata.org/wiki/Q42314,https://en.wikipedia.org/wiki/Channel_Islands
-Chile,https://www.wikidata.org/wiki/Q298,https://en.wikipedia.org/wiki/Chile
-China (PRC),https://www.wikidata.org/wiki/Q148,https://en.wikipedia.org/wiki/China
-Colombia,https://www.wikidata.org/wiki/Q739,https://en.wikipedia.org/wiki/Colombia
-Comoros,https://www.wikidata.org/wiki/Q970,https://en.wikipedia.org/wiki/Comoros
-Congo (DRC),https://www.wikidata.org/wiki/Q974,https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo
-Congo (RC),https://www.wikidata.org/wiki/Q971,https://en.wikipedia.org/wiki/Republic_of_the_Congo
-Cook Islands,https://www.wikidata.org/wiki/Q26988,https://en.wikipedia.org/wiki/Cook_Islands
-Costa Rica,https://www.wikidata.org/wiki/Q800,https://en.wikipedia.org/wiki/Costa_Rica
-Croatia,https://www.wikidata.org/wiki/Q224,https://en.wikipedia.org/wiki/Croatia
-Cuba,https://www.wikidata.org/wiki/Q241,https://en.wikipedia.org/wiki/Cuba
-Cyprus,https://www.wikidata.org/wiki/Q229,https://en.wikipedia.org/wiki/Cyprus
-Czech Republic,https://www.wikidata.org/wiki/Q213,https://en.wikipedia.org/wiki/Czech_Republic
-Denmark,https://www.wikidata.org/wiki/Q35,https://en.wikipedia.org/wiki/Denmark
-Djibouti,https://www.wikidata.org/wiki/Q977,https://en.wikipedia.org/wiki/Djibouti
-Dominican Republic,https://www.wikidata.org/wiki/Q786,https://en.wikipedia.org/wiki/Dominican_Republic
-East Timor / Timor-Leste,https://www.wikidata.org/wiki/Q574,https://en.wikipedia.org/wiki/East_Timor
-Ecuador,https://www.wikidata.org/wiki/Q736,https://en.wikipedia.org/wiki/Ecuador
-Egypt,https://www.wikidata.org/wiki/Q79,https://en.wikipedia.org/wiki/Egypt
-El Salvador,https://www.wikidata.org/wiki/Q792,https://en.wikipedia.org/wiki/El_Salvador
-England,https://www.wikidata.org/wiki/Q21,https://en.wikipedia.org/wiki/England
-Equatorial Guinea,https://www.wikidata.org/wiki/Q983,https://en.wikipedia.org/wiki/Equatorial_Guinea
-Eritrea,https://www.wikidata.org/wiki/Q986,https://en.wikipedia.org/wiki/Eritrea
-Estonia,https://www.wikidata.org/wiki/Q191,https://en.wikipedia.org/wiki/Estonia
-Eswatini,https://www.wikidata.org/wiki/Q1050,https://en.wikipedia.org/wiki/Eswatini
-Ethiopia,https://www.wikidata.org/wiki/Q115,https://en.wikipedia.org/wiki/Ethiopia
-Faroe Islands,https://www.wikidata.org/wiki/Q4628,https://en.wikipedia.org/wiki/Faroe_Islands
-Fiji,https://www.wikidata.org/wiki/Q712,https://en.wikipedia.org/wiki/Fiji
-Finland,https://www.wikidata.org/wiki/Q33,https://en.wikipedia.org/wiki/Finland
-France,https://www.wikidata.org/wiki/Q142,https://en.wikipedia.org/wiki/France
-French Guiana,https://www.wikidata.org/wiki/Q3769,https://en.wikipedia.org/wiki/French_Guiana
-Gabon,https://www.wikidata.org/wiki/Q1000,https://en.wikipedia.org/wiki/Gabon
-Gambia,https://www.wikidata.org/wiki/Q1005,https://en.wikipedia.org/wiki/The_Gambia
-Georgia (Country),https://www.wikidata.org/wiki/Q230,https://en.wikipedia.org/wiki/Georgia_(country)
-Germany,https://www.wikidata.org/wiki/Q183,https://en.wikipedia.org/wiki/Germany
-Ghana,https://www.wikidata.org/wiki/Q117,https://en.wikipedia.org/wiki/Ghana
-Gibraltar,https://www.wikidata.org/wiki/Q1410,https://en.wikipedia.org/wiki/Gibraltar
-Greece,https://www.wikidata.org/wiki/Q41,https://en.wikipedia.org/wiki/Greece
-Greenland,https://www.wikidata.org/wiki/Q223,https://en.wikipedia.org/wiki/Greenland
-Grenada,https://www.wikidata.org/wiki/Q769,https://en.wikipedia.org/wiki/Grenada
-Guadeloupe,https://www.wikidata.org/wiki/Q17012,https://en.wikipedia.org/wiki/Guadeloupe
-Guam,https://www.wikidata.org/wiki/Q16635,https://en.wikipedia.org/wiki/Guam
-Guatemala,https://www.wikidata.org/wiki/Q774,https://en.wikipedia.org/wiki/Guatemala
-Guernsey,https://www.wikidata.org/wiki/Q25230,https://en.wikipedia.org/wiki/Bailiwick_of_Guernsey
-Guinea,https://www.wikidata.org/wiki/Q1006,https://en.wikipedia.org/wiki/Guinea
-Guinea-Bissau,https://www.wikidata.org/wiki/Q1007,https://en.wikipedia.org/wiki/Guinea-Bissau
-Guyana,https://www.wikidata.org/wiki/Q734,https://en.wikipedia.org/wiki/Guyana
-Haiti,https://www.wikidata.org/wiki/Q790,https://en.wikipedia.org/wiki/Haiti
-Honduras,https://www.wikidata.org/wiki/Q783,https://en.wikipedia.org/wiki/Honduras
-Hong Kong,https://www.wikidata.org/wiki/Q8646,https://en.wikipedia.org/wiki/Hong_Kong
-Hungary,https://www.wikidata.org/wiki/Q28,https://en.wikipedia.org/wiki/Hungary
-Iceland,https://www.wikidata.org/wiki/Q189,https://en.wikipedia.org/wiki/Iceland
-India,https://www.wikidata.org/wiki/Q668,https://en.wikipedia.org/wiki/India
-Indonesia,https://www.wikidata.org/wiki/Q252,https://en.wikipedia.org/wiki/Indonesia
-Iran,https://www.wikidata.org/wiki/Q794,https://en.wikipedia.org/wiki/Iran
-Iraq,https://www.wikidata.org/wiki/Q796,https://en.wikipedia.org/wiki/Iraq
-Ireland,https://www.wikidata.org/wiki/Q27,https://en.wikipedia.org/wiki/Republic_of_Ireland
-Isle of Man,https://www.wikidata.org/wiki/Q9676,https://en.wikipedia.org/wiki/Isle_of_Man
-Israel,https://www.wikidata.org/wiki/Q801,https://en.wikipedia.org/wiki/Israel
-Italy,https://www.wikidata.org/wiki/Q38,https://en.wikipedia.org/wiki/Italy
-Ivory Coast,https://www.wikidata.org/wiki/Q1008,https://en.wikipedia.org/wiki/Ivory_Coast
-Jamaica,https://www.wikidata.org/wiki/Q766,https://en.wikipedia.org/wiki/Jamaica
-Japan,https://www.wikidata.org/wiki/Q17,https://en.wikipedia.org/wiki/Japan
-Jordan,https://www.wikidata.org/wiki/Q810,https://en.wikipedia.org/wiki/Jordan
-Kazakhstan,https://www.wikidata.org/wiki/Q232,https://en.wikipedia.org/wiki/Kazakhstan
-Kenya,https://www.wikidata.org/wiki/Q114,https://en.wikipedia.org/wiki/Kenya
-Kiribati,https://www.wikidata.org/wiki/Q710,https://en.wikipedia.org/wiki/Kiribati
-Kosovo,https://www.wikidata.org/wiki/Q1246,https://en.wikipedia.org/wiki/Kosovo
-Kuwait,https://www.wikidata.org/wiki/Q817,https://en.wikipedia.org/wiki/Kuwait
-Kyrgyzstan,https://www.wikidata.org/wiki/Q813,https://en.wikipedia.org/wiki/Kyrgyzstan
-Laos,https://www.wikidata.org/wiki/Q819,https://en.wikipedia.org/wiki/Laos
-Latvia,https://www.wikidata.org/wiki/Q211,https://en.wikipedia.org/wiki/Latvia
-Lebanon,https://www.wikidata.org/wiki/Q822,https://en.wikipedia.org/wiki/Lebanon
-Lesotho,https://www.wikidata.org/wiki/Q1013,https://en.wikipedia.org/wiki/Lesotho
-Liberia,https://www.wikidata.org/wiki/Q1014,https://en.wikipedia.org/wiki/Liberia
-Libya,https://www.wikidata.org/wiki/Q1016,https://en.wikipedia.org/wiki/Libya
-Liechtenstein,https://www.wikidata.org/wiki/Q347,https://en.wikipedia.org/wiki/Liechtenstein
-Lithuania,https://www.wikidata.org/wiki/Q37,https://en.wikipedia.org/wiki/Lithuania
-Luxembourg,https://www.wikidata.org/wiki/Q32,https://en.wikipedia.org/wiki/Luxembourg
-Macau,https://www.wikidata.org/wiki/Q14773,https://en.wikipedia.org/wiki/Macau
-Madagascar,https://www.wikidata.org/wiki/Q1019,https://en.wikipedia.org/wiki/Madagascar
-Malawi,https://www.wikidata.org/wiki/Q1020,https://en.wikipedia.org/wiki/Malawi
-Malaysia,https://www.wikidata.org/wiki/Q833,https://en.wikipedia.org/wiki/Malaysia
-Maldives,https://www.wikidata.org/wiki/Q826,https://en.wikipedia.org/wiki/Maldives
-Mali,https://www.wikidata.org/wiki/Q912,https://en.wikipedia.org/wiki/Mali
-Malta,https://www.wikidata.org/wiki/Q233,https://en.wikipedia.org/wiki/Malta
-Marshall Islands,https://www.wikidata.org/wiki/Q709,https://en.wikipedia.org/wiki/Marshall_Islands
-Mauritania,https://www.wikidata.org/wiki/Q1025,https://en.wikipedia.org/wiki/Mauritania
-Mauritius,https://www.wikidata.org/wiki/Q1027,https://en.wikipedia.org/wiki/Mauritius
-Mexico,https://www.wikidata.org/wiki/Q96,https://en.wikipedia.org/wiki/Mexico
-Micronesia,https://www.wikidata.org/wiki/Q702,https://en.wikipedia.org/wiki/Federated_States_of_Micronesia
-Moldova,https://www.wikidata.org/wiki/Q217,https://en.wikipedia.org/wiki/Moldova
-Monaco,https://www.wikidata.org/wiki/Q235,https://en.wikipedia.org/wiki/Monaco
-Mongolia,https://www.wikidata.org/wiki/Q711,https://en.wikipedia.org/wiki/Mongolia
-Montenegro,https://www.wikidata.org/wiki/Q236,https://en.wikipedia.org/wiki/Montenegro
-Morocco,https://www.wikidata.org/wiki/Q1028,https://en.wikipedia.org/wiki/Morocco
-Mozambique,https://www.wikidata.org/wiki/Q1029,https://en.wikipedia.org/wiki/Mozambique
-Myanmar,https://www.wikidata.org/wiki/Q836,https://en.wikipedia.org/wiki/Myanmar
-Namibia,https://www.wikidata.org/wiki/Q1030,https://en.wikipedia.org/wiki/Namibia
-Nauru,https://www.wikidata.org/wiki/Q697,https://en.wikipedia.org/wiki/Nauru
-Nepal,https://www.wikidata.org/wiki/Q837,https://en.wikipedia.org/wiki/Nepal
-Netherlands,https://www.wikidata.org/wiki/Q55,https://en.wikipedia.org/wiki/Netherlands
-New Caledonia,https://www.wikidata.org/wiki/Q33788,https://en.wikipedia.org/wiki/New_Caledonia
-New Zealand,https://www.wikidata.org/wiki/Q664,https://en.wikipedia.org/wiki/New_Zealand
-Nicaragua,https://www.wikidata.org/wiki/Q811,https://en.wikipedia.org/wiki/Nicaragua
-Niger,https://www.wikidata.org/wiki/Q1032,https://en.wikipedia.org/wiki/Niger
-Nigeria,https://www.wikidata.org/wiki/Q1033,https://en.wikipedia.org/wiki/Nigeria
-North Korea,https://www.wikidata.org/wiki/Q423,https://en.wikipedia.org/wiki/North_Korea
-North Macedonia,https://www.wikidata.org/wiki/Q221,https://en.wikipedia.org/wiki/North_Macedonia
-Northern Ireland,https://www.wikidata.org/wiki/Q26,https://en.wikipedia.org/wiki/Northern_Ireland
-Norway,https://www.wikidata.org/wiki/Q20,https://en.wikipedia.org/wiki/Norway
-Oman,https://www.wikidata.org/wiki/Q842,https://en.wikipedia.org/wiki/Oman
-Pakistan,https://www.wikidata.org/wiki/Q843,https://en.wikipedia.org/wiki/Pakistan
-Palau,https://www.wikidata.org/wiki/Q695,https://en.wikipedia.org/wiki/Palau
-Palestinian Territories,https://www.wikidata.org/wiki/Q407199,https://en.wikipedia.org/wiki/Palestinian_territories
-Panama,https://www.wikidata.org/wiki/Q804,https://en.wikipedia.org/wiki/Panama
-Papua New Guinea,https://www.wikidata.org/wiki/Q691,https://en.wikipedia.org/wiki/Papua_New_Guinea
-Paraguay,https://www.wikidata.org/wiki/Q733,https://en.wikipedia.org/wiki/Paraguay
-Peru,https://www.wikidata.org/wiki/Q419,https://en.wikipedia.org/wiki/Peru
-Philippines,https://www.wikidata.org/wiki/Q928,https://en.wikipedia.org/wiki/Philippines
-Poland,https://www.wikidata.org/wiki/Q36,https://en.wikipedia.org/wiki/Poland
-Portugal,https://www.wikidata.org/wiki/Q45,https://en.wikipedia.org/wiki/Portugal
-Puerto Rico,https://www.wikidata.org/wiki/Q1183,https://en.wikipedia.org/wiki/Puerto_Rico
-Qatar,https://www.wikidata.org/wiki/Q846,https://en.wikipedia.org/wiki/Qatar
-Romania,https://www.wikidata.org/wiki/Q218,https://en.wikipedia.org/wiki/Romania
-Russia,https://www.wikidata.org/wiki/Q159,https://en.wikipedia.org/wiki/Russia
-Rwanda,https://www.wikidata.org/wiki/Q1037,https://en.wikipedia.org/wiki/Rwanda
-Saint Helena Ascension and Tristan da Cunha,https://www.wikidata.org/wiki/Q34497,https://en.wikipedia.org/wiki/Saint_Helena
-Saint Kitts and Nevis,https://www.wikidata.org/wiki/Q763,https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis
-Saint Lucia,https://www.wikidata.org/wiki/Q760,https://en.wikipedia.org/wiki/Saint_Lucia
-Saint Vincent and the Grenadines,https://www.wikidata.org/wiki/Q757,https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines
-Samoa,https://www.wikidata.org/wiki/Q683,https://en.wikipedia.org/wiki/Samoa
-San Marino,https://www.wikidata.org/wiki/Q238,https://en.wikipedia.org/wiki/San_Marino
-Sao Tome and Principe,https://www.wikidata.org/wiki/Q1039,https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe
-Saudi Arabia,https://www.wikidata.org/wiki/Q851,https://en.wikipedia.org/wiki/Saudi_Arabia
-Scotland,https://www.wikidata.org/wiki/Q22,https://en.wikipedia.org/wiki/Scotland
-Senegal,https://www.wikidata.org/wiki/Q1041,https://en.wikipedia.org/wiki/Senegal
-Serbia,https://www.wikidata.org/wiki/Q403,https://en.wikipedia.org/wiki/Serbia
-Seychelles,https://www.wikidata.org/wiki/Q1042,https://en.wikipedia.org/wiki/Seychelles
-Sierra Leone,https://www.wikidata.org/wiki/Q1044,https://en.wikipedia.org/wiki/Sierra_Leone
-Singapore,https://www.wikidata.org/wiki/Q334,https://en.wikipedia.org/wiki/Singapore
-Slovakia,https://www.wikidata.org/wiki/Q214,https://en.wikipedia.org/wiki/Slovakia
-Slovenia,https://www.wikidata.org/wiki/Q215,https://en.wikipedia.org/wiki/Slovenia
-Solomon Islands,https://www.wikidata.org/wiki/Q685,https://en.wikipedia.org/wiki/Solomon_Islands
-Somalia,https://www.wikidata.org/wiki/Q1045,https://en.wikipedia.org/wiki/Somalia
-South Africa,https://www.wikidata.org/wiki/Q258,https://en.wikipedia.org/wiki/South_Africa
-South Korea,https://www.wikidata.org/wiki/Q884,https://en.wikipedia.org/wiki/South_Korea
-South Sudan,https://www.wikidata.org/wiki/Q958,https://en.wikipedia.org/wiki/South_Sudan
-Spain,https://www.wikidata.org/wiki/Q29,https://en.wikipedia.org/wiki/Spain
-Sri Lanka,https://www.wikidata.org/wiki/Q854,https://en.wikipedia.org/wiki/Sri_Lanka
-Sudan,https://www.wikidata.org/wiki/Q1049,https://en.wikipedia.org/wiki/Sudan
-Suriname,https://www.wikidata.org/wiki/Q730,https://en.wikipedia.org/wiki/Suriname
-Sweden,https://www.wikidata.org/wiki/Q34,https://en.wikipedia.org/wiki/Sweden
-Switzerland,https://www.wikidata.org/wiki/Q39,https://en.wikipedia.org/wiki/Switzerland
-Syria,https://www.wikidata.org/wiki/Q858,https://en.wikipedia.org/wiki/Syria
-Taiwan,https://www.wikidata.org/wiki/Q865,https://en.wikipedia.org/wiki/Taiwan
-Tajikistan,https://www.wikidata.org/wiki/Q863,https://en.wikipedia.org/wiki/Tajikistan
-Tanzania,https://www.wikidata.org/wiki/Q924,https://en.wikipedia.org/wiki/Tanzania
-Thailand,https://www.wikidata.org/wiki/Q869,https://en.wikipedia.org/wiki/Thailand
-Togo,https://www.wikidata.org/wiki/Q945,https://en.wikipedia.org/wiki/Togo
-Tonga,https://www.wikidata.org/wiki/Q678,https://en.wikipedia.org/wiki/Tonga
-Trinidad and Tobago,https://www.wikidata.org/wiki/Q754,https://en.wikipedia.org/wiki/Trinidad_and_Tobago
-Tunisia,https://www.wikidata.org/wiki/Q948,https://en.wikipedia.org/wiki/Tunisia
-Turkey,https://www.wikidata.org/wiki/Q43,https://en.wikipedia.org/wiki/Turkey
-Turkmenistan,https://www.wikidata.org/wiki/Q874,https://en.wikipedia.org/wiki/Turkmenistan
-Turks and Caicos Islands,https://www.wikidata.org/wiki/Q18221,https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands
-Tuvalu,https://www.wikidata.org/wiki/Q672,https://en.wikipedia.org/wiki/Tuvalu
-U.S. Virgin Islands,https://www.wikidata.org/wiki/Q11703,https://en.wikipedia.org/wiki/United_States_Virgin_Islands
-Uganda,https://www.wikidata.org/wiki/Q1036,https://en.wikipedia.org/wiki/Uganda
-Ukraine,https://www.wikidata.org/wiki/Q212,https://en.wikipedia.org/wiki/Ukraine
-United Arab Emirates,https://www.wikidata.org/wiki/Q878,https://en.wikipedia.org/wiki/United_Arab_Emirates
-United Kingdom,https://www.wikidata.org/wiki/Q145,https://en.wikipedia.org/wiki/United_Kingdom
-United States,https://www.wikidata.org/wiki/Q30,https://en.wikipedia.org/wiki/United_States
-Uruguay,https://www.wikidata.org/wiki/Q77,https://en.wikipedia.org/wiki/Uruguay
-Uzbekistan,https://www.wikidata.org/wiki/Q265,https://en.wikipedia.org/wiki/Uzbekistan
-Vatican City,https://www.wikidata.org/wiki/Q237,https://en.wikipedia.org/wiki/Vatican_City
-Venezuela,https://www.wikidata.org/wiki/Q717,https://en.wikipedia.org/wiki/Venezuela
-Vietnam,https://www.wikidata.org/wiki/Q881,https://en.wikipedia.org/wiki/Vietnam
-Wales,https://www.wikidata.org/wiki/Q25,https://en.wikipedia.org/wiki/Wales
-West Indies,https://www.wikidata.org/wiki/Q669037,https://en.wikipedia.org/wiki/West_Indies
-Western Sahara,https://www.wikidata.org/wiki/Q6250,https://en.wikipedia.org/wiki/Western_Sahara
-Yemen,https://www.wikidata.org/wiki/Q805,https://en.wikipedia.org/wiki/Yemen
-Zambia,https://www.wikidata.org/wiki/Q953,https://en.wikipedia.org/wiki/Zambia
-Zimbabwe,https://www.wikidata.org/wiki/Q954,https://en.wikipedia.org/wiki/Zimbabwe
-,,
-,,
-ASEAN Countries,https://www.wikidata.org/wiki/Q29957542,
-Americas,https://www.wikidata.org/wiki/Q828,https://en.wikipedia.org/wiki/Americas
-Antarctic,https://www.wikidata.org/wiki/Q1555938,https://en.wikipedia.org/wiki/Antarctic
-Asia / Pacific,https://www.wikidata.org/wiki/Q1070940,https://en.wikipedia.org/wiki/Asia-Pacific
-Australia / New Zealand,,
-Baltic States,https://www.wikidata.org/wiki/Q39731,https://en.wikipedia.org/wiki/Baltic_states
-Benelux,https://www.wikidata.org/wiki/Q13116,https://en.wikipedia.org/wiki/Benelux
-British Indian Ocean Territory,https://www.wikidata.org/wiki/Q43448,https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory
-CIS Countries,https://www.wikidata.org/wiki/Q7779,https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States
-Caribbean,https://www.wikidata.org/wiki/Q664609,https://en.wikipedia.org/wiki/Caribbean
-Central / Eastern Europe,,
-Central Africa,https://www.wikidata.org/wiki/Q27433,https://en.wikipedia.org/wiki/Central_Africa
-Central America,https://www.wikidata.org/wiki/Q27611,https://en.wikipedia.org/wiki/Central_America
-Central Asia,https://www.wikidata.org/wiki/Q27275,https://en.wikipedia.org/wiki/Central_Asia
-East Africa,https://www.wikidata.org/wiki/Q27407,https://en.wikipedia.org/wiki/East_Africa
-East Asia,https://www.wikidata.org/wiki/Q27231,https://en.wikipedia.org/wiki/East_Asia
-East Coast (PADD I),https://www.wikidata.org/wiki/Q4268,https://en.wikipedia.org/wiki/East_Coast_of_the_United_States
-East European Countries,https://www.wikidata.org/wiki/Q27468,https://en.wikipedia.org/wiki/Eastern_Europe
-Emerging Market Countries,,
-Energy Region Americas,,
-Energy Region Asia,,
-Energy Region Caribbean / Central America,,
-Energy Region Central / Eastern Europe,,
-Energy Region Europe / Middle East / Africa,,
-Energy Region Former Soviet Union,,
-Energy Region Mediterranean / North Africa,,
-Energy Region Middle East,,
-Energy Region North America,,
-Energy Region North Asia,,
-Energy Region North-West Europe,,
-Energy Region Other Africa,,
-Energy Region Pacific,,
-Energy Region South America,,
-Energy Region South Asia,,
-Energy Region South-East Asia,,
-Euro Zone,https://www.wikidata.org/wiki/Q8268,https://en.wikipedia.org/wiki/Eurozone
-Euro Zone as a Whole,,
-Gulf,,
-Gulf Coast (PADD III),https://www.wikidata.org/wiki/Q55241,https://en.wikipedia.org/wiki/Gulf_Coast_of_the_United_States
-Indo-China,https://www.wikidata.org/wiki/Q43467,https://en.wikipedia.org/wiki/Mainland_Southeast_Asia
-Middle East,https://www.wikidata.org/wiki/Q7204,https://en.wikipedia.org/wiki/Middle_East
-Midwest (PADD II),https://www.wikidata.org/wiki/Q186545,https://en.wikipedia.org/wiki/Midwestern_United_States
-Nordic States,https://www.wikidata.org/wiki/Q52062,https://en.wikipedia.org/wiki/Nordic_countries
-North Africa,https://www.wikidata.org/wiki/Q27381,https://en.wikipedia.org/wiki/North_Africa
-North Asia,https://www.wikidata.org/wiki/Q27329,https://en.wikipedia.org/wiki/North_Asia
-Pacific Islands,https://www.wikidata.org/wiki/Q844857,https://en.wikipedia.org/wiki/Pacific_Islands
-Scandinavia,https://www.wikidata.org/wiki/Q21195,https://en.wikipedia.org/wiki/Scandinavia
-South America / Central America,,
-South Asia,https://www.wikidata.org/wiki/Q771405,https://en.wikipedia.org/wiki/South_Asia
-South China Sea,https://www.wikidata.org/wiki/Q1141500,https://en.wikipedia.org/wiki/South_China_Sea_Islands
-South-East Asia,,
-South-Eastern Europe,,
-South-West Asia,,
-Southern Africa,https://www.wikidata.org/wiki/Q27394,https://en.wikipedia.org/wiki/Southern_Africa
-Southern France,https://www.wikidata.org/wiki/Q1237299,https://en.wikipedia.org/wiki/Southern_France
-West Africa,https://www.wikidata.org/wiki/Q4412,https://en.wikipedia.org/wiki/West_Africa
-West Coast (PADD V),https://www.wikidata.org/wiki/Q12606,https://en.wikipedia.org/wiki/West_Coast_of_the_United_States
-Western Europe,https://www.wikidata.org/wiki/Q27496,https://en.wikipedia.org/wiki/Western_Europe
-,,
-CONTINENT,,
-Antarctica,https://www.wikidata.org/wiki/Q51,https://en.wikipedia.org/wiki/Antarctica
-Africa,https://www.wikidata.org/wiki/Q15,https://en.wikipedia.org/wiki/Africa
-Asia,https://www.wikidata.org/wiki/Q48,https://en.wikipedia.org/wiki/Asia
-Australia,https://www.wikidata.org/wiki/Q3960,https://en.wikipedia.org/wiki/Australia_(continent)
-Europe,https://www.wikidata.org/wiki/Q46,https://en.wikipedia.org/wiki/Europe
-North America,https://www.wikidata.org/wiki/Q49,https://en.wikipedia.org/wiki/North_America
-South America,https://www.wikidata.org/wiki/Q18,https://en.wikipedia.org/wiki/South_America
-,,
-"US STATE (missing RI, SD, VT?)",,
-Alabama,https://www.wikidata.org/wiki/Q173,https://en.wikipedia.org/wiki/Alabama
-Alaska,https://www.wikidata.org/wiki/Q797,https://en.wikipedia.org/wiki/Alaska
-Arizona,https://www.wikidata.org/wiki/Q816,https://en.wikipedia.org/wiki/Arizona
-Arkansas,https://www.wikidata.org/wiki/Q1612,https://en.wikipedia.org/wiki/Arkansas
-California,https://www.wikidata.org/wiki/Q99,https://en.wikipedia.org/wiki/California
-Colorado,https://www.wikidata.org/wiki/Q1261,https://en.wikipedia.org/wiki/Colorado
-Connecticut,https://www.wikidata.org/wiki/Q779,https://en.wikipedia.org/wiki/Connecticut
-Delaware,https://www.wikidata.org/wiki/Q1393,https://en.wikipedia.org/wiki/Delaware
-Florida,https://www.wikidata.org/wiki/Q812,https://en.wikipedia.org/wiki/Florida
-Georgia (US State),https://www.wikidata.org/wiki/Q1428,https://en.wikipedia.org/wiki/Georgia_(U.S._state)
-Hawaii,https://www.wikidata.org/wiki/Q782,https://en.wikipedia.org/wiki/Hawaii
-Idaho,https://www.wikidata.org/wiki/Q1221,https://en.wikipedia.org/wiki/Idaho
-Illinois,https://www.wikidata.org/wiki/Q1204,https://en.wikipedia.org/wiki/Illinois
-Indiana,https://www.wikidata.org/wiki/Q1415,https://en.wikipedia.org/wiki/Indiana
-Iowa,https://www.wikidata.org/wiki/Q1546,https://en.wikipedia.org/wiki/Iowa
-Kansas,https://www.wikidata.org/wiki/Q1558,https://en.wikipedia.org/wiki/Kansas
-Kentucky,https://www.wikidata.org/wiki/Q1603,https://en.wikipedia.org/wiki/Kentucky
-Louisiana,https://www.wikidata.org/wiki/Q1588,https://en.wikipedia.org/wiki/Louisiana
-Maine,https://www.wikidata.org/wiki/Q724,https://en.wikipedia.org/wiki/Maine
-Maryland,https://www.wikidata.org/wiki/Q1391,https://en.wikipedia.org/wiki/Maryland
-Massachusetts,https://www.wikidata.org/wiki/Q771,https://en.wikipedia.org/wiki/Massachusetts
-Michigan,https://www.wikidata.org/wiki/Q1166,https://en.wikipedia.org/wiki/Michigan
-Minnesota,https://www.wikidata.org/wiki/Q1527,https://en.wikipedia.org/wiki/Minnesota
-Mississippi,https://www.wikidata.org/wiki/Q1494,https://en.wikipedia.org/wiki/Mississippi
-Missouri,https://www.wikidata.org/wiki/Q1581,https://en.wikipedia.org/wiki/Missouri
-Montana,https://www.wikidata.org/wiki/Q1212,https://en.wikipedia.org/wiki/Montana
-Nebraska,https://www.wikidata.org/wiki/Q1553,https://en.wikipedia.org/wiki/Nebraska
-Nevada,https://www.wikidata.org/wiki/Q1227,https://en.wikipedia.org/wiki/Nevada
-New Hampshire,https://www.wikidata.org/wiki/Q759,https://en.wikipedia.org/wiki/New_Hampshire
-New Jersey,https://www.wikidata.org/wiki/Q1408,https://en.wikipedia.org/wiki/New_Jersey
-New Mexico,https://www.wikidata.org/wiki/Q1522,https://en.wikipedia.org/wiki/New_Mexico
-New York,https://www.wikidata.org/wiki/Q1384,https://en.wikipedia.org/wiki/New_York_(state)
-North Carolina,https://www.wikidata.org/wiki/Q1454,https://en.wikipedia.org/wiki/North_Carolina
-North Dakota,https://www.wikidata.org/wiki/Q1207,https://en.wikipedia.org/wiki/North_Dakota
-Ohio,https://www.wikidata.org/wiki/Q1397,https://en.wikipedia.org/wiki/Ohio
-Oklahoma,https://www.wikidata.org/wiki/Q1649,https://en.wikipedia.org/wiki/Oklahoma
-Oregon,https://www.wikidata.org/wiki/Q824,https://en.wikipedia.org/wiki/Oregon
-Pennsylvania,https://www.wikidata.org/wiki/Q1400,https://en.wikipedia.org/wiki/Pennsylvania
-South Carolina,https://www.wikidata.org/wiki/Q1456,https://en.wikipedia.org/wiki/South_Carolina
-Tennessee,https://www.wikidata.org/wiki/Q1509,https://en.wikipedia.org/wiki/Tennessee
-Texas,https://www.wikidata.org/wiki/Q1439,https://en.wikipedia.org/wiki/Texas
-Utah,https://www.wikidata.org/wiki/Q829,https://en.wikipedia.org/wiki/Utah
-Virginia,https://www.wikidata.org/wiki/Q1370,https://en.wikipedia.org/wiki/Virginia
-Washington,https://www.wikidata.org/wiki/Q1223,https://en.wikipedia.org/wiki/Washington_(state)
-West Virginia,https://www.wikidata.org/wiki/Q1371,https://en.wikipedia.org/wiki/West_Virginia
-Wisconsin,https://www.wikidata.org/wiki/Q1537,https://en.wikipedia.org/wiki/Wisconsin
-Wyoming,https://www.wikidata.org/wiki/Q1214,https://en.wikipedia.org/wiki/Wyoming
-,,
-SPORTS,,
-Alpine Skiing,https://www.wikidata.org/wiki/Q186222,https://en.wikipedia.org/wiki/Alpine_skiing
-American Football,https://www.wikidata.org/wiki/Q41323,https://en.wikipedia.org/wiki/American_football
-Angling,https://www.wikidata.org/wiki/Q14373,https://en.wikipedia.org/wiki/Fishing
-Aquatic Sports,https://www.wikidata.org/wiki/Q61065,https://en.wikipedia.org/wiki/List_of_water_sports
-Archery,https://www.wikidata.org/wiki/Q108429,https://en.wikipedia.org/wiki/Archery
-Athletics,https://www.wikidata.org/wiki/Q542,https://en.wikipedia.org/wiki/Sport_of_athletics
-Australian Rules Football,https://www.wikidata.org/wiki/Q50776,https://en.wikipedia.org/wiki/Australian_rules_football
-Badminton,https://www.wikidata.org/wiki/Q7291,https://en.wikipedia.org/wiki/Badminton
-Baseball,https://www.wikidata.org/wiki/Q5369,https://en.wikipedia.org/wiki/Baseball
-Basketball,https://www.wikidata.org/wiki/Q5372,https://en.wikipedia.org/wiki/Basketball
-Boating / Sailing,https://www.wikidata.org/wiki/Q14085739,https://en.wikipedia.org/wiki/Sailing_(sport)
-Bobsleigh,https://www.wikidata.org/wiki/Q177275,https://en.wikipedia.org/wiki/Bobsleigh
-Boxing,https://www.wikidata.org/wiki/Q32112,https://en.wikipedia.org/wiki/Boxing
-Canoeing,https://www.wikidata.org/wiki/Q213934,https://en.wikipedia.org/wiki/Canoeing_and_kayaking
-Chess,https://www.wikidata.org/wiki/Q718,https://en.wikipedia.org/wiki/Chess
-Climbing,https://www.wikidata.org/wiki/Q22857,https://en.wikipedia.org/wiki/Climbing
-Cricket,https://www.wikidata.org/wiki/Q5375,https://en.wikipedia.org/wiki/Cricket
-Cycling,https://www.wikidata.org/wiki/Q53121,https://en.wikipedia.org/wiki/Cycling
-Diving,https://www.wikidata.org/wiki/Q7735,https://en.wikipedia.org/wiki/Diving_(sport)
-Doping / Drugs Tests,https://www.wikidata.org/wiki/Q166376,https://en.wikipedia.org/wiki/Doping_in_sport
-Equestrian,https://www.wikidata.org/wiki/Q179226,https://en.wikipedia.org/wiki/Equestrianism
-Fencing,https://www.wikidata.org/wiki/Q12100,https://en.wikipedia.org/wiki/Fencing
-Field Hockey,https://www.wikidata.org/wiki/Q1455,https://en.wikipedia.org/wiki/Field_hockey
-Figure Skating,https://www.wikidata.org/wiki/Q38108,https://en.wikipedia.org/wiki/Figure_skating
-Formula 1,https://www.wikidata.org/wiki/Q1968,https://en.wikipedia.org/wiki/Formula_One
-Golf,https://www.wikidata.org/wiki/Q5377,https://en.wikipedia.org/wiki/Golf
-Gymnastics,https://www.wikidata.org/wiki/Q43450,https://en.wikipedia.org/wiki/Gymnastics
-Horse Racing,https://www.wikidata.org/wiki/Q187916,https://en.wikipedia.org/wiki/Horse_racing
-Ice Hockey,https://www.wikidata.org/wiki/Q41466,https://en.wikipedia.org/wiki/Ice_hockey
-Jai Alai / Pelota,https://www.wikidata.org/wiki/Q1193361,https://en.wikipedia.org/wiki/Jai_alai
-Judo,https://www.wikidata.org/wiki/Q11420,https://en.wikipedia.org/wiki/Judo
-Karate,https://www.wikidata.org/wiki/Q11419,https://en.wikipedia.org/wiki/Karate
-Marathon,https://www.wikidata.org/wiki/Q40244,https://en.wikipedia.org/wiki/Marathon
-Martial Arts,https://www.wikidata.org/wiki/Q11417,https://en.wikipedia.org/wiki/Martial_arts
-Mixed Martial Arts,https://www.wikidata.org/wiki/Q114466,https://en.wikipedia.org/wiki/Mixed_martial_arts
-Motor Racing,https://www.wikidata.org/wiki/Q5386,https://en.wikipedia.org/wiki/Auto_racing
-Motorcycle Racing,https://www.wikidata.org/wiki/Q17163326,https://en.wikipedia.org/wiki/Motorcycle_racing
-NBA Basketball,https://www.wikidata.org/wiki/Q155223,https://en.wikipedia.org/wiki/National_Basketball_Association
-NFL American Football,https://www.wikidata.org/wiki/Q1215884,https://en.wikipedia.org/wiki/National_Football_League
-NHL Ice Hockey,https://www.wikidata.org/wiki/Q1215892,https://en.wikipedia.org/wiki/National_Hockey_League
-Nordic Skiing,https://www.wikidata.org/wiki/Q216613,https://en.wikipedia.org/wiki/Nordic_skiing
-Pool,https://www.wikidata.org/wiki/Q11020,https://en.wikipedia.org/wiki/Pool_(cue_sports)
-Power Boating,,
-Rallying,https://www.wikidata.org/wiki/Q7856,https://en.wikipedia.org/wiki/Rallying
-Rugby League,https://www.wikidata.org/wiki/Q10962,https://en.wikipedia.org/wiki/Rugby_league
-Rugby Union,https://www.wikidata.org/wiki/Q5849,https://en.wikipedia.org/wiki/Rugby_union
-Shooting,https://www.wikidata.org/wiki/Q206989,https://en.wikipedia.org/wiki/Shooting_sports
-Snooker,https://www.wikidata.org/wiki/Q11015,https://en.wikipedia.org/wiki/Snooker
-Snowboarding,https://www.wikidata.org/wiki/Q178131,https://en.wikipedia.org/wiki/Snowboarding
-Soccer,https://www.wikidata.org/wiki/Q2736,https://en.wikipedia.org/wiki/Association_football
-Softball,https://www.wikidata.org/wiki/Q171038,https://en.wikipedia.org/wiki/Softball
-Sport,https://www.wikidata.org/wiki/Q349,https://en.wikipedia.org/wiki/Sport
-Sumo Wrestling,https://www.wikidata.org/wiki/Q40561,https://en.wikipedia.org/wiki/Sumo
-Surfing,https://www.wikidata.org/wiki/Q159992,https://en.wikipedia.org/wiki/Surfing
-Swimming,https://www.wikidata.org/wiki/Q31920,https://en.wikipedia.org/wiki/Swimming_(sport)
-Table Tennis,https://www.wikidata.org/wiki/Q3930,https://en.wikipedia.org/wiki/Table_tennis
-Tennis,https://www.wikidata.org/wiki/Q847,https://en.wikipedia.org/wiki/Tennis
-Tenpin Bowling,https://www.wikidata.org/wiki/Q172809,https://en.wikipedia.org/wiki/Ten-pin_bowling
-Triathlon,https://www.wikidata.org/wiki/Q10980,https://en.wikipedia.org/wiki/Triathlon
-Video Games,https://www.wikidata.org/wiki/Q7889,https://en.wikipedia.org/wiki/Video_game
-Weightlifting,https://www.wikidata.org/wiki/Q83462,https://en.wikipedia.org/wiki/Olympic_weightlifting
-Wrestling,https://www.wikidata.org/wiki/Q42486,https://en.wikipedia.org/wiki/Wrestling
-Yachting / Sailing,https://www.wikidata.org/wiki/Q14085739,https://en.wikipedia.org/wiki/Sailing_(sport)
-,,
-ART / CULTURE,,
-Art,https://www.wikidata.org/wiki/Q735,https://en.wikipedia.org/wiki/Art
-Arts / Culture / Entertainment,https://www.wikidata.org/wiki/Q173799,https://en.wikipedia.org/wiki/Entertainment
-Books,https://www.wikidata.org/wiki/Q571,https://en.wikipedia.org/wiki/Book
-Celebrities,https://www.wikidata.org/wiki/Q211236,https://en.wikipedia.org/wiki/Celebrity
-Fashion,https://www.wikidata.org/wiki/Q12684,https://en.wikipedia.org/wiki/Fashion
-Film,https://www.wikidata.org/wiki/Q11424,https://en.wikipedia.org/wiki/Film
-Human Interest / Brights / Odd News,,
-Living / Lifestyle,https://www.wikidata.org/wiki/Q32090,https://en.wikipedia.org/wiki/Lifestyle_(sociology)
-Music,https://www.wikidata.org/wiki/Q638,https://en.wikipedia.org/wiki/Music
-Television,https://www.wikidata.org/wiki/Q289,https://en.wikipedia.org/wiki/Television
-Theater,https://www.wikidata.org/wiki/Q11635,https://en.wikipedia.org/wiki/Theatre
-,,
-OTHER,,
-BULLETIN,,
-Bowls,,
-Reunion,,
+﻿name,category,wikidataURL,wikipediaURL
+New York City,city,https://www.wikidata.org/wiki/Q60,https://en.wikipedia.org/wiki/New_York_City
+Washington DC,city,https://www.wikidata.org/wiki/Q61,https://en.wikipedia.org/wiki/Washington_D.C.
+Afghanistan,country,https://www.wikidata.org/wiki/Q889,https://en.wikipedia.org/wiki/Afghanistan
+Albania,country,https://www.wikidata.org/wiki/Q222,https://en.wikipedia.org/wiki/Albania
+Algeria,country,https://www.wikidata.org/wiki/Q262,https://en.wikipedia.org/wiki/Algeria
+American Samoa,country,https://www.wikidata.org/wiki/Q16641,https://en.wikipedia.org/wiki/American_Samoa
+Andorra,country,https://www.wikidata.org/wiki/Q228,https://en.wikipedia.org/wiki/Andorra
+Angola,country,https://www.wikidata.org/wiki/Q916,https://en.wikipedia.org/wiki/Angola
+Anguilla,country,https://www.wikidata.org/wiki/Q25228,https://en.wikipedia.org/wiki/Anguilla
+Antigua and Barbuda,country,https://www.wikidata.org/wiki/Q316390,https://en.wikipedia.org/wiki/Antigua
+Argentina,country,https://www.wikidata.org/wiki/Q414,https://en.wikipedia.org/wiki/Argentina
+Armenia,country,https://www.wikidata.org/wiki/Q399,https://en.wikipedia.org/wiki/Armenia
+Aruba,country,https://www.wikidata.org/wiki/Q21203,https://en.wikipedia.org/wiki/Aruba
+Austria,country,https://www.wikidata.org/wiki/Q40,https://en.wikipedia.org/wiki/Austria
+Azerbaijan,country,https://www.wikidata.org/wiki/Q227,https://en.wikipedia.org/wiki/Azerbaijan
+Bahamas,country,https://www.wikidata.org/wiki/Q778,https://en.wikipedia.org/wiki/The_Bahamas
+Bahrain,country,https://www.wikidata.org/wiki/Q398,https://en.wikipedia.org/wiki/Bahrain
+Bangladesh,country,https://www.wikidata.org/wiki/Q902,https://en.wikipedia.org/wiki/Bangladesh
+Barbados,country,https://www.wikidata.org/wiki/Q244,https://en.wikipedia.org/wiki/Barbados
+Belarus,country,https://www.wikidata.org/wiki/Q184,https://en.wikipedia.org/wiki/Belarus
+Belgium,country,https://www.wikidata.org/wiki/Q31,https://en.wikipedia.org/wiki/Belgium
+Belize,country,https://www.wikidata.org/wiki/Q242,https://en.wikipedia.org/wiki/Belize
+Benin,country,https://www.wikidata.org/wiki/Q962,https://en.wikipedia.org/wiki/Benin
+Bermuda,country,https://www.wikidata.org/wiki/Q23635,https://en.wikipedia.org/wiki/Bermuda
+Bhutan,country,https://www.wikidata.org/wiki/Q917,https://en.wikipedia.org/wiki/Bhutan
+Bolivia,country,https://www.wikidata.org/wiki/Q750,https://en.wikipedia.org/wiki/Bolivia
+Bosnia and Herzegovina,country,https://www.wikidata.org/wiki/Q225,https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina
+Botswana,country,https://www.wikidata.org/wiki/Q963,https://en.wikipedia.org/wiki/Botswana
+Brazil,country,https://www.wikidata.org/wiki/Q155,https://en.wikipedia.org/wiki/Brazil
+British Virgin Islands,country,https://www.wikidata.org/wiki/Q25305,https://en.wikipedia.org/wiki/British_Virgin_Islands
+Brunei,country,https://www.wikidata.org/wiki/Q921,https://en.wikipedia.org/wiki/Brunei
+Bulgaria,country,https://www.wikidata.org/wiki/Q219,https://en.wikipedia.org/wiki/Bulgaria
+Burkina Faso,country,https://www.wikidata.org/wiki/Q965,https://en.wikipedia.org/wiki/Burkina_Faso
+Burundi,country,https://www.wikidata.org/wiki/Q967,https://en.wikipedia.org/wiki/Burundi
+Cambodia,country,https://www.wikidata.org/wiki/Q424,https://en.wikipedia.org/wiki/Cambodia
+Cameroon,country,https://www.wikidata.org/wiki/Q1009,https://en.wikipedia.org/wiki/Cameroon
+Canada,country,https://www.wikidata.org/wiki/Q16,https://en.wikipedia.org/wiki/Canada
+Cape Verde,country,https://www.wikidata.org/wiki/Q1011,https://en.wikipedia.org/wiki/Cape_Verde
+Cayman Islands,country,https://www.wikidata.org/wiki/Q5785,https://en.wikipedia.org/wiki/Cayman_Islands
+Central African Republic,country,https://www.wikidata.org/wiki/Q929,https://en.wikipedia.org/wiki/Central_African_Republic
+Chad,country,https://www.wikidata.org/wiki/Q657,https://en.wikipedia.org/wiki/Chad
+Channel Islands,country,https://www.wikidata.org/wiki/Q42314,https://en.wikipedia.org/wiki/Channel_Islands
+Chile,country,https://www.wikidata.org/wiki/Q298,https://en.wikipedia.org/wiki/Chile
+China (PRC),country,https://www.wikidata.org/wiki/Q148,https://en.wikipedia.org/wiki/China
+Colombia,country,https://www.wikidata.org/wiki/Q739,https://en.wikipedia.org/wiki/Colombia
+Comoros,country,https://www.wikidata.org/wiki/Q970,https://en.wikipedia.org/wiki/Comoros
+Congo (DRC),country,https://www.wikidata.org/wiki/Q974,https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo
+Congo (RC),country,https://www.wikidata.org/wiki/Q971,https://en.wikipedia.org/wiki/Republic_of_the_Congo
+Cook Islands,country,https://www.wikidata.org/wiki/Q26988,https://en.wikipedia.org/wiki/Cook_Islands
+Costa Rica,country,https://www.wikidata.org/wiki/Q800,https://en.wikipedia.org/wiki/Costa_Rica
+Croatia,country,https://www.wikidata.org/wiki/Q224,https://en.wikipedia.org/wiki/Croatia
+Cuba,country,https://www.wikidata.org/wiki/Q241,https://en.wikipedia.org/wiki/Cuba
+Cyprus,country,https://www.wikidata.org/wiki/Q229,https://en.wikipedia.org/wiki/Cyprus
+Czech Republic,country,https://www.wikidata.org/wiki/Q213,https://en.wikipedia.org/wiki/Czech_Republic
+Denmark,country,https://www.wikidata.org/wiki/Q35,https://en.wikipedia.org/wiki/Denmark
+Djibouti,country,https://www.wikidata.org/wiki/Q977,https://en.wikipedia.org/wiki/Djibouti
+Dominican Republic,country,https://www.wikidata.org/wiki/Q786,https://en.wikipedia.org/wiki/Dominican_Republic
+East Timor / Timor-Leste,country,https://www.wikidata.org/wiki/Q574,https://en.wikipedia.org/wiki/East_Timor
+Ecuador,country,https://www.wikidata.org/wiki/Q736,https://en.wikipedia.org/wiki/Ecuador
+Egypt,country,https://www.wikidata.org/wiki/Q79,https://en.wikipedia.org/wiki/Egypt
+El Salvador,country,https://www.wikidata.org/wiki/Q792,https://en.wikipedia.org/wiki/El_Salvador
+England,country,https://www.wikidata.org/wiki/Q21,https://en.wikipedia.org/wiki/England
+Equatorial Guinea,country,https://www.wikidata.org/wiki/Q983,https://en.wikipedia.org/wiki/Equatorial_Guinea
+Eritrea,country,https://www.wikidata.org/wiki/Q986,https://en.wikipedia.org/wiki/Eritrea
+Estonia,country,https://www.wikidata.org/wiki/Q191,https://en.wikipedia.org/wiki/Estonia
+Eswatini,country,https://www.wikidata.org/wiki/Q1050,https://en.wikipedia.org/wiki/Eswatini
+Ethiopia,country,https://www.wikidata.org/wiki/Q115,https://en.wikipedia.org/wiki/Ethiopia
+Faroe Islands,country,https://www.wikidata.org/wiki/Q4628,https://en.wikipedia.org/wiki/Faroe_Islands
+Fiji,country,https://www.wikidata.org/wiki/Q712,https://en.wikipedia.org/wiki/Fiji
+Finland,country,https://www.wikidata.org/wiki/Q33,https://en.wikipedia.org/wiki/Finland
+France,country,https://www.wikidata.org/wiki/Q142,https://en.wikipedia.org/wiki/France
+French Guiana,country,https://www.wikidata.org/wiki/Q3769,https://en.wikipedia.org/wiki/French_Guiana
+Gabon,country,https://www.wikidata.org/wiki/Q1000,https://en.wikipedia.org/wiki/Gabon
+Gambia,country,https://www.wikidata.org/wiki/Q1005,https://en.wikipedia.org/wiki/The_Gambia
+Georgia (Country),country,https://www.wikidata.org/wiki/Q230,https://en.wikipedia.org/wiki/Georgia_(country)
+Germany,country,https://www.wikidata.org/wiki/Q183,https://en.wikipedia.org/wiki/Germany
+Ghana,country,https://www.wikidata.org/wiki/Q117,https://en.wikipedia.org/wiki/Ghana
+Gibraltar,country,https://www.wikidata.org/wiki/Q1410,https://en.wikipedia.org/wiki/Gibraltar
+Greece,country,https://www.wikidata.org/wiki/Q41,https://en.wikipedia.org/wiki/Greece
+Greenland,country,https://www.wikidata.org/wiki/Q223,https://en.wikipedia.org/wiki/Greenland
+Grenada,country,https://www.wikidata.org/wiki/Q769,https://en.wikipedia.org/wiki/Grenada
+Guadeloupe,country,https://www.wikidata.org/wiki/Q17012,https://en.wikipedia.org/wiki/Guadeloupe
+Guam,country,https://www.wikidata.org/wiki/Q16635,https://en.wikipedia.org/wiki/Guam
+Guatemala,country,https://www.wikidata.org/wiki/Q774,https://en.wikipedia.org/wiki/Guatemala
+Guernsey,country,https://www.wikidata.org/wiki/Q25230,https://en.wikipedia.org/wiki/Bailiwick_of_Guernsey
+Guinea,country,https://www.wikidata.org/wiki/Q1006,https://en.wikipedia.org/wiki/Guinea
+Guinea-Bissau,country,https://www.wikidata.org/wiki/Q1007,https://en.wikipedia.org/wiki/Guinea-Bissau
+Guyana,country,https://www.wikidata.org/wiki/Q734,https://en.wikipedia.org/wiki/Guyana
+Haiti,country,https://www.wikidata.org/wiki/Q790,https://en.wikipedia.org/wiki/Haiti
+Honduras,country,https://www.wikidata.org/wiki/Q783,https://en.wikipedia.org/wiki/Honduras
+Hong Kong,country,https://www.wikidata.org/wiki/Q8646,https://en.wikipedia.org/wiki/Hong_Kong
+Hungary,country,https://www.wikidata.org/wiki/Q28,https://en.wikipedia.org/wiki/Hungary
+Iceland,country,https://www.wikidata.org/wiki/Q189,https://en.wikipedia.org/wiki/Iceland
+India,country,https://www.wikidata.org/wiki/Q668,https://en.wikipedia.org/wiki/India
+Indonesia,country,https://www.wikidata.org/wiki/Q252,https://en.wikipedia.org/wiki/Indonesia
+Iran,country,https://www.wikidata.org/wiki/Q794,https://en.wikipedia.org/wiki/Iran
+Iraq,country,https://www.wikidata.org/wiki/Q796,https://en.wikipedia.org/wiki/Iraq
+Ireland,country,https://www.wikidata.org/wiki/Q27,https://en.wikipedia.org/wiki/Republic_of_Ireland
+Isle of Man,country,https://www.wikidata.org/wiki/Q9676,https://en.wikipedia.org/wiki/Isle_of_Man
+Israel,country,https://www.wikidata.org/wiki/Q801,https://en.wikipedia.org/wiki/Israel
+Italy,country,https://www.wikidata.org/wiki/Q38,https://en.wikipedia.org/wiki/Italy
+Ivory Coast,country,https://www.wikidata.org/wiki/Q1008,https://en.wikipedia.org/wiki/Ivory_Coast
+Jamaica,country,https://www.wikidata.org/wiki/Q766,https://en.wikipedia.org/wiki/Jamaica
+Japan,country,https://www.wikidata.org/wiki/Q17,https://en.wikipedia.org/wiki/Japan
+Jordan,country,https://www.wikidata.org/wiki/Q810,https://en.wikipedia.org/wiki/Jordan
+Kazakhstan,country,https://www.wikidata.org/wiki/Q232,https://en.wikipedia.org/wiki/Kazakhstan
+Kenya,country,https://www.wikidata.org/wiki/Q114,https://en.wikipedia.org/wiki/Kenya
+Kiribati,country,https://www.wikidata.org/wiki/Q710,https://en.wikipedia.org/wiki/Kiribati
+Kosovo,country,https://www.wikidata.org/wiki/Q1246,https://en.wikipedia.org/wiki/Kosovo
+Kuwait,country,https://www.wikidata.org/wiki/Q817,https://en.wikipedia.org/wiki/Kuwait
+Kyrgyzstan,country,https://www.wikidata.org/wiki/Q813,https://en.wikipedia.org/wiki/Kyrgyzstan
+Laos,country,https://www.wikidata.org/wiki/Q819,https://en.wikipedia.org/wiki/Laos
+Latvia,country,https://www.wikidata.org/wiki/Q211,https://en.wikipedia.org/wiki/Latvia
+Lebanon,country,https://www.wikidata.org/wiki/Q822,https://en.wikipedia.org/wiki/Lebanon
+Lesotho,country,https://www.wikidata.org/wiki/Q1013,https://en.wikipedia.org/wiki/Lesotho
+Liberia,country,https://www.wikidata.org/wiki/Q1014,https://en.wikipedia.org/wiki/Liberia
+Libya,country,https://www.wikidata.org/wiki/Q1016,https://en.wikipedia.org/wiki/Libya
+Liechtenstein,country,https://www.wikidata.org/wiki/Q347,https://en.wikipedia.org/wiki/Liechtenstein
+Lithuania,country,https://www.wikidata.org/wiki/Q37,https://en.wikipedia.org/wiki/Lithuania
+Luxembourg,country,https://www.wikidata.org/wiki/Q32,https://en.wikipedia.org/wiki/Luxembourg
+Macau,country,https://www.wikidata.org/wiki/Q14773,https://en.wikipedia.org/wiki/Macau
+Madagascar,country,https://www.wikidata.org/wiki/Q1019,https://en.wikipedia.org/wiki/Madagascar
+Malawi,country,https://www.wikidata.org/wiki/Q1020,https://en.wikipedia.org/wiki/Malawi
+Malaysia,country,https://www.wikidata.org/wiki/Q833,https://en.wikipedia.org/wiki/Malaysia
+Maldives,country,https://www.wikidata.org/wiki/Q826,https://en.wikipedia.org/wiki/Maldives
+Mali,country,https://www.wikidata.org/wiki/Q912,https://en.wikipedia.org/wiki/Mali
+Malta,country,https://www.wikidata.org/wiki/Q233,https://en.wikipedia.org/wiki/Malta
+Marshall Islands,country,https://www.wikidata.org/wiki/Q709,https://en.wikipedia.org/wiki/Marshall_Islands
+Mauritania,country,https://www.wikidata.org/wiki/Q1025,https://en.wikipedia.org/wiki/Mauritania
+Mauritius,country,https://www.wikidata.org/wiki/Q1027,https://en.wikipedia.org/wiki/Mauritius
+Mexico,country,https://www.wikidata.org/wiki/Q96,https://en.wikipedia.org/wiki/Mexico
+Micronesia,country,https://www.wikidata.org/wiki/Q702,https://en.wikipedia.org/wiki/Federated_States_of_Micronesia
+Moldova,country,https://www.wikidata.org/wiki/Q217,https://en.wikipedia.org/wiki/Moldova
+Monaco,country,https://www.wikidata.org/wiki/Q235,https://en.wikipedia.org/wiki/Monaco
+Mongolia,country,https://www.wikidata.org/wiki/Q711,https://en.wikipedia.org/wiki/Mongolia
+Montenegro,country,https://www.wikidata.org/wiki/Q236,https://en.wikipedia.org/wiki/Montenegro
+Morocco,country,https://www.wikidata.org/wiki/Q1028,https://en.wikipedia.org/wiki/Morocco
+Mozambique,country,https://www.wikidata.org/wiki/Q1029,https://en.wikipedia.org/wiki/Mozambique
+Myanmar,country,https://www.wikidata.org/wiki/Q836,https://en.wikipedia.org/wiki/Myanmar
+Namibia,country,https://www.wikidata.org/wiki/Q1030,https://en.wikipedia.org/wiki/Namibia
+Nauru,country,https://www.wikidata.org/wiki/Q697,https://en.wikipedia.org/wiki/Nauru
+Nepal,country,https://www.wikidata.org/wiki/Q837,https://en.wikipedia.org/wiki/Nepal
+Netherlands,country,https://www.wikidata.org/wiki/Q55,https://en.wikipedia.org/wiki/Netherlands
+New Caledonia,country,https://www.wikidata.org/wiki/Q33788,https://en.wikipedia.org/wiki/New_Caledonia
+New Zealand,country,https://www.wikidata.org/wiki/Q664,https://en.wikipedia.org/wiki/New_Zealand
+Nicaragua,country,https://www.wikidata.org/wiki/Q811,https://en.wikipedia.org/wiki/Nicaragua
+Niger,country,https://www.wikidata.org/wiki/Q1032,https://en.wikipedia.org/wiki/Niger
+Nigeria,country,https://www.wikidata.org/wiki/Q1033,https://en.wikipedia.org/wiki/Nigeria
+North Korea,country,https://www.wikidata.org/wiki/Q423,https://en.wikipedia.org/wiki/North_Korea
+North Macedonia,country,https://www.wikidata.org/wiki/Q221,https://en.wikipedia.org/wiki/North_Macedonia
+Northern Ireland,country,https://www.wikidata.org/wiki/Q26,https://en.wikipedia.org/wiki/Northern_Ireland
+Norway,country,https://www.wikidata.org/wiki/Q20,https://en.wikipedia.org/wiki/Norway
+Oman,country,https://www.wikidata.org/wiki/Q842,https://en.wikipedia.org/wiki/Oman
+Pakistan,country,https://www.wikidata.org/wiki/Q843,https://en.wikipedia.org/wiki/Pakistan
+Palau,country,https://www.wikidata.org/wiki/Q695,https://en.wikipedia.org/wiki/Palau
+Palestinian Territories,country,https://www.wikidata.org/wiki/Q407199,https://en.wikipedia.org/wiki/Palestinian_territories
+Panama,country,https://www.wikidata.org/wiki/Q804,https://en.wikipedia.org/wiki/Panama
+Papua New Guinea,country,https://www.wikidata.org/wiki/Q691,https://en.wikipedia.org/wiki/Papua_New_Guinea
+Paraguay,country,https://www.wikidata.org/wiki/Q733,https://en.wikipedia.org/wiki/Paraguay
+Peru,country,https://www.wikidata.org/wiki/Q419,https://en.wikipedia.org/wiki/Peru
+Philippines,country,https://www.wikidata.org/wiki/Q928,https://en.wikipedia.org/wiki/Philippines
+Poland,country,https://www.wikidata.org/wiki/Q36,https://en.wikipedia.org/wiki/Poland
+Portugal,country,https://www.wikidata.org/wiki/Q45,https://en.wikipedia.org/wiki/Portugal
+Puerto Rico,country,https://www.wikidata.org/wiki/Q1183,https://en.wikipedia.org/wiki/Puerto_Rico
+Qatar,country,https://www.wikidata.org/wiki/Q846,https://en.wikipedia.org/wiki/Qatar
+Romania,country,https://www.wikidata.org/wiki/Q218,https://en.wikipedia.org/wiki/Romania
+Russia,country,https://www.wikidata.org/wiki/Q159,https://en.wikipedia.org/wiki/Russia
+Rwanda,country,https://www.wikidata.org/wiki/Q1037,https://en.wikipedia.org/wiki/Rwanda
+Saint Helena Ascension and Tristan da Cunha,country,https://www.wikidata.org/wiki/Q34497,https://en.wikipedia.org/wiki/Saint_Helena
+Saint Kitts and Nevis,country,https://www.wikidata.org/wiki/Q763,https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis
+Saint Lucia,country,https://www.wikidata.org/wiki/Q760,https://en.wikipedia.org/wiki/Saint_Lucia
+Saint Vincent and the Grenadines,country,https://www.wikidata.org/wiki/Q757,https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines
+Samoa,country,https://www.wikidata.org/wiki/Q683,https://en.wikipedia.org/wiki/Samoa
+San Marino,country,https://www.wikidata.org/wiki/Q238,https://en.wikipedia.org/wiki/San_Marino
+Sao Tome and Principe,country,https://www.wikidata.org/wiki/Q1039,https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe
+Saudi Arabia,country,https://www.wikidata.org/wiki/Q851,https://en.wikipedia.org/wiki/Saudi_Arabia
+Scotland,country,https://www.wikidata.org/wiki/Q22,https://en.wikipedia.org/wiki/Scotland
+Senegal,country,https://www.wikidata.org/wiki/Q1041,https://en.wikipedia.org/wiki/Senegal
+Serbia,country,https://www.wikidata.org/wiki/Q403,https://en.wikipedia.org/wiki/Serbia
+Seychelles,country,https://www.wikidata.org/wiki/Q1042,https://en.wikipedia.org/wiki/Seychelles
+Sierra Leone,country,https://www.wikidata.org/wiki/Q1044,https://en.wikipedia.org/wiki/Sierra_Leone
+Singapore,country,https://www.wikidata.org/wiki/Q334,https://en.wikipedia.org/wiki/Singapore
+Slovakia,country,https://www.wikidata.org/wiki/Q214,https://en.wikipedia.org/wiki/Slovakia
+Slovenia,country,https://www.wikidata.org/wiki/Q215,https://en.wikipedia.org/wiki/Slovenia
+Solomon Islands,country,https://www.wikidata.org/wiki/Q685,https://en.wikipedia.org/wiki/Solomon_Islands
+Somalia,country,https://www.wikidata.org/wiki/Q1045,https://en.wikipedia.org/wiki/Somalia
+South Africa,country,https://www.wikidata.org/wiki/Q258,https://en.wikipedia.org/wiki/South_Africa
+South Korea,country,https://www.wikidata.org/wiki/Q884,https://en.wikipedia.org/wiki/South_Korea
+South Sudan,country,https://www.wikidata.org/wiki/Q958,https://en.wikipedia.org/wiki/South_Sudan
+Spain,country,https://www.wikidata.org/wiki/Q29,https://en.wikipedia.org/wiki/Spain
+Sri Lanka,country,https://www.wikidata.org/wiki/Q854,https://en.wikipedia.org/wiki/Sri_Lanka
+Sudan,country,https://www.wikidata.org/wiki/Q1049,https://en.wikipedia.org/wiki/Sudan
+Suriname,country,https://www.wikidata.org/wiki/Q730,https://en.wikipedia.org/wiki/Suriname
+Sweden,country,https://www.wikidata.org/wiki/Q34,https://en.wikipedia.org/wiki/Sweden
+Switzerland,country,https://www.wikidata.org/wiki/Q39,https://en.wikipedia.org/wiki/Switzerland
+Syria,country,https://www.wikidata.org/wiki/Q858,https://en.wikipedia.org/wiki/Syria
+Taiwan,country,https://www.wikidata.org/wiki/Q865,https://en.wikipedia.org/wiki/Taiwan
+Tajikistan,country,https://www.wikidata.org/wiki/Q863,https://en.wikipedia.org/wiki/Tajikistan
+Tanzania,country,https://www.wikidata.org/wiki/Q924,https://en.wikipedia.org/wiki/Tanzania
+Thailand,country,https://www.wikidata.org/wiki/Q869,https://en.wikipedia.org/wiki/Thailand
+Togo,country,https://www.wikidata.org/wiki/Q945,https://en.wikipedia.org/wiki/Togo
+Tonga,country,https://www.wikidata.org/wiki/Q678,https://en.wikipedia.org/wiki/Tonga
+Trinidad and Tobago,country,https://www.wikidata.org/wiki/Q754,https://en.wikipedia.org/wiki/Trinidad_and_Tobago
+Tunisia,country,https://www.wikidata.org/wiki/Q948,https://en.wikipedia.org/wiki/Tunisia
+Turkey,country,https://www.wikidata.org/wiki/Q43,https://en.wikipedia.org/wiki/Turkey
+Turkmenistan,country,https://www.wikidata.org/wiki/Q874,https://en.wikipedia.org/wiki/Turkmenistan
+Turks and Caicos Islands,country,https://www.wikidata.org/wiki/Q18221,https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands
+Tuvalu,country,https://www.wikidata.org/wiki/Q672,https://en.wikipedia.org/wiki/Tuvalu
+U.S. Virgin Islands,country,https://www.wikidata.org/wiki/Q11703,https://en.wikipedia.org/wiki/United_States_Virgin_Islands
+Uganda,country,https://www.wikidata.org/wiki/Q1036,https://en.wikipedia.org/wiki/Uganda
+Ukraine,country,https://www.wikidata.org/wiki/Q212,https://en.wikipedia.org/wiki/Ukraine
+United Arab Emirates,country,https://www.wikidata.org/wiki/Q878,https://en.wikipedia.org/wiki/United_Arab_Emirates
+United Kingdom,country,https://www.wikidata.org/wiki/Q145,https://en.wikipedia.org/wiki/United_Kingdom
+United States,country,https://www.wikidata.org/wiki/Q30,https://en.wikipedia.org/wiki/United_States
+Uruguay,country,https://www.wikidata.org/wiki/Q77,https://en.wikipedia.org/wiki/Uruguay
+Uzbekistan,country,https://www.wikidata.org/wiki/Q265,https://en.wikipedia.org/wiki/Uzbekistan
+Vatican City,country,https://www.wikidata.org/wiki/Q237,https://en.wikipedia.org/wiki/Vatican_City
+Venezuela,country,https://www.wikidata.org/wiki/Q717,https://en.wikipedia.org/wiki/Venezuela
+Vietnam,country,https://www.wikidata.org/wiki/Q881,https://en.wikipedia.org/wiki/Vietnam
+Wales,country,https://www.wikidata.org/wiki/Q25,https://en.wikipedia.org/wiki/Wales
+West Indies,country,https://www.wikidata.org/wiki/Q669037,https://en.wikipedia.org/wiki/West_Indies
+Western Sahara,country,https://www.wikidata.org/wiki/Q6250,https://en.wikipedia.org/wiki/Western_Sahara
+Yemen,country,https://www.wikidata.org/wiki/Q805,https://en.wikipedia.org/wiki/Yemen
+Zambia,country,https://www.wikidata.org/wiki/Q953,https://en.wikipedia.org/wiki/Zambia
+Zimbabwe,country,https://www.wikidata.org/wiki/Q954,https://en.wikipedia.org/wiki/Zimbabwe
+ASEAN Countries,region,https://www.wikidata.org/wiki/Q29957542,
+Americas,region,https://www.wikidata.org/wiki/Q828,https://en.wikipedia.org/wiki/Americas
+Antarctic,region,https://www.wikidata.org/wiki/Q1555938,https://en.wikipedia.org/wiki/Antarctic
+Asia / Pacific,region,https://www.wikidata.org/wiki/Q1070940,https://en.wikipedia.org/wiki/Asia-Pacific
+Australia / New Zealand,region,,
+Baltic States,region,https://www.wikidata.org/wiki/Q39731,https://en.wikipedia.org/wiki/Baltic_states
+Benelux,region,https://www.wikidata.org/wiki/Q13116,https://en.wikipedia.org/wiki/Benelux
+British Indian Ocean Territory,region,https://www.wikidata.org/wiki/Q43448,https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory
+CIS Countries,region,https://www.wikidata.org/wiki/Q7779,https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States
+Caribbean,region,https://www.wikidata.org/wiki/Q664609,https://en.wikipedia.org/wiki/Caribbean
+Central / Eastern Europe,region,,
+Central Africa,region,https://www.wikidata.org/wiki/Q27433,https://en.wikipedia.org/wiki/Central_Africa
+Central America,region,https://www.wikidata.org/wiki/Q27611,https://en.wikipedia.org/wiki/Central_America
+Central Asia,region,https://www.wikidata.org/wiki/Q27275,https://en.wikipedia.org/wiki/Central_Asia
+East Africa,region,https://www.wikidata.org/wiki/Q27407,https://en.wikipedia.org/wiki/East_Africa
+East Asia,region,https://www.wikidata.org/wiki/Q27231,https://en.wikipedia.org/wiki/East_Asia
+East Coast (PADD I),region,https://www.wikidata.org/wiki/Q4268,https://en.wikipedia.org/wiki/East_Coast_of_the_United_States
+East European Countries,region,https://www.wikidata.org/wiki/Q27468,https://en.wikipedia.org/wiki/Eastern_Europe
+Emerging Market Countries,region,,
+Energy Region Americas,region,,
+Energy Region Asia,region,,
+Energy Region Caribbean / Central America,region,,
+Energy Region Central / Eastern Europe,region,,
+Energy Region Europe / Middle East / Africa,region,,
+Energy Region Former Soviet Union,region,,
+Energy Region Mediterranean / North Africa,region,,
+Energy Region Middle East,region,,
+Energy Region North America,region,,
+Energy Region North Asia,region,,
+Energy Region North-West Europe,region,,
+Energy Region Other Africa,region,,
+Energy Region Pacific,region,,
+Energy Region South America,region,,
+Energy Region South Asia,region,,
+Energy Region South-East Asia,region,,
+Euro Zone,region,https://www.wikidata.org/wiki/Q8268,https://en.wikipedia.org/wiki/Eurozone
+Euro Zone as a Whole,region,,
+Gulf,region,,
+Gulf Coast (PADD III),region,https://www.wikidata.org/wiki/Q55241,https://en.wikipedia.org/wiki/Gulf_Coast_of_the_United_States
+Indo-China,region,https://www.wikidata.org/wiki/Q43467,https://en.wikipedia.org/wiki/Mainland_Southeast_Asia
+Middle East,region,https://www.wikidata.org/wiki/Q7204,https://en.wikipedia.org/wiki/Middle_East
+Midwest (PADD II),region,https://www.wikidata.org/wiki/Q186545,https://en.wikipedia.org/wiki/Midwestern_United_States
+Nordic States,region,https://www.wikidata.org/wiki/Q52062,https://en.wikipedia.org/wiki/Nordic_countries
+North Africa,region,https://www.wikidata.org/wiki/Q27381,https://en.wikipedia.org/wiki/North_Africa
+North Asia,region,https://www.wikidata.org/wiki/Q27329,https://en.wikipedia.org/wiki/North_Asia
+Pacific Islands,region,https://www.wikidata.org/wiki/Q844857,https://en.wikipedia.org/wiki/Pacific_Islands
+Scandinavia,region,https://www.wikidata.org/wiki/Q21195,https://en.wikipedia.org/wiki/Scandinavia
+South America / Central America,region,,
+South Asia,region,https://www.wikidata.org/wiki/Q771405,https://en.wikipedia.org/wiki/South_Asia
+South China Sea,region,https://www.wikidata.org/wiki/Q1141500,https://en.wikipedia.org/wiki/South_China_Sea_Islands
+South-East Asia,region,,
+South-Eastern Europe,region,,
+South-West Asia,region,,
+Southern Africa,region,https://www.wikidata.org/wiki/Q27394,https://en.wikipedia.org/wiki/Southern_Africa
+Southern France,region,https://www.wikidata.org/wiki/Q1237299,https://en.wikipedia.org/wiki/Southern_France
+West Africa,region,https://www.wikidata.org/wiki/Q4412,https://en.wikipedia.org/wiki/West_Africa
+West Coast (PADD V),region,https://www.wikidata.org/wiki/Q12606,https://en.wikipedia.org/wiki/West_Coast_of_the_United_States
+Western Europe,region,https://www.wikidata.org/wiki/Q27496,https://en.wikipedia.org/wiki/Western_Europe
+Antarctica,continent,https://www.wikidata.org/wiki/Q51,https://en.wikipedia.org/wiki/Antarctica
+Africa,continent,https://www.wikidata.org/wiki/Q15,https://en.wikipedia.org/wiki/Africa
+Asia,continent,https://www.wikidata.org/wiki/Q48,https://en.wikipedia.org/wiki/Asia
+Australia,continent,https://www.wikidata.org/wiki/Q3960,https://en.wikipedia.org/wiki/Australia_(continent)
+Europe,continent,https://www.wikidata.org/wiki/Q46,https://en.wikipedia.org/wiki/Europe
+North America,continent,https://www.wikidata.org/wiki/Q49,https://en.wikipedia.org/wiki/North_America
+South America,continent,https://www.wikidata.org/wiki/Q18,https://en.wikipedia.org/wiki/South_America
+Alabama,US state,https://www.wikidata.org/wiki/Q173,https://en.wikipedia.org/wiki/Alabama
+Alaska,US state,https://www.wikidata.org/wiki/Q797,https://en.wikipedia.org/wiki/Alaska
+Arizona,US state,https://www.wikidata.org/wiki/Q816,https://en.wikipedia.org/wiki/Arizona
+Arkansas,US state,https://www.wikidata.org/wiki/Q1612,https://en.wikipedia.org/wiki/Arkansas
+California,US state,https://www.wikidata.org/wiki/Q99,https://en.wikipedia.org/wiki/California
+Colorado,US state,https://www.wikidata.org/wiki/Q1261,https://en.wikipedia.org/wiki/Colorado
+Connecticut,US state,https://www.wikidata.org/wiki/Q779,https://en.wikipedia.org/wiki/Connecticut
+Delaware,US state,https://www.wikidata.org/wiki/Q1393,https://en.wikipedia.org/wiki/Delaware
+Florida,US state,https://www.wikidata.org/wiki/Q812,https://en.wikipedia.org/wiki/Florida
+Georgia (US State),US state,https://www.wikidata.org/wiki/Q1428,https://en.wikipedia.org/wiki/Georgia_(U.S._state)
+Hawaii,US state,https://www.wikidata.org/wiki/Q782,https://en.wikipedia.org/wiki/Hawaii
+Idaho,US state,https://www.wikidata.org/wiki/Q1221,https://en.wikipedia.org/wiki/Idaho
+Illinois,US state,https://www.wikidata.org/wiki/Q1204,https://en.wikipedia.org/wiki/Illinois
+Indiana,US state,https://www.wikidata.org/wiki/Q1415,https://en.wikipedia.org/wiki/Indiana
+Iowa,US state,https://www.wikidata.org/wiki/Q1546,https://en.wikipedia.org/wiki/Iowa
+Kansas,US state,https://www.wikidata.org/wiki/Q1558,https://en.wikipedia.org/wiki/Kansas
+Kentucky,US state,https://www.wikidata.org/wiki/Q1603,https://en.wikipedia.org/wiki/Kentucky
+Louisiana,US state,https://www.wikidata.org/wiki/Q1588,https://en.wikipedia.org/wiki/Louisiana
+Maine,US state,https://www.wikidata.org/wiki/Q724,https://en.wikipedia.org/wiki/Maine
+Maryland,US state,https://www.wikidata.org/wiki/Q1391,https://en.wikipedia.org/wiki/Maryland
+Massachusetts,US state,https://www.wikidata.org/wiki/Q771,https://en.wikipedia.org/wiki/Massachusetts
+Michigan,US state,https://www.wikidata.org/wiki/Q1166,https://en.wikipedia.org/wiki/Michigan
+Minnesota,US state,https://www.wikidata.org/wiki/Q1527,https://en.wikipedia.org/wiki/Minnesota
+Mississippi,US state,https://www.wikidata.org/wiki/Q1494,https://en.wikipedia.org/wiki/Mississippi
+Missouri,US state,https://www.wikidata.org/wiki/Q1581,https://en.wikipedia.org/wiki/Missouri
+Montana,US state,https://www.wikidata.org/wiki/Q1212,https://en.wikipedia.org/wiki/Montana
+Nebraska,US state,https://www.wikidata.org/wiki/Q1553,https://en.wikipedia.org/wiki/Nebraska
+Nevada,US state,https://www.wikidata.org/wiki/Q1227,https://en.wikipedia.org/wiki/Nevada
+New Hampshire,US state,https://www.wikidata.org/wiki/Q759,https://en.wikipedia.org/wiki/New_Hampshire
+New Jersey,US state,https://www.wikidata.org/wiki/Q1408,https://en.wikipedia.org/wiki/New_Jersey
+New Mexico,US state,https://www.wikidata.org/wiki/Q1522,https://en.wikipedia.org/wiki/New_Mexico
+New York,US state,https://www.wikidata.org/wiki/Q1384,https://en.wikipedia.org/wiki/New_York_(state)
+North Carolina,US state,https://www.wikidata.org/wiki/Q1454,https://en.wikipedia.org/wiki/North_Carolina
+North Dakota,US state,https://www.wikidata.org/wiki/Q1207,https://en.wikipedia.org/wiki/North_Dakota
+Ohio,US state,https://www.wikidata.org/wiki/Q1397,https://en.wikipedia.org/wiki/Ohio
+Oklahoma,US state,https://www.wikidata.org/wiki/Q1649,https://en.wikipedia.org/wiki/Oklahoma
+Oregon,US state,https://www.wikidata.org/wiki/Q824,https://en.wikipedia.org/wiki/Oregon
+Pennsylvania,US state,https://www.wikidata.org/wiki/Q1400,https://en.wikipedia.org/wiki/Pennsylvania
+South Carolina,US state,https://www.wikidata.org/wiki/Q1456,https://en.wikipedia.org/wiki/South_Carolina
+Tennessee,US state,https://www.wikidata.org/wiki/Q1509,https://en.wikipedia.org/wiki/Tennessee
+Texas,US state,https://www.wikidata.org/wiki/Q1439,https://en.wikipedia.org/wiki/Texas
+Utah,US state,https://www.wikidata.org/wiki/Q829,https://en.wikipedia.org/wiki/Utah
+Virginia,US state,https://www.wikidata.org/wiki/Q1370,https://en.wikipedia.org/wiki/Virginia
+Washington,US state,https://www.wikidata.org/wiki/Q1223,https://en.wikipedia.org/wiki/Washington_(state)
+West Virginia,US state,https://www.wikidata.org/wiki/Q1371,https://en.wikipedia.org/wiki/West_Virginia
+Wisconsin,US state,https://www.wikidata.org/wiki/Q1537,https://en.wikipedia.org/wiki/Wisconsin
+Wyoming,US state,https://www.wikidata.org/wiki/Q1214,https://en.wikipedia.org/wiki/Wyoming
+Alpine Skiing,sport,https://www.wikidata.org/wiki/Q186222,https://en.wikipedia.org/wiki/Alpine_skiing
+American Football,sport,https://www.wikidata.org/wiki/Q41323,https://en.wikipedia.org/wiki/American_football
+Angling,sport,https://www.wikidata.org/wiki/Q14373,https://en.wikipedia.org/wiki/Fishing
+Aquatic Sports,sport,https://www.wikidata.org/wiki/Q61065,https://en.wikipedia.org/wiki/List_of_water_sports
+Archery,sport,https://www.wikidata.org/wiki/Q108429,https://en.wikipedia.org/wiki/Archery
+Athletics,sport,https://www.wikidata.org/wiki/Q542,https://en.wikipedia.org/wiki/Sport_of_athletics
+Australian Rules Football,sport,https://www.wikidata.org/wiki/Q50776,https://en.wikipedia.org/wiki/Australian_rules_football
+Badminton,sport,https://www.wikidata.org/wiki/Q7291,https://en.wikipedia.org/wiki/Badminton
+Baseball,sport,https://www.wikidata.org/wiki/Q5369,https://en.wikipedia.org/wiki/Baseball
+Basketball,sport,https://www.wikidata.org/wiki/Q5372,https://en.wikipedia.org/wiki/Basketball
+Boating / Sailing,sport,https://www.wikidata.org/wiki/Q14085739,https://en.wikipedia.org/wiki/Sailing_(sport)
+Bobsleigh,sport,https://www.wikidata.org/wiki/Q177275,https://en.wikipedia.org/wiki/Bobsleigh
+Boxing,sport,https://www.wikidata.org/wiki/Q32112,https://en.wikipedia.org/wiki/Boxing
+Canoeing,sport,https://www.wikidata.org/wiki/Q213934,https://en.wikipedia.org/wiki/Canoeing_and_kayaking
+Chess,sport,https://www.wikidata.org/wiki/Q718,https://en.wikipedia.org/wiki/Chess
+Climbing,sport,https://www.wikidata.org/wiki/Q22857,https://en.wikipedia.org/wiki/Climbing
+Cricket,sport,https://www.wikidata.org/wiki/Q5375,https://en.wikipedia.org/wiki/Cricket
+Cycling,sport,https://www.wikidata.org/wiki/Q53121,https://en.wikipedia.org/wiki/Cycling
+Diving,sport,https://www.wikidata.org/wiki/Q7735,https://en.wikipedia.org/wiki/Diving_(sport)
+Doping / Drugs Tests,sport,https://www.wikidata.org/wiki/Q166376,https://en.wikipedia.org/wiki/Doping_in_sport
+Equestrian,sport,https://www.wikidata.org/wiki/Q179226,https://en.wikipedia.org/wiki/Equestrianism
+Fencing,sport,https://www.wikidata.org/wiki/Q12100,https://en.wikipedia.org/wiki/Fencing
+Field Hockey,sport,https://www.wikidata.org/wiki/Q1455,https://en.wikipedia.org/wiki/Field_hockey
+Figure Skating,sport,https://www.wikidata.org/wiki/Q38108,https://en.wikipedia.org/wiki/Figure_skating
+Formula 1,sport,https://www.wikidata.org/wiki/Q1968,https://en.wikipedia.org/wiki/Formula_One
+Golf,sport,https://www.wikidata.org/wiki/Q5377,https://en.wikipedia.org/wiki/Golf
+Gymnastics,sport,https://www.wikidata.org/wiki/Q43450,https://en.wikipedia.org/wiki/Gymnastics
+Horse Racing,sport,https://www.wikidata.org/wiki/Q187916,https://en.wikipedia.org/wiki/Horse_racing
+Ice Hockey,sport,https://www.wikidata.org/wiki/Q41466,https://en.wikipedia.org/wiki/Ice_hockey
+Jai Alai / Pelota,sport,https://www.wikidata.org/wiki/Q1193361,https://en.wikipedia.org/wiki/Jai_alai
+Judo,sport,https://www.wikidata.org/wiki/Q11420,https://en.wikipedia.org/wiki/Judo
+Karate,sport,https://www.wikidata.org/wiki/Q11419,https://en.wikipedia.org/wiki/Karate
+Marathon,sport,https://www.wikidata.org/wiki/Q40244,https://en.wikipedia.org/wiki/Marathon
+Martial Arts,sport,https://www.wikidata.org/wiki/Q11417,https://en.wikipedia.org/wiki/Martial_arts
+Mixed Martial Arts,sport,https://www.wikidata.org/wiki/Q114466,https://en.wikipedia.org/wiki/Mixed_martial_arts
+Motor Racing,sport,https://www.wikidata.org/wiki/Q5386,https://en.wikipedia.org/wiki/Auto_racing
+Motorcycle Racing,sport,https://www.wikidata.org/wiki/Q17163326,https://en.wikipedia.org/wiki/Motorcycle_racing
+NBA Basketball,sport,https://www.wikidata.org/wiki/Q155223,https://en.wikipedia.org/wiki/National_Basketball_Association
+NFL American Football,sport,https://www.wikidata.org/wiki/Q1215884,https://en.wikipedia.org/wiki/National_Football_League
+NHL Ice Hockey,sport,https://www.wikidata.org/wiki/Q1215892,https://en.wikipedia.org/wiki/National_Hockey_League
+Nordic Skiing,sport,https://www.wikidata.org/wiki/Q216613,https://en.wikipedia.org/wiki/Nordic_skiing
+Pool,sport,https://www.wikidata.org/wiki/Q11020,https://en.wikipedia.org/wiki/Pool_(cue_sports)
+Power Boating,sport,,
+Rallying,sport,https://www.wikidata.org/wiki/Q7856,https://en.wikipedia.org/wiki/Rallying
+Rugby League,sport,https://www.wikidata.org/wiki/Q10962,https://en.wikipedia.org/wiki/Rugby_league
+Rugby Union,sport,https://www.wikidata.org/wiki/Q5849,https://en.wikipedia.org/wiki/Rugby_union
+Shooting,sport,https://www.wikidata.org/wiki/Q206989,https://en.wikipedia.org/wiki/Shooting_sports
+Snooker,sport,https://www.wikidata.org/wiki/Q11015,https://en.wikipedia.org/wiki/Snooker
+Snowboarding,sport,https://www.wikidata.org/wiki/Q178131,https://en.wikipedia.org/wiki/Snowboarding
+Soccer,sport,https://www.wikidata.org/wiki/Q2736,https://en.wikipedia.org/wiki/Association_football
+Softball,sport,https://www.wikidata.org/wiki/Q171038,https://en.wikipedia.org/wiki/Softball
+Sport,sport,https://www.wikidata.org/wiki/Q349,https://en.wikipedia.org/wiki/Sport
+Sumo Wrestling,sport,https://www.wikidata.org/wiki/Q40561,https://en.wikipedia.org/wiki/Sumo
+Surfing,sport,https://www.wikidata.org/wiki/Q159992,https://en.wikipedia.org/wiki/Surfing
+Swimming,sport,https://www.wikidata.org/wiki/Q31920,https://en.wikipedia.org/wiki/Swimming_(sport)
+Table Tennis,sport,https://www.wikidata.org/wiki/Q3930,https://en.wikipedia.org/wiki/Table_tennis
+Tennis,sport,https://www.wikidata.org/wiki/Q847,https://en.wikipedia.org/wiki/Tennis
+Tenpin Bowling,sport,https://www.wikidata.org/wiki/Q172809,https://en.wikipedia.org/wiki/Ten-pin_bowling
+Triathlon,sport,https://www.wikidata.org/wiki/Q10980,https://en.wikipedia.org/wiki/Triathlon
+Video Games,sport,https://www.wikidata.org/wiki/Q7889,https://en.wikipedia.org/wiki/Video_game
+Weightlifting,sport,https://www.wikidata.org/wiki/Q83462,https://en.wikipedia.org/wiki/Olympic_weightlifting
+Wrestling,sport,https://www.wikidata.org/wiki/Q42486,https://en.wikipedia.org/wiki/Wrestling
+Yachting / Sailing,sport,https://www.wikidata.org/wiki/Q14085739,https://en.wikipedia.org/wiki/Sailing_(sport)
+Art,art and culture,https://www.wikidata.org/wiki/Q735,https://en.wikipedia.org/wiki/Art
+Arts / Culture / Entertainment,art and culture,https://www.wikidata.org/wiki/Q173799,https://en.wikipedia.org/wiki/Entertainment
+Books,art and culture,https://www.wikidata.org/wiki/Q571,https://en.wikipedia.org/wiki/Book
+Celebrities,art and culture,https://www.wikidata.org/wiki/Q211236,https://en.wikipedia.org/wiki/Celebrity
+Fashion,art and culture,https://www.wikidata.org/wiki/Q12684,https://en.wikipedia.org/wiki/Fashion
+Film,art and culture,https://www.wikidata.org/wiki/Q11424,https://en.wikipedia.org/wiki/Film
+Human Interest / Brights / Odd News,art and culture,,
+Living / Lifestyle,art and culture,https://www.wikidata.org/wiki/Q32090,https://en.wikipedia.org/wiki/Lifestyle_(sociology)
+Music,art and culture,https://www.wikidata.org/wiki/Q638,https://en.wikipedia.org/wiki/Music
+Television,art and culture,https://www.wikidata.org/wiki/Q289,https://en.wikipedia.org/wiki/Television
+Theater,art and culture,https://www.wikidata.org/wiki/Q11635,https://en.wikipedia.org/wiki/Theatre
+OTHER,miscellaneous,,
+BULLETIN,miscellaneous,,
+Bowls,miscellaneous,,
+Reunion,miscellaneous,,
