@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Problem}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Project Objectives}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Summary of Findings}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Report Outline}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Technical Specifications}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Context and Background}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Knowledge Graphs}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.2}{Network stuff?}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Data}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Data Set Collection}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Data Input and Preprocessing}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Knowledge Graph Design and Implementation}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Graph Database Creation}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Semantic Enhancements}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{Natural Language Processing}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.4}{Models, etc.???}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Knowledge Graph performance evaluation}{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Interpretability}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Others...confusion matrix, predictions, clustering, betweenness, etc.}{section.5}% 20
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 21
+\BOOKMARK [2][-]{subsection.6.1}{Future Work}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.2}{Conclusion}{section.6}% 23
+\BOOKMARK [1][-]{section.7}{Appendix}{}% 24

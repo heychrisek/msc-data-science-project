@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Problem}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Project Objectives}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Summary of Findings}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Report Outline}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Technical Specifications}{4}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Context and Background}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Knowledge Graphs}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Network stuff?}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Data}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Data Set Collection}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Data Input and Preprocessing}{5}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Knowledge Graph Design and Implementation}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Graph Database Creation}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Semantic Enhancements}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Natural Language Processing}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Models, etc.???}{5}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Knowledge Graph performance evaluation}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Interpretability}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Others...confusion matrix, predictions, clustering, betweenness, etc.}{5}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Conclusions}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Future Work}{5}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Conclusion}{5}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Appendix}{5}{section.7}%

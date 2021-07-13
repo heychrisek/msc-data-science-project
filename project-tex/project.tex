@@ -1,0 +1,108 @@
+% to compile:
+% bibtex project
+% bibtex project
+% pdflatex project
+
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{A Domain-Specific Knowledge Graph for News Item Recommendations and Information Retrieval}
+\author{Author: Christopher Eaves-Kohlbrenner \\ Supervisor: Michael Zakharyaschev}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\hfill \break
+\hfill \break
+\hfill \break
+MSc Data Science project\\
+Department of Computer Science and Information Systems\\
+Birkbeck College, University of London\\
+2021\\
+\hfill \break
+\hfill \break
+\hfill \break
+
+\textit{This report is substantially the result of my own work, expressed in my own words, except where explicitly indicated in the text. I have read and understood the sections on plagiarism in the Programme Handbook and the College web site. I give my permission for it to be submitted to the JISC Plagiarism Detection Service. \\
+\hfill \break
+The report may be freely copied and distributed provided the source is explicitly acknowledged.}
+\end{center}
+
+% \end{center}
+
+\newpage
+\begin{abstract}
+TBD...
+\end{abstract}
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introduction}
+Introduction
+\subsection{Problem}
+Problem...
+\subsection{Project Objectives}
+Project Objectives...
+\subsection{Summary of Findings}
+Summary of Findings...
+\subsection{Report Outline}
+Report Outline...
+\subsection{Technical Specifications}
+Technical Specifications...
+
+\section{Context and Background}
+\subsection{Knowledge Graphs}
+\subsection{Network stuff?}
+similar to this?
+https://www.dcs.bbk.ac.uk/r/studentprojects/exampleprojects/msc/
+
+"A graph neural network path to network centralities.pdf"
+
+
+\section{Data}
+
+What is Reuters data set, how did I get it, etc.
+
+Jupyter notebook -- data exploration and preprocessing, diagrams, histograms, etc.
+
+Simple dimensions (properties like subjects, genres, word count) and complex NLP ones (XML body)
+
+Challenges / edge cases: https://github.com/heychrisek/msc-data-science-project/ - 5x-challenges
+
+\subsection{Data Set Collection}
+\subsection{Data Input and Preprocessing}
+
+
+\section{Knowledge Graph Design and Implementation}
+
+Continuation of previous section (Data Input and Preprocessing), load into Neo4j...
+
+\subsection{Graph Database Creation}
+Neo4j ingest
+\subsection{Semantic Enhancements}
+\subsection{Natural Language Processing}
+\subsection{Models, etc.???}
+
+\section{Knowledge Graph performance evaluation}
+\subsection{Interpretability}
+\subsection{Others...confusion matrix, predictions, clustering, betweenness, etc.}
+
+\section{Conclusions}
+\subsection{Future Work}
+\subsection{Conclusion}
+
+\section{Appendix}
+
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{proposal}
+
+\end{document}
