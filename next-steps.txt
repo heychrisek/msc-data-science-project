@@ -1,0 +1,33 @@
+NEXT STEPS
+
+    July 26-30
+      Python/Neo4j links
+        https://towardsdatascience.com/create-a-graph-database-in-neo4j-using-python-4172d40f89c4
+        https://towardsdatascience.com/neo4j-cypher-python-7a919a372be7
+        https://medium.com/@kashish.gakkar/working-with-neo4j-using-python-131ccc074947
+        https://towardsdatascience.com/movie-recommendations-powered-by-knowledge-graphs-and-neo4j-33603a212ad0
+
+      Python POC
+      hook up Python to "full KG database"
+
+      continue query_kg.cypher
+        (useful queries before adding additional enhancements)
+      write section 4...
+
+      review feedback
+        First marker's comments:
+        The background research section is very solid and detailed. The student has already taken first practical steps in order to investigate feasibility of this project. Maybe what’s missing in this section is a concrete (possibly imaginary) example of how the resulting system is supposed to work. The proposal contains a section with the project aims and objectives. It is not perfectly written, but the author’s intentions are clear. The project plan and methodology look detailed. Whether it can be followed successfully depends on many parameters, as the author mentions in Section 4.3. The proposal is well written in general. It would be even better without a few typos and little imperfections such as Latex quotation marks.
+
+
+        Second marker's comments:
+        The main aim is to build a system for news retrieval and recommendation using knowledge graph techniques. Many different technologies are proposed for use in developing a solution, probably too many. Recommendations are usually based on some knowledge of user preferences, but there is no mention of how these will be captured or used. Perhaps it is expected to be more about retrieval than recommendation. An extensive list of news sources has been identified. It is commendable that a proof-of-concept system has already been built. I would have thought that a full(er) literature review would have been done in preparation for the proposal. The project is ambitious, but the potential risks have been recognised. The timeline could have provided greater detail. The proposal is very well written, with a good number of references. 
+
+      email Michael
+
+
+    August 2-6
+      talk to Michael
+
+      ST / ML / NLP / networks
+        drop NLP?
+

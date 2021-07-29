@@ -10,3 +10,9 @@ proposal-tex/*.blg
 proposal-tex/*.log
 proposal-tex/*.pdf
 proposal-tex/*.toc
+project-tex/*.aux
+project-tex/*.bbl
+project-tex/*.blg
+project-tex/*.log
+project-tex/*.pdf
+project-tex/*.toc
