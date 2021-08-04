@@ -69,3 +69,16 @@ CREATE (n)-[:HAS_ENTITY]->(e)
 // MATCH (n)-[:HAS_ENTITY]->(e) RETURN n, e
 
 
+
+
+// 00001-10000   14:10-14:34 (24 minutes)
+// 10001-20000   14:34-14:40 (6 minutes)
+// 20001-30000   14:41-14:48 (7 minutes)
+// 30001-40000   14:49-14:57 (8 minutes)
+// 40001-50000   14:57-15:03 (6 minutes)
+// 50001-59542   15:03-15:08 (5 minutes)
+//                           (56 minutes)
+CALL apoc.load.csv('/guid_to_text_body.csv') yield map as row
+MATCH (n:NewsItem {guid:row.guid})
+SET n.body = row.body
+RETURN n.guid, n.body;

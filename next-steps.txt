@@ -1,18 +1,19 @@
 NEXT STEPS
 
     July 26-30
-      Python/Neo4j links
-        https://towardsdatascience.com/create-a-graph-database-in-neo4j-using-python-4172d40f89c4
-        https://towardsdatascience.com/neo4j-cypher-python-7a919a372be7
-        https://medium.com/@kashish.gakkar/working-with-neo4j-using-python-131ccc074947
-        https://towardsdatascience.com/movie-recommendations-powered-by-knowledge-graphs-and-neo4j-33603a212ad0
+    
 
-      Python POC
-      hook up Python to "full KG database"
+      ingest text body into Neo4g graph DB
 
-      continue query_kg.cypher
-        (useful queries before adding additional enhancements)
-      write section 4...
+      start doing GCP NLP entity extraction
+      see tutorial: https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/#entity-extraction
+        https://neo4j.com/developer/graph-data-science/nlp/entity-extraction/
+      CREATE (e:Entity) ...
+
+
+      from there link to Wikidata/Wikipedia?
+
+
 
       review feedback
         First marker's comments:
@@ -22,12 +23,24 @@ NEXT STEPS
         Second marker's comments:
         The main aim is to build a system for news retrieval and recommendation using knowledge graph techniques. Many different technologies are proposed for use in developing a solution, probably too many. Recommendations are usually based on some knowledge of user preferences, but there is no mention of how these will be captured or used. Perhaps it is expected to be more about retrieval than recommendation. An extensive list of news sources has been identified. It is commendable that a proof-of-concept system has already been built. I would have thought that a full(er) literature review would have been done in preparation for the proposal. The project is ambitious, but the potential risks have been recognised. The timeline could have provided greater detail. The proposal is very well written, with a good number of references. 
 
+      
+      ST / ML / NLP / networks
+        drop NLP?
+
       email Michael
 
 
     August 2-6
       talk to Michael
 
-      ST / ML / NLP / networks
-        drop NLP?
 
+
+
+OPTIONAL
+  Python/Neo4j links
+        https://towardsdatascience.com/create-a-graph-database-in-neo4j-using-python-4172d40f89c4
+        https://towardsdatascience.com/neo4j-cypher-python-7a919a372be7
+        https://medium.com/@kashish.gakkar/working-with-neo4j-using-python-131ccc074947
+        https://towardsdatascience.com/movie-recommendations-powered-by-knowledge-graphs-and-neo4j-33603a212ad0
+  Python POC
+  hook up Python to "full KG database"

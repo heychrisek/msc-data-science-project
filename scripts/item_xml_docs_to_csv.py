@@ -17,7 +17,7 @@ import pdb
 NSMAP = {'iptc': 'http://iptc.org/std/nar/2006-10-01/',
          'xhtml': 'http://www.w3.org/1999/xhtml'}
 CSV_ROW_LIMIT = 10000
-VERBOSE = False
+VERBOSE = True
 
 # temporary solution for encoded emojis in files like:
 #   tag:reuters.com,2019:newsml_CqtdcPk1a:607651010.XML
@@ -35,18 +35,18 @@ VERBOSE = False
 INVALID_CHAR_REGEX = '&#\d\d\d\d\d;'
 
 def save_to_csv(news_items, filename):
-  fields = ['filename',
-            'datetime',
+  fields = [#'filename',
+            #'datetime',
             'guid',
-            'slugline',
-            'headline',
-            'description',
-            'genres',
-            'subjects',
-            'bodyLengthChars',
-            'bodyLengthCharsNonWhitespace',
-            'bodyLengthWords',
-            # 'body'
+            #'slugline',
+            #'headline',
+            #'description',
+            #'genres',
+            #'subjects',
+            #'bodyLengthChars',
+            #'bodyLengthCharsNonWhitespace',
+            #'bodyLengthWords',
+            'body'
             ]
 
   with open(filename, 'w') as csvfile:
@@ -61,18 +61,19 @@ def make_news_item_dict(filename, body='', datetime='EXCEPTION', description='EX
   Return dictionary of news_item. For empty case (in exceptions), default arguments
   will be 'EXCEPTION' and 0 length for bodyLengthChards and bodyLengthWords.
   """
-  return {#'body': body,
-          'datetime': datetime,
-          'description': description,
-          'filename': filename,
-          'genres': genres,
-          'guid': guid,
-          'headline': headline,
-          'slugline': slugline,
-          'subjects': subjects,
-          'bodyLengthChars': len(body),
-          'bodyLengthCharsNonWhitespace': len(body.replace(' ', '')),
-          'bodyLengthWords': len(re.split('\s+', body))} # split on \s+ for one *or more* spaces
+  return {'body': body,
+          # 'datetime': datetime,
+          # 'description': description,
+          # 'filename': filename,
+          # 'genres': genres,
+          'guid': guid#,
+          # 'headline': headline,
+          # 'slugline': slugline,
+          # 'subjects': subjects,
+          # 'bodyLengthChars': len(body),
+          # 'bodyLengthCharsNonWhitespace': len(body.replace(' ', '')),
+          # 'bodyLengthWords': len(re.split('\s+', body))
+          } # split on \s+ for one *or more* spaces
 
 def parse_xml(path, filename):
   file = path + '/' + filename
@@ -109,6 +110,8 @@ def parse_xml(path, filename):
   description = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentMeta/iptc:description', namespaces=NSMAP).text
   body = root.find('./iptc:itemSet/iptc:newsItem/iptc:contentSet/iptc:inlineXML/xhtml:html/xhtml:body', namespaces=NSMAP)#.text
   body = str(ET.tostring(body))
+  body = body.replace('b\'<html:body xmlns:html="http://www.w3.org/1999/xhtml">\\n              ',"")
+  body = body.replace('\\n            </html:body>\\n          \'',"")
 
   return make_news_item_dict(filename, body, datetime, description, genres, guid, headline, slugline, subjects)
 

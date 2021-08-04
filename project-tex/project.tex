@@ -114,7 +114,7 @@ Creating a knowledge graph requires a transformation of the news data from its o
   The first step was to download the XML documents from AWS S3 into a local directory. As a one-time step, this was done manually via the AWS S3 user interface.
 
   \subsubsection{Extract XML properties (\lstinline{item_xml_docs_to_csv.py})}
-  Next a batched job converted the directory of local XML documents into CSV format, with a CSV for each 10,000 items and a row for each of the 59,542 news items. This job output six CSV files with columns for XML filename, datetime, guid, slugline, headline, description, genres, subjects, bodyLengthChars, and bodyLengthWords (see \hyperref[sec:AppendixA]{``Appendix A"}).
+  Next a batched job converted the directory of local XML documents into CSV format, with a CSV for each 10,000 items and a row for each of the 59,542 news items. This job output six CSV files with columns for XML filename, datetime, guid, slugline, headline, description, genres, subjects, bodyLengthChars, and bodyLengthWords (see \hyperref[sec:AppendixA]{``Appendix A"}). A separate job is run to map guid to body, for later ingest.
   
   \subsubsection{Ontology development and linked data (\lstinline{wikidata_to_wikipedia_url.py})}
   A manual step categorised the 415 subjects extracted from the news item XML documents, subjects (e.g., Aquatic Sports, United Kingdom, Middle East, and Books) into categories (e.g., sport, country, region, art and culture). Next a script mapped each subject to a Wikidata ID and Wikipedia URL, to enable linked data with Wikidata.
@@ -170,7 +170,7 @@ Creating a knowledge graph requires a transformation of the news data from its o
   \end{itemize}
 
   \subsubsection{Graph database ingestion (\lstinline{csvs_to_neo4j.cypher})}
-  Finally, Cypher queries were run to ingest the primary metadata from each cleaned XML news item into Neo4j as a property graph with initial relationships (see\hyperref[sec:AppendixC]{``Appendix C"}). After running these Cypher queries, a prototype knowledge graph is available for meaningful queries and initial information retrieval (see\hyperref[sec:DataSetEvaluation]{``Data Set Evaluation"} below). This step uses Neo4j, Cypher, and APOC to load the cleaned CSV, create Neo4j nodes for each NewsItem, Subject, and Genre, add properties to the nodes, and create \lstinline{-[:HAS_GENRE]->} and \lstinline{-[:HAS_SUBJECT]->} relationships.
+  Finally, the CSVs were combined and ingested into Neo4g as a graph database. Cypher queries were run to ingest the primary metadata from each cleaned XML news item into Neo4j as a property graph with initial relationships (see\hyperref[sec:AppendixC]{``Appendix C"}). After running these Cypher queries, a prototype knowledge graph is available for meaningful queries and initial information retrieval (see\hyperref[sec:DataSetEvaluation]{``Data Set Evaluation"} below). This step uses Neo4j, Cypher, and APOC to load the cleaned CSV, create Neo4j nodes for each NewsItem, Subject, and Genre, add properties to the nodes, and create \lstinline{-[:HAS_GENRE]->} and \lstinline{-[:HAS_SUBJECT]->} relationships.
 
 
 
