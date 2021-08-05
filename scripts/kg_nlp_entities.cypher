@@ -73,7 +73,9 @@ LIMIT 25;
 //    MATCH (n:NewsItem {guid: "tag:reuters.com,2019:newsml_A4N21U01K"})-[r:HAS_ENTITY]->(p)
 //    RETURN n, r, p;
 
-// start 11:33, 100 every 81 seconds...
+// batch of 10 completes every ~6 seconds
+// 60,000 items / batch of 10 = 6,000 batches
+// 6,000 batches x 6 seconds = 36,000 seconds = 600 minutes = 10 hours...
 CALL apoc.periodic.iterate(
   "MATCH (n:NewsItem)
    WHERE not(exists(n.gcpEntitiesProcessed))

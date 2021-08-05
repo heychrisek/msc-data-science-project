@@ -1,37 +1,31 @@
-\BOOKMARK [1][-]{section.1}{Glossary}{}% 1
-\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Problem}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Project Objectives}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Summary of Findings}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Report Outline}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Technical Specifications}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Context and Background}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{Knowledge Graphs}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Network stuff?}{section.3}% 10
-\BOOKMARK [1][-]{section.4}{Data}{}% 11
-\BOOKMARK [2][-]{subsection.4.1}{Data Set Collection}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.2}{Data Input and Preprocessing}{section.4}% 13
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Source data}{subsection.4.2}% 14
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Extract XML properties \(itemxmldocstocsv.py\)}{subsection.4.2}% 15
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Ontology development and linked data \(wikidatatowikipediaurl.py\)}{subsection.4.2}% 16
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Data cleaning \(data-dimensions.ipynb\)}{subsection.4.2}% 17
-\BOOKMARK [3][-]{subsubsection.4.2.5}{Data challenges}{subsection.4.2}% 18
-\BOOKMARK [3][-]{subsubsection.4.2.6}{Graph database ingestion \(csvstoneo4j.cypher\)}{subsection.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.3}{Data Set Evaluation}{section.4}% 20
-\BOOKMARK [1][-]{section.5}{Knowledge Graph Design and Implementation}{}% 21
-\BOOKMARK [2][-]{subsection.5.1}{Graph Database Creation}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.2}{Semantic Enhancements}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.3}{Natural Language Processing}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.4}{Models, networks, etc.???}{section.5}% 25
-\BOOKMARK [1][-]{section.6}{Knowledge Graph performance evaluation}{}% 26
-\BOOKMARK [2][-]{subsection.6.1}{Interpretability}{section.6}% 27
-\BOOKMARK [2][-]{subsection.6.2}{Others...confusion matrix, predictions, clustering, betweenness, etc.}{section.6}% 28
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 29
-\BOOKMARK [2][-]{subsection.7.1}{Future Work}{section.7}% 30
-\BOOKMARK [2][-]{subsection.7.2}{Conclusion}{section.7}% 31
-\BOOKMARK [1][-]{section.8}{Appendix}{}% 32
-\BOOKMARK [2][-]{subsection.8.1}{Appendix XML...}{section.8}% 33
-\BOOKMARK [2][-]{subsection.8.2}{Appendix A. itemxmldocstocsv.py to transform XML docs to CSV}{section.8}% 34
-\BOOKMARK [2][-]{subsection.8.3}{Code to turn CSVs into Neo4j knowledge graph}{section.8}% 35
-\BOOKMARK [2][-]{subsection.8.4}{Code to turn CSVs into Neo4j knowledge graph}{section.8}% 36
-\BOOKMARK [2][-]{subsection.8.5}{Queries of knowledge graph...}{section.8}% 37
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Background}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Aims and Objectives}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Literature Review}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{News media knowledge graph literature}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Knowledge Graph literature}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Data Extraction and Software Specification}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Software Specification}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Data Set}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Data Input and Preprocessing}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Source data}{subsection.3.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Extract XML properties \(itemxmldocstocsv.py\)}{subsection.3.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Initial linked data \(wikidatatowikipediaurl.py\)}{subsection.3.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Data cleaning \(data-dimensions.ipynb\)}{subsection.3.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Data challenges}{subsection.3.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.3.6}{Graph database ingestion \(csvstoneo4j.cypher\)}{subsection.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.4}{Data Set Evaluation}{section.3}% 17
+\BOOKMARK [1][-]{section.4}{Knowledge Graph Design and Enhancement}{}% 18
+\BOOKMARK [2][-]{subsection.4.1}{Semantic Enhancements}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.2}{Natural Language Processing}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.3}{Models, networks, etc.???}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{[WIP] Evaluation}{}% 22
+\BOOKMARK [1][-]{section.6}{[WIP] Conclusions}{}% 23
+\BOOKMARK [2][-]{subsection.6.1}{Future Work}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.2}{Conclusion}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Appendix}{}% 26
+\BOOKMARK [2][-]{subsection.7.1}{Appendix XML...}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.2}{Appendix A. itemxmldocstocsv.py to transform XML docs to CSV}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.3}{Code to turn CSVs into Neo4j knowledge graph}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.4}{Code to turn CSVs into Neo4j knowledge graph}{section.7}% 30
+\BOOKMARK [2][-]{subsection.7.5}{Queries of knowledge graph...}{section.7}% 31
