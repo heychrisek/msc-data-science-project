@@ -382,18 +382,25 @@ For example:
   MATCH path = (c:Category {name: "republic"})<-[:SUB_CAT_OF*]-(child)
   RETURN path
   LIMIT 25;
-  \end{lstlisting}
+\end{lstlisting}
 
-  \begin{figure}
-    \centerline{\includegraphics[scale=0.5]{category-republic.png}}
-    \caption{\textit{Countries which are instances of republic}}
-  \end{figure}
+\begin{figure}
+  \centerline{\includegraphics[scale=0.5]{category-republic.png}}
+  \caption{\textit{Countries which are instances of republic}}
+\end{figure}
 
 This provides a foundation of knowledge via Wikidata's ontology, which can now be connected to facts from the news items via natural language processing (NLP) and entity extraction.
 
 \subsection{Natural Language Processing}
 
-The APOC plugin enables Neo4j Cypher queries to use the Google Cloud Platform's entity extraction procedures\footnote{\url{https://neo4j.com/labs/apoc/4.1/nlp/gcp/#nlp-gcp-entities}}.
+The APOC plugin enables Neo4j Cypher queries to use the Google Cloud Platform's entity extraction procedures\footnote{\url{https://neo4j.com/labs/apoc/4.1/nlp/gcp}}.
+
+By running entity extraction over each news item's text body, which takes approximately 10 hours for all 59,542 items, we can now see entities for a given news item. For example, a news item about the Gap clothing company may have entities United States, Gap, and Sephora (see "Figure ...").
+
+\begin{figure}
+  \centerline{\includegraphics[scale=0.5]{has-entity.png}}
+  \caption{\textit{\lstinline{(n:NewsItem)-[:HAS_ENTITY]->(p:WikipediaPage)}}}
+\end{figure}
 
 \subsection{Models, networks, etc.???}
 
