@@ -36,7 +36,7 @@ NEXT STEPS
 
 
 
-OPTIONAL
+SKIP!
   Python/Neo4j links
         https://towardsdatascience.com/create-a-graph-database-in-neo4j-using-python-4172d40f89c4
         https://towardsdatascience.com/neo4j-cypher-python-7a919a372be7

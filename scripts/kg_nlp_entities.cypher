@@ -185,9 +185,9 @@ return path, otherPath;
 
 
 // :ABOUT relationship between wikipedia page and category for Obamas
-MATCH (w:WikipediaPage)-[a:ABOUT]-(c:Category)
-WHERE w.uri CONTAINS "Obama"
-RETURN w, a, c;
+  MATCH (w:WikipediaPage)-[a:ABOUT]-(c:Category)
+  WHERE w.uri CONTAINS "Obama"
+  RETURN w, a, c;
 
 
 // Category and WikipediaPage for US Democratic Party
@@ -205,3 +205,34 @@ RETURN c1, c2 LIMIT 10;
 MATCH p=(c1 {name:"IBM"})-[:SUB_CAT_OF]-(c2)
 WITH *, relationships(p) AS r
 RETURN c1, c2, r LIMIT 100
+
+
+// wikipedia pages about subcategories (e.g., countries) of "landlocked country" category
+MATCH (c1 {name:"landlocked country"})<-[r1:SUB_CAT_OF]-(c2)<-[r2:ABOUT]-(w:WikipediaPage)
+RETURN c1, c2, r1, r2, w LIMIT 100
+
+
+// news items about wikipedia pages about subcategories (e.g., countries) of "landlocked country" category
+MATCH (c1 {name:"landlocked country"})<-[r1:SUB_CAT_OF]-(c2)<-[r2:ABOUT]-(w:WikipediaPage)<-[r3:HAS_ENTITY]-(n:NewsItem)
+RETURN c1, c2, r1, r2, w, r3, n LIMIT 100
+
+MATCH (c1 {name:"landlocked country"})<-[r1:SUB_CAT_OF]-(c2)<-[r2:ABOUT]-(w:WikipediaPage)<-[r3:HAS_ENTITY]-(n:NewsItem)
+RETURN n.headline, c2.name AS country, c1.name AS category LIMIT 100
+
+
+
+// wikipedia pages and categories for a given news item
+MATCH (n:NewsItem {guid:"tag:reuters.com,2019:newsml_L5N26G16Q"})-[r1:HAS_ENTITY]->(w:WikipediaPage)-[r2:ABOUT]->(c:Category)
+// WHERE r1.salience>0.01
+RETURN n, w, c
+
+
+// "recommended" items based on 
+MATCH (n:NewsItem {guid:"tag:reuters.com,2019:newsml_L5N26G16Q"}),
+      entityPath = (n)-[:HAS_ENTITY]->(wiki)-[:ABOUT]->(cat),
+      path = (cat)-[:SUB_CAT_OF]->(parent)<-[:SUB_CAT_OF]-(otherCat),
+      otherEntityPath = (otherCat)<-[:ABOUT]-(otherWiki)<-[:HAS_ENTITY]-(other)
+RETURN other.guid, other.headline,
+       [(other)-[:HAS_ENTITY]->()-[:ABOUT]->(entity) | entity.name] AS otherCategories,
+       collect([node in nodes(path) | node.name]) AS pathToOther
+LIMIT 10;
