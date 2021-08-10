@@ -90,7 +90,7 @@ CALL apoc.periodic.iterate(
    UNWIND value.entities AS entity
    WITH entity, node
    WHERE not(entity.metadata.wikipedia_url is null)
-   MERGE (page:Resource {uri: entity.metadata.wikipedia_url, name:entity.name})
+   MERGE (page:Resource {uri: entity.metadata.wikipedia_url})
    SET page:WikipediaPage
    MERGE (node)-[:HAS_ENTITY {salience:entity.salience}]->(page)",
   {batchMode: "BATCH_SINGLE", batchSize: 1000, params: {key: $key}})
@@ -114,6 +114,94 @@ LIMIT 10;
 
 // -----------
 // 3 QUERY KNOWLEDGE GRAPH
+// https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/#querying-the-knowledge-graph
+// https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/#querying-the-knowledge-graph
 // -----------
+MATCH (n:NewsItem)
+WHERE NOT(n)-[:HAS_ENTITY]->()
+RETURN COUNT(n);
 
-https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/#querying-the-knowledge-graph
+    // -----------
+    // 3a CLEANUP
+    // some Category nodes are missing 'name' property -- see wikidata_urls_to_names.py script
+    // after Python script runs, copy names into CSV of URIs, then run the following:
+    // -----------
+    CALL apoc.load.csv('wikidata_uris_and_names.csv') YIELD map as row
+    MATCH (c:Category {uri: row.uri})
+    SET c.name = row.name
+    RETURN c
+
+
+// news items matching Croatia as an explicit topic
+MATCH (c:Category {name: "Croatia"})
+CALL n10s.inference.nodesInCategory(c, {
+  inCatRel: "ABOUT",
+  subCatRel: "SUB_CAT_OF"
+})
+YIELD node
+MATCH (node)<-[e:HAS_ENTITY]-(n:NewsItem)
+RETURN n.headline AS headline, n.description AS description, n.datetime AS date,
+       collect(n10s.rdf.getIRILocalName(node.uri)) as explicitTopics, e.salience AS entitySalience
+ORDER BY entitySalience DESC
+LIMIT 5;
+
+
+// news items matching explicit topics like US and Egypt (countries), based on subcategory relationship to "state"
+MATCH (c:Category {name: "state"})
+CALL n10s.inference.nodesInCategory(c, {
+  inCatRel: "ABOUT",
+  subCatRel: "SUB_CAT_OF"
+})
+YIELD node
+MATCH (node)<-[e:HAS_ENTITY]-(n:NewsItem)
+RETURN n.headline AS headline, n.description AS description, n.datetime AS date,
+       collect(n10s.rdf.getIRILocalName(node.uri)) as explicitTopics, e.salience AS entitySalience
+ORDER BY entitySalience DESC
+LIMIT 500;
+
+
+// news items matching explicit topics like Norway and Thailand, based on subcategory relationship to "constitutional monarchy"
+MATCH (c:Category {name: "constitutional monarchy"})-[r]-(n)
+RETURN c, r, n
+
+MATCH (c:Category {name: "constitutional monarchy"})
+CALL n10s.inference.nodesInCategory(c, {
+  inCatRel: "ABOUT",
+  subCatRel: "SUB_CAT_OF"
+})
+YIELD node
+MATCH (node)<-[e:HAS_ENTITY]-(n:NewsItem)
+RETURN n.headline AS headline, n.description AS description, n.datetime AS date,
+       collect(n10s.rdf.getIRILocalName(node.uri)) as explicitTopics, e.salience AS entitySalience
+ORDER BY entitySalience DESC
+LIMIT 500;
+
+
+
+MATCH (n:NewsItem {guid: "tag:reuters.com,2019:newsml_A4N21U01Y"}),
+      path = (a)-[:HAS_ENTITY]->(wiki)-[:ABOUT]->(cat),
+      otherPath = (wiki)<-[:HAS_ENTITY]-(other)
+return path, otherPath;
+
+
+// :ABOUT relationship between wikipedia page and category for Obamas
+MATCH (w:WikipediaPage)-[a:ABOUT]-(c:Category)
+WHERE w.uri CONTAINS "Obama"
+RETURN w, a, c;
+
+
+// Category and WikipediaPage for US Democratic Party
+MATCH (c:Category)<-[r:ABOUT]-(w:WikipediaPage)
+WHERE c.uri="http://www.wikidata.org/entity/Q29552"
+RETURN c, r, w;
+
+
+// categories that are subcategories of something else
+MATCH (c1)-[:SUB_CAT_OF]-(c2)
+RETURN c1, c2 LIMIT 10;
+
+
+// categories that are parents of IBM
+MATCH p=(c1 {name:"IBM"})-[:SUB_CAT_OF]-(c2)
+WITH *, relationships(p) AS r
+RETURN c1, c2, r LIMIT 100

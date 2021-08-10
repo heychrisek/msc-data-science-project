@@ -67,6 +67,124 @@ TBD...
 
 \newpage
 \section{Introduction}
+\subsection{Summary}
+This project proposes a data pipeline to transform XML or raw text news items into a knowledge graph.
+
+\subsubsection{Input / Output}
+For example, given an \textbf{input} of XML documents in the following format:
+\begin{lstlisting}[basicstyle=\tiny]
+<?xml version="1.0" encoding="UTF-8"?>
+<newsMessage xmlns="http://iptc.org/std/nar/2006-10-01/" xmlns:rtr="http://www.reuters.com/ns/2003/08/content" xmlns:x="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <itemSet>
+    <newsItem guid="tag:reuters.com,2019:newsml_L2N25V1DP" xml:lang="en">
+      <itemMeta>
+        <firstCreated>2019-09-04T20:08:51.000Z</firstCreated>
+        <fileName>2019-09-04T200851Z_702697965_L2N25V1DP_RTRMADT_0_EXXON-MOBIL-CHEVRON-BREAKINGVIEWS.XML</fileName>
+        <rtr:versionedId guid="tag:reuters.com,2019:newsml_L2N25V1DP:702697965"/>
+      </itemMeta>
+      <contentMeta>
+        <language tag="en"/>
+        <subject qcode="N2:US" type="cptType:5">
+          <name>United States</name>
+          <facet qcode="geoProp:5"/>
+        </subject>
+        <subject qcode="N2:NAMER" type="cptType:5">
+          <name>North America</name>
+          <facet qcode="geoProp:3"/>
+        </subject>
+        <slugline separator="-">EXXON MOBIL-CHEVRON/BREAKINGVIEWS</slugline>
+        <headline>BREAKINGVIEWS-Exxon CEO risks fueling unholy investor alliance</headline>
+        <creditline>Reuters</creditline>
+        <description>EXXON MOBIL-CHEVRON/BREAKINGVIEWS:BREAKINGVIEWS-Exxon CEO risks fueling unholy investor alliance</description>
+        <by>By Antony Currie</by>
+      </contentMeta>
+      <contentSet>
+        <inlineXML contenttype="application/xhtml+html" wordcount="209">
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <body>
+              <p>(The author is a Reuters Breakingviews columnist.  The opinions
+expressed are his own.)</p>
+              <p>By Antony Currie</p>
+              <p>NEW YORK, Sept 4 (Reuters Breakingviews) - Darren Woods
+reckons human progress and the unreliability of alternative
+energy sources justifies investing more in emissions-laden...</p>
+            </body>
+          </html>
+        </inlineXML>
+      </contentSet>
+    </newsItem>
+  </itemSet>
+</newsMessage>
+\end{lstlisting}
+
+The proposed pipeline will produce an \textbf{output} of a Neo4j knowledge graph, transforming the XML documents into the following graph nodes:
+\begin{itemize}
+  \item{News items, representing each XML document and its metadata including filename, datetime, text body, etc.}
+  \item{Subjects, representing the topic areas covered in the news item's text body.}
+  \item{Genres, representing the publication type of news item including column, editorial special, obituary, or poll.}
+  \item{Wikipedia pages, representing the entities extracted from the news item's text body}
+  \item{Categories, representing an ontology of categories as defined by WikiData for such areas as geography, political parties, politicans, cities, athletes, and public companies.}
+\end{itemize}
+
+\subsubsection{Benefits and Use Cases}
+The proposed pipeline and resulting knowledge graph are of particular value to two user types:
+
+\textbf{Journalists and media companies} can use this pipeline to store all news items when published. This has the following benefits:
+\begin{enumerate}
+  \item{
+    \textit{Context}: Journalists can view deeper context when writing and researching a story.
+
+    For example, a journalist reporting on Austria may be interested in some background context and learn, via the Wikidata ontology, that Austria is an instance of landlocked country, Rechtsstaat, and other categories.
+  
+    \centerline{\includegraphics[scale=0.3]{use-case-1a}}
+
+    From there, she may seek to draw links to other similar categories and learn that Senegal, Brazil, and Transnistria\footnote{A ``de facto unrecognized state in Eastern Europe that has declared independence from Moldova" (\url{https://www.wikidata.org/wiki/Q907112})}.
+  
+    \centerline{\includegraphics[scale=0.3]{use-case-1b}}
+
+    Finally, she may be deepen her contextual knowledge by viewing any news items previously published about countries in a category like Rechtsstaat\footnote{A ``doctrine in European legal thinking, means `state based on justice and integrity'" (\url{https://www.wikidata.org/wiki/Q4209223})}.
+  
+    \centerline{\includegraphics[scale=0.3]{use-case-1c}}
+  }
+  \item{
+    \textit{Recommendations}: Media companies can leverage the knowledge graph as an API to provide recommendations to customers based on items they are viewing. This provides an improved user experience and increases the time the customers remain on the company's platform, thus increasing company revenue.
+
+    For example, a customer may be reading a news article about football:
+
+    \centerline{\includegraphics[scale=0.3]{use-case-2a}}
+
+    The knowledge graph provides an easy way for the customer to view "similar" articles, by retrieving other articles that share knowledge graph paths to relevant football players:
+    
+    \centerline{\includegraphics[scale=0.25]{use-case-2c}}
+    }
+\end{enumerate}
+
+The second user type who would benefit from this pipeline and knowledge graph are \textbf{researchers and media customers}, who can use the knowledge graph for information retrieval and data mining. For example, the knowledge graph adds structure to semi-structured documents and draw meaning from the text in the following ways:
+\begin{enumerate}
+  \item{
+    \textit{Entity extraction}: Entities have been extracted for each news item, enriching the news items' metadata and enabling users to identify the entities in a news item or news items about a given entity. A given news item's entities can be ranked based on their salience, giving an idea of each entity's relevance:
+
+    \centerline{\includegraphics[scale=0.3]{use-case-3a}}
+    \centerline{\includegraphics[scale=0.3]{use-case-3b}}
+
+  }
+  \item{
+    \textit{Similarity}: News items can be similar based on shared relationships, as well as graph properties like K-nearest neighbours, Euclidean distance, or cosine similarity. As a simple example, Jaccard similarity can be computed using shared entities or subjects:
+
+    \centerline{\includegraphics[scale=0.3]{use-case-4-similarity-1}}
+  
+    \centerline{\includegraphics[scale=0.3]{use-case-4-similarity-2}}
+  
+    \centerline{\includegraphics[scale=0.3]{use-case-4-similarity-3}}
+  }
+  \item{
+    \textit{Categorisation}: By linking data with Wikidata, particularly Wikidata's ontology of categories and subcategories, the news items can be categorised in new ways. For example, categories enable unique queries like "all articles featuring landlocked countries" and provide additional details about companies like IBM as a public company, technology company, etc.:
+
+    \centerline{\includegraphics[scale=0.3]{use-case-5a}}
+
+    \centerline{\includegraphics[scale=0.3]{use-case-5b}}
+    }
+\end{enumerate}
 \subsection{Background}
 The intent of this project is to build a knowledge graph for the news domain to improve news item recommendations and information retrieval. Knowledge graphs make use of the mathematical graph structure to enable knowledge representation or knowledge bases that can generate value in terms of human meaning.
 
@@ -132,30 +250,30 @@ As reviewed in the project proposal\cite{ek-proposal}, a number of knowledge rep
   \caption{\textit{Neptuno diagram}}
 \end{figure}
 
-The first system of note historically is \textbf{Neptuno} (2004)\cite{castells2004neptuno}, which introduces ``emergent semantic-based technologies to improve the processes of creation, maintenance, and exploitation of the digital archive of a newspaper". This archive-focused technique presents useful background for this project, but is oriented as an ontology-first approach. For example, Neptuno's ``Publication through visualisation ontology" model begins with RDF and ends with XML and HTML, whereas this project begins with published XML documents (see "Figure 1").
+The first system of note historically is \textit{Neptuno} (2004)\cite{castells2004neptuno}, which introduces ``emergent semantic-based technologies to improve the processes of creation, maintenance, and exploitation of the digital archive of a newspaper". This archive-focused technique presents useful background for this project, but is oriented as an ontology-first approach. For example, Neptuno's ``Publication through visualisation ontology" model begins with RDF and ends with XML and HTML, whereas this project begins with published XML documents (see "Figure 1").
 
 \begin{figure}
   \centerline{\includegraphics[scale=0.4]{literature-review--newsreader.png}}
   \caption{\textit{NewsReader diagram}}
 \end{figure}
 
-Meanwhile, \textbf{News Engine Web Services (NEWS)} \cite{fernandez2010news} (2010), \textbf{NewsReader} \cite{vossen2016newsreader} (2016), and \textbf{Acquisition de Schémas pour la Reconnaissance et l'Annotation d'Événements Liés (ASRAEL)} \cite{rudnik2019searching} (2019) each approach the news industry from a semantic technology point of view, using ontology, metadata vocabularies, RDF, and Wikidata. NewsReader, for example, matches the sequence of operations that this project proposes, from raw text to information extraction, linked data, and ontology development (see "Figure 2").
+Meanwhile, \textit{News Engine Web Services (NEWS)} \cite{fernandez2010news} (2010), \textit{NewsReader} \cite{vossen2016newsreader} (2016), and \textit{Acquisition de Schémas pour la Reconnaissance et l'Annotation d'Événements Liés (ASRAEL)} \cite{rudnik2019searching} (2019) each approach the news industry from a semantic technology point of view, using ontology, metadata vocabularies, RDF, and Wikidata. NewsReader, for example, matches the sequence of operations that this project proposes, from raw text to information extraction, linked data, and ontology development (see "Figure 2").
 
 \begin{figure}
   \centerline{\includegraphics[scale=0.4]{literature-review--summa.png}}
   \caption{\textit{SUMMA diagram}}
 \end{figure}
 
-Two recent efforts have applied NLP and ML techniques to news data. These are \textbf{Scalable Understanding of Multilingual MediA (SUMMA)} \cite{germann2018integrating} (2018) and \textbf{News Hunter} \cite{berven2020knowledge} (2020), which are both platforms and architectures for news monitoring and applying NLP pipelines. For example, SUMMA matches the general data flow proposed in this project (see "Figure 3"). Furthermore, it presents useful state of the art for NLP techniques, including entity extraction, clustering, and topic detection, which will be pursued in this project.
+Two recent efforts have applied NLP and ML techniques to news data. These are \textit{Scalable Understanding of Multilingual MediA (SUMMA)} \cite{germann2018integrating} (2018) and \textit{News Hunter} \cite{berven2020knowledge} (2020), which are both platforms and architectures for news monitoring and applying NLP pipelines. For example, SUMMA matches the general data flow proposed in this project (see "Figure 3"). Furthermore, it presents useful state of the art for NLP techniques, including entity extraction, clustering, and topic detection, which will be pursued in this project.
 
 \begin{figure}
   \centerline{\includegraphics[scale=0.4]{literature-review--newsgraph.png}}
   \caption{\textit{SUMMA diagram}}
 \end{figure}
 
-\textbf{News Graph} \cite{liu2019news} (2019), may be the research most directly relevant to this project. As an enhanced news knowledge graph that adds new entities and relationships and removes news-irrelevant links, it models the desired outcome of news recommendations based on the application of NLP techniques. On the other hand, it focuses on mathematical techniques around entity embeddings for news recommendations; this is of note for the project, but goes deeply into a specific direction rather than as a general knowledge graph in the news domain.
+\textit{News Graph} \cite{liu2019news} (2019), may be the research most directly relevant to this project. As an enhanced news knowledge graph that adds new entities and relationships and removes news-irrelevant links, it models the desired outcome of news recommendations based on the application of NLP techniques. On the other hand, it focuses on mathematical techniques around entity embeddings for news recommendations; this is of note for the project, but goes deeply into a specific direction rather than as a general knowledge graph in the news domain.
 
-Finally, a number of other systems were reviewed, but deemed not relevant to the project at hand. These include \textbf{Global Database of Events, Language, and Tone (GDELT)}\footnote{\url{https://www.gdeltproject.org/}} (2013) and \textbf{Event Registry} \cite{leban2014event} (2014), which were proposed as real-time monitoring systems for analysing "world events" or "world's news media". These both approach the field differently, as a high-volume monitoring system rather than a knowledge graph architecture for information retrieval. Furthermore, \textbf{NewsAPI}\footnote{\url{https://newsapi.org/}} (2017) is JSON API to retrieve articles and breaking news headlines from various sources, but not an overall knowledge architecture. Finally, \textbf{Reuters' Tracer} \cite{liu2017reuters} (2017) ``automates end-to-end news production using Twitter data." It provides an interesting example of a data pipeline, but with a different use case.
+Finally, a number of other systems were reviewed, but deemed not relevant to the project at hand. These include \textit{Global Database of Events, Language, and Tone (GDELT)}\footnote{\url{https://www.gdeltproject.org/}} (2013) and \textit{Event Registry} \cite{leban2014event} (2014), which were proposed as real-time monitoring systems for analysing "world events" or "world's news media". These both approach the field differently, as a high-volume monitoring system rather than a knowledge graph architecture for information retrieval. Furthermore, \textit{NewsAPI}\footnote{\url{https://newsapi.org/}} (2017) is JSON API to retrieve articles and breaking news headlines from various sources, but not an overall knowledge architecture. Finally, \textit{Reuters' Tracer} \cite{liu2017reuters} (2017) ``automates end-to-end news production using Twitter data." It provides an interesting example of a data pipeline, but with a different use case.
 
 \subsection{Knowledge Graph literature}
 
@@ -351,7 +469,7 @@ More significantly, at this point the knowledge graph's practical value begins t
 
 \begin{figure}
   \centerline{\includegraphics[scale=0.2]{03-shortest-path}}
-  \caption{\textit{Knowledge graph Cypher queries: shortest-path}}
+  \caption{\textit{Knowledge graph Cypher queries: shortest path}}
 \end{figure}
 
 
@@ -395,7 +513,7 @@ This provides a foundation of knowledge via Wikidata's ontology, which can now b
 
 The APOC plugin enables Neo4j Cypher queries to use the Google Cloud Platform's entity extraction procedures\footnote{\url{https://neo4j.com/labs/apoc/4.1/nlp/gcp}}.
 
-By running entity extraction over each news item's text body, which takes approximately 10 hours for all 59,542 items, we can now see entities for a given news item. For example, a news item about the Gap clothing company may have entities United States, Gap, and Sephora (see "Figure ...").
+By running entity extraction over each news item's text body, which takes approximately 10 hours for all 59,542 items, we can now see entities for a given news item. For example, a news item about the Gap clothing company may have entities United States, Gap, and Sephora (see "Figure 12").
 
 \begin{figure}
   \centerline{\includegraphics[scale=0.5]{has-entity.png}}
@@ -427,7 +545,7 @@ Sample XML document from Reuters corpus on AWS S3, specifically file \lstinline{
 \\
 
 
-\begin{lstlisting}
+\begin{lstlisting}[basicstyle=\tiny]
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 SUMMARY: 
@@ -527,8 +645,7 @@ with climate activists...</p>
 Save the following code as \textit{\lstinline{item_xml_docs_to_csv.py}} and run using command line arguments below with a directory of XML / NewsMLG2 documents.
 \\
 
-\begin{lstlisting}[language=Python]
-% \begin{lstlisting}
+\begin{lstlisting}[language=Python, basicstyle=\tiny]
 import csv
 import os
 import re
