@@ -1,23 +1,87 @@
 NEXT STEPS
+    Fix latex quotes " -> ``
+
+
+    August 10-12
+      write report, reorganize abstract / intro / etc.
+
+      NOTES FROM MICHAEL
+          question:
+            corpus of XML about champions league football -- how does this import into Neo4j 
+            explain mapping of news XML to neo4j, how would it be different for a different corpus
+
+          todo:        
+            indicate some possibilities of future research (similarity, algorithms, etc)
+            indicate what can be done, give examples
+
+            end research paper with outlook/conclusions/future work
+
+            demo in September
+
+            structure of report:
+                abstract: this project is about this and that, aim is ..., general terms about research problem, why people are interested
+                (check if I'm interested at all)
+
+                intro
+                (why this is interesting and that I'm great; you're an idiot to not buy my product; sell story)
+                  
+                  summary -> "research problem", media area
+                    i/o
+                    use cases
+                  background
+                  aims and objectives
+
+                  technologies used to solve problem
+
+      future work
+          similarity algorithms: https://neo4j.com/docs/graph-data-science/current/algorithms/similarity/
+          centrality algorithms: https://neo4j.com/docs/graph-data-science/current/algorithms/centrality/
+          link prediction algorithms: https://neo4j.com/docs/graph-data-science/current/algorithms/linkprediction/
+
+      evaluation
+        precision/recall
+        interpretability
+
+        compare similarity
+          different algorithms (Jaccard, etc.)
+          different shared properties (subjects/genres/entities)
+
+        information retrieval: can retrieve information we couldn't before
+
+      write up sections from "MSc Data Science project marking criteria" on Moodle
+      for a distinction:
+        "Project Report:
+                • Specification and design: The specification and design of the system/software shows a clear understanding of what needs to be done to meet the requirements, and is well-rounded, i.e. the components fit together in a coherent way. 
+                • Implementation, or execution of research: The key stages of the implementation/research are clearly explained. The implementation/research is done to a high standard.
+                • Testing, results, analysis and critical evaluation: The solution demonstrates real insight into the problem/research question. There is clear and justified reflection upon the contribution and its limitations. The key results are accurately analysed and their relevance is explained. It is discussed how the software meets the specified requirements and is shown to be reliable. The author critically assesses the results and draws relevant conclusions from the study. A running version of the software is demonstrated (as above).
+                • Presentation of the proposal/report and documentation: Complex issues are explained clearly and concisely. The content is well-organised and structured in a way that demonstrates the links between the concepts presented. The proposal/report shows that the student clearly understands the researched material. The solution and any other claims made by the students are well-justified. The author uses various resources and cites relevant resources using an appropriate consistent referencing style. The proposal/report is of professional quality and contains very few, ideally no, typographic errors.
+        "
+
+
+    August 11
+      talk to Michael
+
 
     July 26-30
     
 
-      ingest text body into Neo4g graph DB
+x     ingest text body into Neo4g graph DB
 
-      start doing GCP NLP entity extraction
+x     start doing GCP NLP entity extraction
       see tutorial: https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/#entity-extraction
         https://neo4j.com/developer/graph-data-science/nlp/entity-extraction/
-      CREATE (e:Entity) ...
+x     CREATE (e:Entity) ...
 
 
-      from there link to Wikidata/Wikipedia?
+x     from there link to Wikidata/Wikipedia?
 
 
 
       review feedback
         First marker's comments:
         The background research section is very solid and detailed. The student has already taken first practical steps in order to investigate feasibility of this project. Maybe what’s missing in this section is a concrete (possibly imaginary) example of how the resulting system is supposed to work. The proposal contains a section with the project aims and objectives. It is not perfectly written, but the author’s intentions are clear. The project plan and methodology look detailed. Whether it can be followed successfully depends on many parameters, as the author mentions in Section 4.3. The proposal is well written in general. It would be even better without a few typos and little imperfections such as Latex quotation marks.
+
+x           "concrete (possibly imaginary) example of how the resulting system is supposed to work"
 
 
         Second marker's comments:
