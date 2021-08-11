@@ -68,7 +68,7 @@ TBD...
 \newpage
 \section{Introduction}
 \subsection{Summary}
-This project proposes a data pipeline to transform XML or raw text news items into a knowledge graph.
+This project proposes a \textit{data pipeline} to transform XML or raw text news items into a \textit{knowledge graph}.
 
 \subsubsection{Input / Output}
 For example, given an \textbf{input} of XML documents in the following format:
@@ -117,7 +117,33 @@ energy sources justifies investing more in emissions-laden...</p>
 </newsMessage>
 \end{lstlisting}
 
-The proposed pipeline will produce an \textbf{output} of a Neo4j knowledge graph, transforming the XML documents into the following graph nodes:
+The proposed pipeline will first transform each news item into a Neo4j \lstinline{NewsItem} node:
+
+\begin{lstlisting}[basicstyle=\tiny]
+{
+  "identity": 19859,
+  "labels": [
+    "NewsItem"
+  ],
+  "properties": {
+    "bodyLengthCharsNonWhitespace": "1496",
+    "subjects": "{'North America', 'United States', 'Americas'}",
+    "description": "EXXON MOBIL-CHEVRON/BREAKINGVIEWS:BREAKINGVIEWS-Exxon CEO risks fueling unholy investor alliance",
+    "gcpEntitiesProcessed": true,
+    "body": "<html:p>(The author is a Reuters Breakingviews columnist.  The opinions expressed are his own.)</html:p>...",
+    "bodyLengthChars": "1871",
+    "slugline": "EXXON MOBIL-CHEVRON/BREAKINGVIEWS",
+    "datetime": "2019-09-04T20:08:51.000Z",
+    "filename": "tag:reuters.com,2019:newsml_L2N25V1DP:702697965.XML",
+    "genres": "{'Reports', 'Columns', 'Reuters Breakingviews'}",
+    "bodyLengthWords": "199",
+    "guid": "tag:reuters.com,2019:newsml_L2N25V1DP",
+    "headline": "BREAKINGVIEWS-Exxon CEO risks fueling unholy investor alliance"
+  }
+}
+\end{lstlisting}
+
+Using these imported XML news items, the pipeline will then generate a final \textbf{output} of a Neo4j knowledge graph, transforming the XML documents into the following graph nodes:
 \begin{itemize}
   \item{News items, representing each XML document and its metadata including filename, datetime, text body, etc.}
   \item{Subjects, representing the topic areas covered in the news item's text body.}
@@ -539,6 +565,11 @@ Clustering, betweenness
 \newpage
 
 \section{Appendix}
+
+TBD: remove this Appendix and only use Github Classroom repo?
+
+\url{https://github.com/Birkbeck/msc-data-science-project-2020_21---files-heychrisek}
+
 \subsection{Appendix XML...}
 \label{sec:AppendixXML}
 Sample XML document from Reuters corpus on AWS S3, specifically file \lstinline{tag/reuters.com,2019/newsml_L2N25V1DP/702697965}:
