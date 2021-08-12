@@ -3,7 +3,8 @@ NEXT STEPS
 
 
     August 10-12
-      write report, reorganize abstract / intro / etc.
+      *** write report, reorganize abstract / intro / etc.
+      *** finish demo repo: https://github.com/Birkbeck/msc-data-science-project-2020_21---files-heychrisek/
 
       NOTES FROM MICHAEL
           question:
