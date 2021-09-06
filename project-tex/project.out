@@ -1,34 +1,26 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Summary}{section.1}% 2
-\BOOKMARK [3][-]{subsubsection.1.1.1}{Input / Output}{subsection.1.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.1.2}{Benefits and Use Cases}{subsection.1.1}% 4
-\BOOKMARK [2][-]{subsection.1.2}{Background}{section.1}% 5
-\BOOKMARK [2][-]{subsection.1.3}{Aims and Objectives}{section.1}% 6
-\BOOKMARK [1][-]{section.2}{Literature Review}{}% 7
-\BOOKMARK [2][-]{subsection.2.1}{News media knowledge graph literature}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.2}{Knowledge Graph literature}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Data Extraction and Software Specification}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Software Specification}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Data Set}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.3}{Data Input and Preprocessing}{section.3}% 13
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Source data}{subsection.3.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Extract XML properties \(itemxmldocstocsv.py\)}{subsection.3.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Initial linked data \(wikidatatowikipediaurl.py\)}{subsection.3.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Data cleaning \(data-dimensions.ipynb\)}{subsection.3.3}% 17
-\BOOKMARK [3][-]{subsubsection.3.3.5}{Data challenges}{subsection.3.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.3.6}{Graph database ingestion \(csvstoneo4j.cypher\)}{subsection.3.3}% 19
-\BOOKMARK [2][-]{subsection.3.4}{Data Set Evaluation}{section.3}% 20
-\BOOKMARK [1][-]{section.4}{Knowledge Graph Design and Enhancement}{}% 21
-\BOOKMARK [2][-]{subsection.4.1}{Semantic Enhancements}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.2}{Natural Language Processing}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.3}{Models, networks, etc.???}{section.4}% 24
-\BOOKMARK [1][-]{section.5}{[WIP] Evaluation}{}% 25
-\BOOKMARK [1][-]{section.6}{[WIP] Conclusions}{}% 26
-\BOOKMARK [2][-]{subsection.6.1}{Future Work}{section.6}% 27
-\BOOKMARK [2][-]{subsection.6.2}{Conclusion}{section.6}% 28
-\BOOKMARK [1][-]{section.7}{Appendix}{}% 29
-\BOOKMARK [2][-]{subsection.7.1}{Appendix XML...}{section.7}% 30
-\BOOKMARK [2][-]{subsection.7.2}{Appendix A. itemxmldocstocsv.py to transform XML docs to CSV}{section.7}% 31
-\BOOKMARK [2][-]{subsection.7.3}{Code to turn CSVs into Neo4j knowledge graph}{section.7}% 32
-\BOOKMARK [2][-]{subsection.7.4}{Code to turn CSVs into Neo4j knowledge graph}{section.7}% 33
-\BOOKMARK [2][-]{subsection.7.5}{Queries of knowledge graph...}{section.7}% 34
+\BOOKMARK [2][-]{subsection.1.1}{Background}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Research Problem}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Benefits and Use Cases}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Literature Review}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{News Media Knowledge Systems}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Knowledge Graphs}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Technical Specifications}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Input / Output}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Technologies}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Data Extraction}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Data Set}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Data Input and Preprocessing}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Source Data}{subsection.4.2}% 14
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Extract XML Properties}{subsection.4.2}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Linked Data}{subsection.4.2}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Data Cleaning}{subsection.4.2}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Challenges}{subsection.4.2}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Graph Database Ingestion}{subsection.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Data Evaluation}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Knowledge Graph Design and Enhancement}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Semantic Enhancements}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Natural Language Processing}{section.5}% 23
+\BOOKMARK [1][-]{section.6}{Evaluation}{}% 24
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 25
+\BOOKMARK [1][-]{section.8}{Appendix}{}% 26

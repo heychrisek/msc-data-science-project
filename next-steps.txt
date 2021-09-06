@@ -1,38 +1,59 @@
 NEXT STEPS
-    Fix latex quotes " -> ``
+
+
+
+
+    break section 5.1 and 5.2 into subsubsections?
+    (can easily lengthen these, describe each step similar to 4.2 subsubsections)
+
+    read report end-to-end, make revisions
+
+    read Github repo files, final cleanup
+
+    add to "evaluation" and "conclusion" sections
+      - see evaluation.md
+
+    SUBMIT!!! 
+
+
+x   Email Michael (27 AUGUST)
+
+x   Fix latex quotes " -> ``
 
 
     August 10-12
-      *** write report, reorganize abstract / intro / etc.
-      *** finish demo repo: https://github.com/Birkbeck/msc-data-science-project-2020_21---files-heychrisek/
+x     *** write report, reorganize abstract / intro / etc.
+x     *** finish demo repo: https://github.com/Birkbeck/msc-data-science-project-2020_21---files-heychrisek/
 
       NOTES FROM MICHAEL
           question:
-            corpus of XML about champions league football -- how does this import into Neo4j 
-            explain mapping of news XML to neo4j, how would it be different for a different corpus
+x            corpus of XML about champions league football -- how does this import into Neo4j 
+x            explain mapping of news XML to neo4j, how would it be different for a different corpus
 
           todo:        
-            indicate some possibilities of future research (similarity, algorithms, etc)
-            indicate what can be done, give examples
+x           indicate what can be done, give examples
 
-            end research paper with outlook/conclusions/future work
+x           indicate some possibilities of future research (similarity, algorithms, etc)
+x           end research paper with outlook/conclusions/future work
+
+x           add technologies section
 
             demo in September
 
-            structure of report:
+x           change structure of report:
                 abstract: this project is about this and that, aim is ..., general terms about research problem, why people are interested
                 (check if I'm interested at all)
 
-                intro
+x               intro
                 (why this is interesting and that I'm great; you're an idiot to not buy my product; sell story)
                   
-                  summary -> "research problem", media area
+x                 summary -> "research problem", media area
                     i/o
                     use cases
-                  background
-                  aims and objectives
+x                 background
+x                 aims and objectives
 
-                  technologies used to solve problem
+x                 technologies used to solve problem
 
       future work
           similarity algorithms: https://neo4j.com/docs/graph-data-science/current/algorithms/similarity/
