@@ -1,0 +1,14 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces \textit {Literature review: Neptuno workflow}}}{12}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces \textit {Literature review: NewsReader workflow}}}{12}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces \textit {Literature review: SUMMA workflow}}}{13}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces \textit {Literature review: News Graph sample construction}}}{13}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \textit {Proposed architecture for news item pipeline and KG}}}{15}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \textit {Distribution of news items by subject}}}{21}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \textit {Distribution of news items by genre}}}{22}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textit {KG Cypher query: subject and genre relationships)}}}{25}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textit {KG Cypher query: shortest and longest news text}}}{25}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textit {KG Cypher query: subjects and genres with most items}}}{26}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \textit {KG Cypher query: shortest path}}}{26}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces \textit {KG Cypher query: country instances of republic}}}{29}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces \textit {KG Cypher query: news item entities}}}{31}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \textit {KG Cypher query: most common entities in news items}}}{32}{figure.14}%

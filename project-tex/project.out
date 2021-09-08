@@ -18,9 +18,10 @@
 \BOOKMARK [3][-]{subsubsection.4.2.5}{Challenges}{subsection.4.2}% 18
 \BOOKMARK [3][-]{subsubsection.4.2.6}{Graph Database Ingestion}{subsection.4.2}% 19
 \BOOKMARK [2][-]{subsection.4.3}{Data Evaluation}{section.4}% 20
-\BOOKMARK [1][-]{section.5}{Knowledge Graph Design and Enhancement}{}% 21
-\BOOKMARK [2][-]{subsection.5.1}{Semantic Enhancements}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.2}{Natural Language Processing}{section.5}% 23
-\BOOKMARK [1][-]{section.6}{Evaluation}{}% 24
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 25
-\BOOKMARK [1][-]{section.8}{Appendix}{}% 26
+\BOOKMARK [1][-]{section.5}{Knowledge Graph Design and Semantic Enhancement}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Applying Semantics with neosemantics \(n10s\)}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Linked Data with Wikidata and SPARQL}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{APOC and GCP Natural Language API}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{Evaluation}{}% 25
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 26
+\BOOKMARK [1][-]{section.8}{Appendix}{}% 27

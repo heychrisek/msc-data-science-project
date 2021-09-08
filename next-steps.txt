@@ -3,15 +3,26 @@ NEXT STEPS
 
 
 
-    break section 5.1 and 5.2 into subsubsections?
+x   break section 5.1 and 5.2 into subsubsections?
     (can easily lengthen these, describe each step similar to 4.2 subsubsections)
+
+x   table/figure cleanup and lists
 
     read report end-to-end, make revisions
 
     read Github repo files, final cleanup
 
-    add to "evaluation" and "conclusion" sections
+-   add to "evaluation" and "conclusion" sections
       - see evaluation.md
+
+    plan video script
+      dataset -> XML -> scripts -> neo4j
+
+      example neo4j queries
+
+      concluding remarks: run demo / see Github
+
+x   review [WIP] sections
 
     SUBMIT!!! 
 

@@ -1,0 +1,76 @@
+
+example neo4j queries
+
+concluding remarks: run demo / see Github
+
+
+
+
+
+
+
+INTRO
+high level: 
+  
+  from proposal:
+  ** can we build a NewsML to Knowledge Graph pipeline, resulting in a knowledge graph that improves news item recommendations and information retrieval?**
+
+  the answer is yes:
+  
+  -> news dataset
+    -> XML
+      -> scripts
+        -> neo4j
+          -> SPARQL for linked data (Wikidata)
+          -> NLP for entity extraction
+
+  in short, CONVERT:
+    Reuters news archive from AWS S3
+    https://aws.amazon.com/marketplace/pp/prodview-qwmkdffmmjesa
+  INTO
+    an actionable knowledge graph,
+      in the form of a Neo4j graph database
+      which can be queried by Cypher query language
+
+    for example:
+      `* 01 ...`
+      UK-> colonial power -> other colonial powers like Denmark -> guid -> similar guid recommendation
+
+
+  how does path query work?
+    `* 02 n->w->c1->c2`
+
+
+  that's the high-level intro
+  from here, we'll go into:
+    (1) how this was built, how the pipeline works and how we did semantic enhancement, and
+    (2) other useful applications for journalists and researchers
+
+
+1 HOW IT WAS BUILT
+  go through files -- manual processing
+  https://github.com/Birkbeck/msc-data-science-project-2020_21---files-heychrisek
+
+    areas where it can be de-coupled
+    PDF - 6 Evaluation
+
+  SPARQL and linked data
+
+  NLP entity extraction
+
+2 OTHER USEFUL APPLICATIONS
+
+  shortest path...
+
+  journalist research...
+
+  football, austria, others? (EXPLORE!)
+
+
+CONCLUSION
+
+  exhibited how a domain-specific knowledge graph is viable in the news domain
+  how it's useful for journalists and researchers
+
+  for future consideration, how to apply algorithms, etc.
+  improve linked data, which skews heavily towards geography
