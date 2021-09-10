@@ -1,3 +1,6 @@
+GCP API key: AIzaSyCD3ef4Ff6CBBF4mnZEucIb_Mz1Ipc6o4c
+
+
 NEXT STEPS
 
 
@@ -10,20 +13,20 @@ x   table/figure cleanup and lists
 
     read report end-to-end, make revisions
 
-    read Github repo files, final cleanup
+x   read Github repo files, final cleanup
 
 -   add to "evaluation" and "conclusion" sections
       - see evaluation.md
 
-    plan video script
+x   plan video script
       dataset -> XML -> scripts -> neo4j
-
       example neo4j queries
-
       concluding remarks: run demo / see Github
 
 x   review [WIP] sections
 
+    record videos
+    finalize PDF
     SUBMIT!!! 
 
 
